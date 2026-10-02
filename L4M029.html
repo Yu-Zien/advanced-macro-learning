@@ -1,0 +1,58 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>Markov 转移与条件期望：先看信息时序 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L4M029"><h1 id="markov-转移与条件期望先看信息时序">Markov
+转移与条件期望：先看信息时序</h1>
+<p>来源：Lecture4.pdf，PDF 第 67 页；辅助 AIO 第 7.3.1–7.3.2 节（印刷第
+164–165 页 / PDF 第 178–179 页）与第 7.4.1 节条件期望解释（印刷第 169 页
+/ PDF 第 183 页）。</p>
+<h2 id="method">本步讲解</h2>
+<p>随机经济先观察当前状态
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>,</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(k,z)</annotation></semantics></math></span>，再选择消费与下期资本，最后才实现下一期生产率
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>z</mi><mo>′</mo></msup><annotation encoding="application/x-tex">z&#39;</annotation></semantics></math></span>。不能在今天的控制中偷用尚未观察到的
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>z</mi><mo>′</mo></msup><annotation encoding="application/x-tex">z&#39;</annotation></semantics></math></span>。</p>
+<p>有限状态 Markov 过程用转移概率
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>z</mi><mo>′</mo></msup><mo>∣</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\pi(z&#39;\mid z)</annotation></semantics></math></span>
+描述。给定当前
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math></span>，每个概率非负，所有下一期状态的概率和为一。例如有低、高两种状态，行是当前状态、列是下一期状态：
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>0.8</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0.2</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>0.3</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0.7</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">P=\begin{pmatrix}0.8&amp;0.2\\0.3&amp;0.7\end{pmatrix}.</annotation></semantics></math></div>
+在低状态下，明天低、高概率分别为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.8</mn><mo>,</mo><mn>0.2</mn></mrow><annotation encoding="application/x-tex">0.8,0.2</annotation></semantics></math></span>。若明天某量取值为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mi>L</mi></msub><mo>,</mo><msub><mi>h</mi><mi>H</mi></msub></mrow><annotation encoding="application/x-tex">h_L,h_H</annotation></semantics></math></span>，条件期望就是概率加权平均
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false" form="prefix">[</mo><mi>h</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>z</mi><mo>′</mo></msup><mo stretchy="false" form="postfix">)</mo><mo>∣</mo><mi>z</mi><mo>=</mo><mi>L</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mn>0.8</mn><msub><mi>h</mi><mi>L</mi></msub><mo>+</mo><mn>0.2</mn><msub><mi>h</mi><mi>H</mi></msub></mrow><annotation encoding="application/x-tex">E[h(z&#39;)\mid z=L]=0.8h_L+0.2h_H</annotation></semantics></math></span>。</p>
+<p>期望不意味着未来会实际取这个平均值；真正实现仍是某个状态。当前
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math></span>
+影响下一期分布，所以即使资本相同也要保留
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math></span>。这是第
+5 课“外生状态”概念的可计算版本；所需随机变量与期望概念由 AIO
+作为辅助补足，不扩展到全书随机连续时间章节。</p>
+<h2 id="example-a">例题 A · 编辑示范</h2>
+<p>用上面矩阵，若下一期价值在低、高状态分别为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">2,5</annotation></semantics></math></span>，当前低状态时的条件期望是多少？</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.8</mn><mo>×</mo><mn>2</mn><mo>+</mo><mn>0.2</mn><mo>×</mo><mn>5</mn><mo>=</mo><mn>2.6</mn></mrow><annotation encoding="application/x-tex">0.8\times2+0.2\times5=2.6</annotation></semantics></math></span>。使用低状态所在的第一行。</p>
+</details>
+<h2 id="practice-b">练习 B · 补充练习</h2><p class="source-label">新增练习 · 训练本课已演示的方法</p><p>相同价值下，当前高状态时条件期望是多少？若本期选择依赖尚未实现的明天高低状态，会违反什么？</p><div class="practice-controls" data-question-id="L4B029" data-module-id="L4M029" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p>期望为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.3</mn><mo>×</mo><mn>2</mn><mo>+</mo><mn>0.7</mn><mo>×</mo><mn>5</mn><mo>=</mo><mn>4.1</mn></mrow><annotation encoding="application/x-tex">0.3\times2+0.7\times5=4.1</annotation></semantics></math></span>。本期选择必须基于当期已知信息，预先按明天真实状态选择违反非预见性；只能选择在当前状态可执行的规则。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>条件期望使用当前状态对应的转移概率，选择必须遵守信息时序。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

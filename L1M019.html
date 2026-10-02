@@ -1,0 +1,77 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>等比级数：把无限期预算算出来 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L1M019"><h1 id="等比级数把无限期预算算出来">等比级数：把无限期预算算出来</h1>
+<p>来源：Lecture1，PDF 第 49、56–58
+页。目标：推导总和并分别计算偶数期和奇数期现值。</p>
+<h2 id="method">讲解与方法</h2>
+<p>无限期求和并不表示无法算出有限财富。先考虑有限等比和
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>N</mi></msub><mo>=</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo>+</mo><mi>⋯</mi><mo>+</mo><msup><mi>r</mi><mi>N</mi></msup></mrow><annotation encoding="application/x-tex">S_N=1+r+\cdots+r^N</annotation></semantics></math></span>。乘以
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math></span>
+后相减：</p>
+<p><div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>r</mi><mo stretchy="false" form="postfix">)</mo><msub><mi>S</mi><mi>N</mi></msub><mo>=</mo><mn>1</mn><mo>−</mo><msup><mi>r</mi><mrow><mi>N</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>S</mi><mi>N</mi></msub><mo>=</mo><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mi>r</mi><mrow><mi>N</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">(1-r)S_N=1-r^{N+1},\qquad S_N=\frac{1-r^{N+1}}{1-r}.</annotation></semantics></math></div></p>
+<p>若
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>r</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|r|&lt;1</annotation></semantics></math></span>，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math></span>
+越大时
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>r</mi><mrow><mi>N</mi><mo>+</mo><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">r^{N+1}</annotation></semantics></math></span>
+越接近零，因此</p>
+<p><div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mo accent="false">∞</mo></munderover><msup><mi>r</mi><mi>t</mi></msup><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mi>r</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">\sum_{t=0}^{\infty}r^t=\frac1{1-r}.</annotation></semantics></math></div></p>
+<p>这里的条件不可省：<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">r=1</annotation></semantics></math></span>
+时每项都是
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>，总和发散；本讲的
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>β</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0&lt;\beta&lt;1</annotation></semantics></math></span>
+确保收敛。偶数期权重是
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><msup><mi>β</mi><mn>2</mn></msup><mo>+</mo><msup><mi>β</mi><mn>4</mn></msup><mo>+</mo><mi>⋯</mi></mrow><annotation encoding="application/x-tex">1+\beta^2+\beta^4+\cdots</annotation></semantics></math></span>，公比是
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>β</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\beta^2</annotation></semantics></math></span>，不是
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math></span>；奇数期则先提出一个
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math></span>：</p>
+<p><div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mo accent="false">∞</mo></munderover><msup><mi>β</mi><mrow><mn>2</mn><mi>j</mi></mrow></msup><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><msup><mi>β</mi><mn>2</mn></msup></mrow></mfrac><mo>,</mo><mspace width="2.0em"></mspace><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mo accent="false">∞</mo></munderover><msup><mi>β</mi><mrow><mn>2</mn><mi>j</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>=</mo><mfrac><mi>β</mi><mrow><mn>1</mn><mo>−</mo><msup><mi>β</mi><mn>2</mn></msup></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">\sum_{j=0}^{\infty}\beta^{2j}=\frac1{1-\beta^2},\qquad\sum_{j=0}^{\infty}\beta^{2j+1}=\frac\beta{1-\beta^2}.</annotation></semantics></math></div></p>
+<p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">j=0,1,2,\ldots</annotation></semantics></math></span>
+只是重新编号偶数期和奇数期。还会用到
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><msup><mi>β</mi><mn>2</mn></msup><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>β</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>β</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">1-\beta^2=(1-\beta)(1+\beta)</annotation></semantics></math></span>，这是平方差公式。若每期消费恒为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math></span>、价格为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>β</mi><mi>t</mi></msup><annotation encoding="application/x-tex">\beta^t</annotation></semantics></math></span>，消费现值就是
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>β</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">c/(1-\beta)</annotation></semantics></math></span>。</p>
+<h2 id="example-a">例题 A</h2>
+<p>令
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">\beta=1/2</annotation></semantics></math></span>。分别算全部时期权重和、偶数期权重和、奇数期权重和，并核对后两者相加。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>全部为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mn>1</mn><mi>/</mi><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">1/(1-1/2)=2</annotation></semantics></math></span>；偶数期为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mn>1</mn><mi>/</mi><mn>4</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>4</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">1/(1-1/4)=4/3</annotation></semantics></math></span>；奇数期为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>/</mi><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mn>1</mn><mi>/</mi><mn>4</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>2</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">(1/2)/(1-1/4)=2/3</annotation></semantics></math></span>，后两者相加确为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>。</p>
+</details>
+<h2 id="practice-b">练习 B</h2><p class="source-label">新增练习 · 练习本课 A 已示范的核心动作</p><p>令
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mn>2</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">\beta=2/3</annotation></semantics></math></span>。算全部、偶数、奇数权重和，并算每期消费
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>
+的现值。</p><div class="practice-controls" data-question-id="L1B019" data-module-id="L1M019" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+查看参考解
+</summary>
+<p>全部为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math></span>；偶数期为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mn>4</mn><mi>/</mi><mn>9</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>9</mn><mi>/</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">1/(1-4/9)=9/5</annotation></semantics></math></span>；奇数期为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>/</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>5</mn><mi>/</mi><mn>9</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>6</mn><mi>/</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">(2/3)/(5/9)=6/5</annotation></semantics></math></span>；二者和为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math></span>。恒定消费
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>
+的现值为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>×</mo><mn>3</mn><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">2\times3=6</annotation></semantics></math></span>。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>先找公比，再检查绝对值小于一；按交付日期正确重编号。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

@@ -1,0 +1,121 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>原题第三问：有一个人不能借，均衡怎样变化 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L2M035"><h1
+id="原题第三问有一个人不能借均衡怎样变化">原题第三问：有一个人不能借，均衡怎样变化</h1>
+<p>来源：Lecture 2，PDF 第 62–63、66–67 页。</p>
+<h2 id="method">这一步解决什么</h2>
+<p>现在只给家庭
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>
+加
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>a</mi><mn>1</mn><mn>2</mn></msubsup><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_1^2\ge0</annotation></semantics></math></span>。不能把无摩擦价格固定后只裁掉其借款需求；价格也必须调整使市场重新出清。</p>
+<p>用分情况来证明均衡头寸。若
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>a</mi><mn>1</mn><mn>2</mn></msubsup><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_1^2&gt;0</annotation></semantics></math></span>，限制不绑定，两家都满足无约束内点条件，由上一课出清推回
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">q=1</annotation></semantics></math></span>；但该价格下第二家想借款，和正头寸矛盾。因此其均衡在边界
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>a</mi><mn>1</mn><mn>2</mn></msubsup><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_1^2=0</annotation></semantics></math></span>，出清又给
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>a</mi><mn>1</mn><mn>1</mn></msubsup><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_1^1=0</annotation></semantics></math></span>。家庭
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+没有这条限制，必须在零头寸满足内点 Euler
+条件，它决定价格。最后再核验家庭
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>
+确实不愿在允许方向储蓄。</p>
+<p>两期对数目标代入预算可写
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>i</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msubsup><mi>e</mi><mn>0</mn><mi>i</mi></msubsup><mo>−</mo><mi>q</mi><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msubsup><mi>e</mi><mn>1</mn><mi>i</mi></msubsup><mo>+</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f_i(a)=\ln(e_0^i-qa)+\ln(e_1^i+a)</annotation></semantics></math></span>，其导数为
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>f</mi><mi>i</mi><mo>′</mo></msubsup><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mfrac><mi>q</mi><mrow><msubsup><mi>e</mi><mn>0</mn><mi>i</mi></msubsup><mo>−</mo><mi>q</mi><mi>a</mi></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><msubsup><mi>e</mi><mn>1</mn><mi>i</mi></msubsup><mo>+</mo><mi>a</mi></mrow></mfrac><mo>,</mo></mrow><annotation encoding="application/x-tex">f_i&#39;(a)=-\frac q{e_0^i-qa}+\frac1{e_1^i+a},</annotation></semantics></math></div>
+在正消费定义域内严格凹。第二家只允许
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a\ge0</annotation></semantics></math></span>；若边界导数非正，向允许方向增加资产不会提高效用，故边界最优。导数为负恰对应正借款乘子。</p>
+<h2 id="exercise-context">原题完整共用条件</h2>
+<p>经济只有第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+期和第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+期。两位家庭的效用相同：
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>U</mi><mi>i</mi></msup><mo>=</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><msubsup><mi>c</mi><mn>0</mn><mi>i</mi></msubsup><mo>+</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><msubsup><mi>c</mi><mn>1</mn><mi>i</mi></msubsup><mo>,</mo><mspace width="2.0em"></mspace><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">U^i=\ln c_0^i+\ln c_1^i,\qquad i=1,2.</annotation></semantics></math></div>
+禀赋为
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msubsup><mi>e</mi><mn>0</mn><mn>1</mn></msubsup><mo>,</mo><msubsup><mi>e</mi><mn>1</mn><mn>1</mn></msubsup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>,</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><mo stretchy="false" form="prefix">(</mo><msubsup><mi>e</mi><mn>0</mn><mn>2</mn></msubsup><mo>,</mo><msubsup><mi>e</mi><mn>1</mn><mn>2</mn></msubsup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">(e_0^1,e_1^1)=\left(\frac32,\frac12\right),\qquad
+(e_0^2,e_1^2)=\left(\frac12,\frac32\right).</annotation></semantics></math></div>
+一期债券在第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+期价格为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">q&gt;0</annotation></semantics></math></span>，第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+期支付一单位消费品；<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>a</mi><mn>1</mn><mi>i</mi></msubsup><annotation encoding="application/x-tex">a_1^i</annotation></semantics></math></span>
+是家庭
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math></span>
+持有的债券数量。
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mn>0</mn><mi>i</mi></msubsup><mo>+</mo><mi>q</mi><msubsup><mi>a</mi><mn>1</mn><mi>i</mi></msubsup><mo>=</mo><msubsup><mi>e</mi><mn>0</mn><mi>i</mi></msubsup><mo>,</mo><mspace width="2.0em"></mspace><msubsup><mi>c</mi><mn>1</mn><mi>i</mi></msubsup><mo>=</mo><msubsup><mi>e</mi><mn>1</mn><mi>i</mi></msubsup><mo>+</mo><msubsup><mi>a</mi><mn>1</mn><mi>i</mi></msubsup><mo>,</mo><mspace width="2.0em"></mspace><msubsup><mi>a</mi><mn>1</mn><mn>1</mn></msubsup><mo>+</mo><msubsup><mi>a</mi><mn>1</mn><mn>2</mn></msubsup><mo>=</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">c_0^i+qa_1^i=e_0^i,\qquad c_1^i=e_1^i+a_1^i,\qquad a_1^1+a_1^2=0.</annotation></semantics></math></div>
+所有消费严格为正。完整任务依次为：（1）写出等权重社会计划者问题并求最优配置；（2）不设借款约束，求竞争均衡价格和配置；（3）仅限制家庭
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>
+不能借款，即
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>a</mi><mn>1</mn><mn>2</mn></msubsup><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_1^2\ge0</annotation></semantics></math></span>，求新均衡价格、债券和消费，并核验家庭
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>
+的 Euler
+不等式；（4）比较受限均衡和计划者配置，定位效率损失并说明怎样恢复无摩擦配置。四问分别完整作答于本节四课。</p>
+<h2 id="example-a">例题 A：编辑示范</h2>
+<p>继续 A 的示范经济：禀赋
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mi>/</mi><mn>3</mn><mo>,</mo><mn>2</mn><mi>/</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(4/3,2/3)</annotation></semantics></math></span>
+与
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>/</mi><mn>3</mn><mo>,</mo><mn>4</mn><mi>/</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(2/3,4/3)</annotation></semantics></math></span>，只限制第二家
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>a</mi><mn>1</mn><mn>2</mn></msubsup><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_1^2\ge0</annotation></semantics></math></span>。求均衡并核验第二家的
+Euler 不等式。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>若第二家严格储蓄，内点加出清应给
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">q=1</annotation></semantics></math></span>，但此时其资产是
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">-1/3</annotation></semantics></math></span>，矛盾。故两家资产均零，消费等于各自禀赋。第一家条件
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mi>/</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>/</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">q/(4/3)=1/(2/3)</annotation></semantics></math></span>
+给
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">q=2</annotation></semantics></math></span>。第二家有
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mi>/</mi><msubsup><mi>c</mi><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><mn>2</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>/</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">q/c_0^2=2/(2/3)=3</annotation></semantics></math></span>，而
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><msubsup><mi>c</mi><mn>1</mn><mn>2</mn></msubsup><mo>=</mo><mn>1</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mi>/</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>3</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">1/c_1^2=1/(4/3)=3/4</annotation></semantics></math></span>，乘子
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>−</mo><mn>3</mn><mi>/</mi><mn>4</mn><mo>=</mo><mn>9</mn><mi>/</mi><mn>4</mn><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">3-3/4=9/4&gt;0</annotation></semantics></math></span>，边界最优；第一家严格凹目标的驻点亦最优。商品与债券都出清。</p>
+</details>
+<h2 id="practice-b">原题 3</h2><p class="source-label">材料原题 · PDF 第 62–63 页，问题 3；参考答案第 66–67 页</p><p>原题现在规定仅家庭
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>
+不能借款，即
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>a</mi><mn>1</mn><mn>2</mn></msubsup><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_1^2\ge0</annotation></semantics></math></span>，家庭
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+不受此限制。求新均衡价格、两家债券持有和消费；核验家庭
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>
+的 Euler 不等式。</p><div class="practice-controls" data-question-id="L2E001c" data-module-id="L2M035" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p>若
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>a</mi><mn>1</mn><mn>2</mn></msubsup><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_1^2&gt;0</annotation></semantics></math></span>，两家内点条件和债券出清仍给
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">q=1</annotation></semantics></math></span>；但其无约束需求为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">-1/2</annotation></semantics></math></span>，矛盾。故
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>a</mi><mn>1</mn><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_1^{2*}=0</annotation></semantics></math></span>，再由出清
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>a</mi><mn>1</mn><mrow><mn>1</mn><mo>*</mo></mrow></msubsup><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_1^{1*}=0</annotation></semantics></math></span>，消费分别为
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msubsup><mi>c</mi><mn>0</mn><mrow><mn>1</mn><mo>*</mo></mrow></msubsup><mo>,</mo><msubsup><mi>c</mi><mn>1</mn><mrow><mn>1</mn><mo>*</mo></mrow></msubsup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>3</mn><mi>/</mi><mn>2</mn><mo>,</mo><mn>1</mn><mi>/</mi><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mspace width="2.0em"></mspace><mo stretchy="false" form="prefix">(</mo><msubsup><mi>c</mi><mn>0</mn><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><mo>,</mo><msubsup><mi>c</mi><mn>1</mn><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>/</mi><mn>2</mn><mo>,</mo><mn>3</mn><mi>/</mi><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">(c_0^{1*},c_1^{1*})=(3/2,1/2),\qquad(c_0^{2*},c_1^{2*})=(1/2,3/2).</annotation></semantics></math></div>
+第一家不受限制，其零头寸内点条件为
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mi>q</mi><mo>*</mo></msup><mrow><mn>3</mn><mi>/</mi><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></mfrac><mspace width="1.0em"></mspace><mo>⇒</mo><mspace width="1.0em"></mspace><msup><mi>q</mi><mo>*</mo></msup><mo>=</mo><mn>3</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">\frac{q^*}{3/2}=\frac1{1/2}\quad\Longrightarrow\quad q^*=3.</annotation></semantics></math></div>
+对第二家，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>q</mi><mo>*</mo></msup><mi>/</mi><msubsup><mi>c</mi><mn>0</mn><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><mo>=</mo><mn>6</mn><mo>&gt;</mo><mn>2</mn><mi>/</mi><mn>3</mn><mo>=</mo><mn>1</mn><mi>/</mi><msubsup><mi>c</mi><mn>1</mn><mrow><mn>2</mn><mo>*</mo></mrow></msubsup></mrow><annotation encoding="application/x-tex">q^*/c_0^{2*}=6&gt;2/3=1/c_1^{2*}</annotation></semantics></math></span>，故按债券价格单位写的乘子为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mo>=</mo><mn>6</mn><mo>−</mo><mn>2</mn><mi>/</mi><mn>3</mn><mo>=</mo><mn>16</mn><mi>/</mi><mn>3</mn><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mu=6-2/3=16/3&gt;0</annotation></semantics></math></span>。若除以
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>q</mi><mo>*</mo></msup><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">q^*=3</annotation></semantics></math></span>，同一条件是
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>&gt;</mo><mn>2</mn><mi>/</mi><mn>9</mn></mrow><annotation encoding="application/x-tex">2&gt;2/9</annotation></semantics></math></span>，新增项为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mi>/</mi><msup><mi>q</mi><mo>*</mo></msup><mo>=</mo><mn>16</mn><mi>/</mi><mn>9</mn></mrow><annotation encoding="application/x-tex">\mu/q^*=16/9</annotation></semantics></math></span>。</p>
+<p>第二家资产目标在零点导数为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>6</mn><mo>+</mo><mn>2</mn><mi>/</mi><mn>3</mn><mo>=</mo><mi>−</mi><mn>16</mn><mi>/</mi><mn>3</mn><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">-6+2/3=-16/3&lt;0</annotation></semantics></math></span>；可行资产
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a\ge0</annotation></semantics></math></span>，严格凹性保证边界最优。第一家目标在零点导数为零且严格凹，故也最优。两家预算、商品出清、债券出清全部成立。<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>q</mi><mo>*</mo></msup><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">q^*&gt;1</annotation></semantics></math></span>
+表示总回报
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">1/3</annotation></semantics></math></span>、净利率
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>2</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">-2/3</annotation></semantics></math></span>，并非价格写反。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>借款受限时价格也要重求；本题零交易与未受限家庭的 Euler
+条件共同给出价格三。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

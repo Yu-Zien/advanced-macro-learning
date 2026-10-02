@@ -1,0 +1,77 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>递归竞争均衡的四组条件 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L4M026"><h1 id="递归竞争均衡的四组条件">递归竞争均衡的四组条件</h1>
+<p>来源：Lecture4.pdf，PDF 第 59–63、76 页。</p>
+<h2 id="method">本步讲解</h2>
+<p>一个递归竞争均衡需要同时给出家庭值函数
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math></span>、消费与资本政策
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>,</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">C,G</annotation></semantics></math></span>、工资与租金
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>,</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">w,r</annotation></semantics></math></span>、总量规律
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math></span>，并声明状态域和初值。</p>
+<ol type="1">
+<li><strong>家庭最优：</strong> 给定
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>,</mo><mi>r</mi><mo>,</mo><mi>H</mi></mrow><annotation encoding="application/x-tex">w,r,H</annotation></semantics></math></span>，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>,</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">C,G</annotation></semantics></math></span>
+解家庭问题，预算、非负约束与适当尾部条件成立。</li>
+<li><strong>企业最优：</strong> 给定价格，投入最大化利润；在出清点
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><msub><mi>F</mi><mi>K</mi></msub><mo>,</mo><mi>w</mi><mo>=</mo><msub><mi>F</mi><mi>N</mi></msub></mrow><annotation encoding="application/x-tex">r=F_K,w=F_N</annotation></semantics></math></span>。</li>
+<li><strong>总量一致：</strong>
+对相同家庭的对称状态，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo>,</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">H(K)=G(K,K)</annotation></semantics></math></span>。</li>
+<li><strong>市场出清：</strong> 劳动需求为一，资本需求为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math></span>，且
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo>,</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo>,</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>δ</mi><mo stretchy="false" form="postfix">)</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">C(K,K)+G(K,K)=F(K,1)+(1-\delta)K</annotation></semantics></math></span>。</li>
+</ol>
+<p>商品出清可以由其他条件推得：家庭预算在
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">k=K</annotation></semantics></math></span>
+时为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>+</mo><mi>G</mi><mo>=</mo><mi>w</mi><mo>+</mo><mo stretchy="false" form="prefix">[</mo><mn>1</mn><mo>+</mo><mi>r</mi><mo>−</mo><mi>δ</mi><mo stretchy="false" form="postfix">]</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">C+G=w+[1+r-\delta]K</annotation></semantics></math></span>；用零利润恒等式
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>+</mo><mi>r</mi><mi>K</mi><mo>=</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">w+rK=F(K,1)</annotation></semantics></math></span>，便得到资源约束。能推得仍要核验推导所需条件，不能因“预算写过”就不管出清。异质家庭时，第三条需对个体政策按分布聚合，不能简单用对角线
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo>,</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G(K,K)</annotation></semantics></math></span>。</p>
+<h2 id="example-a">例题 A · 编辑示范</h2>
+<p>假定完全折旧、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msqrt><mi>K</mi></msqrt></mrow><annotation encoding="application/x-tex">F(K,1)=\sqrt K</annotation></semantics></math></span>，在
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">K=4</annotation></semantics></math></span>
+处价格支付合计
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>，家庭选
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mo>,</mo><mn>4</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0.5</mn></mrow><annotation encoding="application/x-tex">G(4,4)=0.5</annotation></semantics></math></span>。若一致性成立，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">H(4)</annotation></semantics></math></span>
+和消费应是多少？这些数值已证明均衡吗？</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>一致性要求
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0.5</mn></mrow><annotation encoding="application/x-tex">H(4)=0.5</annotation></semantics></math></span>，资源出清要求
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mo>,</mo><mn>4</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1.5</mn></mrow><annotation encoding="application/x-tex">C(4,4)=1.5</annotation></semantics></math></span>。还未证明均衡；仍须家庭最优与企业最优，并在整个声明状态域中验证。</p>
+</details>
+<h2 id="practice-b">练习 B · 补充练习</h2><p class="source-label">新增练习 · 训练本课已演示的方法</p><p>同模型在
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">K=1</annotation></semantics></math></span>
+处，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0.3</mn></mrow><annotation encoding="application/x-tex">G(1,1)=0.3</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0.7</mn></mrow><annotation encoding="application/x-tex">C(1,1)=0.7</annotation></semantics></math></span>，但猜测
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0.2</mn></mrow><annotation encoding="application/x-tex">H(1)=0.2</annotation></semantics></math></span>。哪条条件失败？</p><div class="practice-controls" data-question-id="L4B026" data-module-id="L4M026" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p>资源出清
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.7</mn><mo>+</mo><mn>0.3</mn><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0.7+0.3=1</annotation></semantics></math></span>
+成立；但总量一致性失败，因为家庭实际产生
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.3</mn><annotation encoding="application/x-tex">0.3</annotation></semantics></math></span>
+而相信
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.2</mn><annotation encoding="application/x-tex">0.2</annotation></semantics></math></span>。不能把商品出清当作全部均衡条件。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>家庭、企业、市场与预期一致性各有不同工作，必须共同成立。</p>
+<details class="prepared-review"><summary>精选回顾（回看不记分）</summary><h2 id="review">精选回顾</h2><p>商品出清与总量一致性有什么区别？</p><h2 id="review-answer">回顾答案</h2><details>
+<summary>
+回忆后查看
+</summary>
+<p>出清核对当期资源用途；一致性核对家庭相信的总量转移是否由其最优选择聚合产生。</p>
+</details></details></article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

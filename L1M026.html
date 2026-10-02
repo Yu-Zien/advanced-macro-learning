@@ -1,0 +1,56 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>由消费增长反推均衡价格 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L1M026"><h1 id="由消费增长反推均衡价格">由消费增长反推均衡价格</h1>
+<p>来源：Lecture1，PDF 第 55
+页。目标：求出归一化的整个现值价格序列。</p>
+<h2 id="method">讲解与方法</h2>
+<p>上一课得到每户总增长因子为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>。代回家庭最优关系：</p>
+<p><div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><mi>β</mi><mfrac><msub><mi>p</mi><mi>t</mi></msub><msub><mi>p</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mfrac><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>p</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mi>β</mi><msub><mi>p</mi><mi>t</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">1=\beta\frac{p_t}{p_{t+1}},\qquad p_{t+1}=\beta p_t.</annotation></semantics></math></div></p>
+<p>这是一条价格递推式。归一化
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p_0=1</annotation></semantics></math></span>
+后，逐步得到
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>=</mo><mi>β</mi></mrow><annotation encoding="application/x-tex">p_1=\beta</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>2</mn></msub><mo>=</mo><mi>β</mi><msub><mi>p</mi><mn>1</mn></msub><mo>=</mo><msup><mi>β</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">p_2=\beta p_1=\beta^2</annotation></semantics></math></span>，一般地</p>
+<p><div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>p</mi><mi>t</mi><mo>*</mo></msubsup><mo>=</mo><msup><mi>β</mi><mi>t</mi></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">p_t^*=\beta^t.</annotation></semantics></math></div></p>
+<p>因为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>β</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0&lt;\beta&lt;1</annotation></semantics></math></span>，每个有限日期的价格严格正，晚交付商品的期初价格更低。在本例中，恒定消费使各期未贴现边际效用相同，而未来效用被贴现，所以均衡价格按相同速度下降。</p>
+<p>不能把“未来商品一律更便宜”当普遍规律：如果未来资源更稀缺、边际效用更高，均衡相对价格也会受到它影响。本例的结论依赖已证明的恒定消费路径。此外价格下降并不表示将来消费的数量减少，只表示期初的相对估值更低。</p>
+<h2 id="example-a">例题 A</h2>
+<p>令
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mn>0.8</mn></mrow><annotation encoding="application/x-tex">\beta=0.8</annotation></semantics></math></span>，求
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>0</mn></msub><mo>,</mo><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><msub><mi>p</mi><mn>2</mn></msub><mo>,</mo><msub><mi>p</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">p_0,p_1,p_2,p_3</annotation></semantics></math></span>，并检查
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><msub><mi>p</mi><mn>1</mn></msub><mi>/</mi><msub><mi>p</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\beta p_1/p_2</annotation></semantics></math></span>。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>价格为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>0.8</mn><mo>,</mo><mn>0.64</mn><mo>,</mo><mn>0.512</mn></mrow><annotation encoding="application/x-tex">1,0.8,0.64,0.512</annotation></semantics></math></span>。<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.8</mn><mo>×</mo><mn>0.8</mn><mi>/</mi><mn>0.64</mn><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0.8\times0.8/0.64=1</annotation></semantics></math></span>，与恒定消费相容。</p>
+</details>
+<h2 id="practice-b">练习 B</h2><p class="source-label">新增练习 · 练习本课 A 已示范的核心动作</p><p>令
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mn>0.6</mn></mrow><annotation encoding="application/x-tex">\beta=0.6</annotation></semantics></math></span>，求前四期价格并检查相邻价格比。如果不固定
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mn>0</mn></msub><annotation encoding="application/x-tex">p_0</annotation></semantics></math></span>，价格是否还唯一？</p><div class="practice-controls" data-question-id="L1B026" data-module-id="L1M026" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+查看参考解
+</summary>
+<p>价格为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>0.6</mn><mo>,</mo><mn>0.36</mn><mo>,</mo><mn>0.216</mn></mrow><annotation encoding="application/x-tex">1,0.6,0.36,0.216</annotation></semantics></math></span>；每个相邻价格比为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>0.6</mn><mo>=</mo><mn>5</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">1/0.6=5/3</annotation></semantics></math></span>。不固定
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mn>0</mn></msub><annotation encoding="application/x-tex">p_0</annotation></semantics></math></span>
+时，任意同一正倍数都代表同一相对价格体系，因此绝对价格水平不唯一。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>用最优条件求相对价格，再用归一化固定计价尺度。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

@@ -1,0 +1,62 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>原始黄金律最大化的是稳态消费 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L3M022"><h1 id="原始黄金律最大化的是稳态消费">原始黄金律最大化的是稳态消费</h1>
+<p>来源：Lecture3.pdf，第 38 页；以下 A 与 B
+除明确标注原题外均为编辑补充。</p>
+<p>本课目标：对稳态消费求导得到黄金律资本。</p>
+<h2 id="method">本步讲解</h2>
+<p>另一个问题是：在所有恒定资本配置中，哪个资本水平能让每期消费最高？它最大化
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>c</mi><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">s</mi></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>δ</mi><mi>k</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">c^{\mathrm{ss}}(k)=F(k,1)-\delta k.</annotation></semantics></math></div>
+若存在内点最大值
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>k</mi><mi>g</mi></msup><annotation encoding="application/x-tex">k^g</annotation></semantics></math></span>，一阶条件为
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>k</mi></msub><mo stretchy="false" form="prefix">(</mo><msup><mi>k</mi><mi>g</mi></msup><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>δ</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">F_k(k^g,1)=\delta.</annotation></semantics></math></div>
+若
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">F(k,1)</annotation></semantics></math></span>
+严格凹，则稳态消费也严格凹，这个内点解是唯一最大点。黄金律比较不同稳态的恒定消费，不计较从给定初值积累到这些稳态时先牺牲多少消费。</p>
+<p>若
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\delta=0</annotation></semantics></math></span>
+且技术严格递增，未必有有限黄金律资本，例如
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msqrt><mi>k</mi></msqrt></mrow><annotation encoding="application/x-tex">F(k,1)=\sqrt{k}</annotation></semantics></math></span>
+的稳态消费随资本无限增加。这是需要保留的边界；不能把公式中除以
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>δ</mi><annotation encoding="application/x-tex">\delta</annotation></semantics></math></span>
+的表达式在
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\delta=0</annotation></semantics></math></span>
+处硬算。</p>
+<h2 id="example-a">例题 A</h2>
+<p>若
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msqrt><mi>k</mi></msqrt></mrow><annotation encoding="application/x-tex">F(k,1)=\sqrt{k}</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>=</mo><mn>1</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">\delta=1/4</annotation></semantics></math></span>，求黄金律资本和最大稳态消费。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>k</mi></msub><mo>=</mo><mn>1</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><msqrt><mi>k</mi></msqrt><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">F_k=1/(2\sqrt{k})</annotation></semantics></math></span>。令其等于
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">1/4</annotation></semantics></math></span>
+得
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mi>k</mi></msqrt><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\sqrt{k}=2</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mi>g</mi></msup><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">k^g=4</annotation></semantics></math></span>。消费为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>−</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>/</mi><mn>4</mn><mo stretchy="false" form="postfix">)</mo><mn>4</mn><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2-(1/4)4=1</annotation></semantics></math></span>。二阶导数为负，确为最大点。</p>
+</details>
+<h2 id="practice-b">补充练习 B</h2><p class="source-label">新增练习 · 练习本课A已经示范的同一动作。</p><p>若
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msqrt><mi>k</mi></msqrt></mrow><annotation encoding="application/x-tex">F(k,1)=\sqrt{k}</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>=</mo><mn>1</mn><mi>/</mi><mn>8</mn></mrow><annotation encoding="application/x-tex">\delta=1/8</annotation></semantics></math></span>，求黄金律资本与消费。</p><div class="practice-controls" data-question-id="L3B022" data-module-id="L3M022" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+完成尝试后查看参考解
+</summary>
+<p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><msqrt><mi>k</mi></msqrt><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn><mi>/</mi><mn>8</mn></mrow><annotation encoding="application/x-tex">1/(2\sqrt{k})=1/8</annotation></semantics></math></span>
+给
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mi>k</mi></msqrt><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\sqrt{k}=4</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mi>g</mi></msup><mo>=</mo><mn>16</mn></mrow><annotation encoding="application/x-tex">k^g=16</annotation></semantics></math></span>，消费为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>−</mo><mn>16</mn><mi>/</mi><mn>8</mn><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">4-16/8=2</annotation></semantics></math></span>。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>黄金律最大化恒定稳态消费；它不是直接求给定初值下的折现效用最优路径。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

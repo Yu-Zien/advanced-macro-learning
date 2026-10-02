@@ -1,0 +1,89 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>福利定理证明：弱改善为什么不能更便宜 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L2M008"><h1
+id="福利定理证明弱改善为什么不能更便宜">福利定理证明：弱改善为什么不能更便宜</h1>
+<p>来源：Lecture 2，PDF 第 16 页。</p>
+<h2 id="method">这一步解决什么</h2>
+<p>本课处理证明中最容易漏掉的一步。暂用有限期
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn><mo>,</mo><mi>…</mi><mo>,</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">t=0,\ldots,T</annotation></semantics></math></span>，价格
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>≫</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p\gg0</annotation></semantics></math></span>
+表示每个价格都严格正。家庭
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math></span>
+在财富
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>W</mi><mi>i</mi></msup><mo>=</mo><mi>p</mi><mo>⋅</mo><msup><mi>e</mi><mi>i</mi></msup></mrow><annotation encoding="application/x-tex">W^i=p\cdot e^i</annotation></semantics></math></span>
+的预算内选择最优
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>c</mi><mrow><mi>i</mi><mo>*</mo></mrow></msup><annotation encoding="application/x-tex">c^{i*}</annotation></semantics></math></span>，偏好局部非饱和。</p>
+<p><strong>支出引理。</strong>若
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>c</mi><mo accent="true">̃</mo></mover><mi>i</mi></msup><annotation encoding="application/x-tex">\widetilde c^i</annotation></semantics></math></span>
+至少和
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>c</mi><mrow><mi>i</mi><mo>*</mo></mrow></msup><annotation encoding="application/x-tex">c^{i*}</annotation></semantics></math></span>
+一样好，那么
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⋅</mo><msup><mover><mi>c</mi><mo accent="true">̃</mo></mover><mi>i</mi></msup><mo>≥</mo><msup><mi>W</mi><mi>i</mi></msup></mrow><annotation encoding="application/x-tex">p\cdot\widetilde c^i\ge W^i</annotation></semantics></math></span>；若严格更好，则
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⋅</mo><msup><mover><mi>c</mi><mo accent="true">̃</mo></mover><mi>i</mi></msup><mo>&gt;</mo><msup><mi>W</mi><mi>i</mi></msup></mrow><annotation encoding="application/x-tex">p\cdot\widetilde c^i&gt;W^i</annotation></semantics></math></span>。</p>
+<p>先证严格改善：如果支出
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo><msup><mi>W</mi><mi>i</mi></msup></mrow><annotation encoding="application/x-tex">\le W^i</annotation></semantics></math></span>，家庭原先就买得起这个严格更好的组合，与最优性直接矛盾。再证弱改善：反设支出
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&lt;</mo><msup><mi>W</mi><mi>i</mi></msup></mrow><annotation encoding="application/x-tex">&lt;W^i</annotation></semantics></math></span>，就有预算余量。由上一课，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>c</mi><mo accent="true">̃</mo></mover><mi>i</mi></msup><annotation encoding="application/x-tex">\widetilde c^i</annotation></semantics></math></span>
+附近存在更好且仍可负担的
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math></span>。偏好的传递性给
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>≻</mo><msup><mover><mi>c</mi><mo accent="true">̃</mo></mover><mi>i</mi></msup><mo>≽</mo><msup><mi>c</mi><mrow><mi>i</mi><mo>*</mo></mrow></msup></mrow><annotation encoding="application/x-tex">y\succ\widetilde c^i\succeq c^{i*}</annotation></semantics></math></span>，所以
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>≻</mo><msup><mi>c</mi><mrow><mi>i</mi><mo>*</mo></mrow></msup></mrow><annotation encoding="application/x-tex">y\succ c^{i*}</annotation></semantics></math></span>，再次违反家庭最优。</p>
+<p>两种不等号来自不同论证，不能把“弱改善买不起”当成未经证明的直觉。支出刚好等于财富且效用一样好时，家庭可有多个最优组合，一般无需排除。</p>
+<h2 id="example-a">例题 A：编辑示范</h2>
+<p>财富为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn><annotation encoding="application/x-tex">10</annotation></semantics></math></span>，最优组合为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mo>*</mo></msup><annotation encoding="application/x-tex">x^*</annotation></semantics></math></span>。组合
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math></span>
+与
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mo>*</mo></msup><annotation encoding="application/x-tex">x^*</annotation></semantics></math></span>
+无差异而花费
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>9</mn><annotation encoding="application/x-tex">9</annotation></semantics></math></span>。在局部非饱和下为什么不可能？</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>剩余预算为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>。在
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math></span>
+足够小的邻域内消费仍可负担；局部非饱和提供严格好于
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math></span>
+的点
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math></span>。由于
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math></span>
+与
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mo>*</mo></msup><annotation encoding="application/x-tex">x^*</annotation></semantics></math></span>
+无差异，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math></span>
+严格好于
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mo>*</mo></msup><annotation encoding="application/x-tex">x^*</annotation></semantics></math></span>，与
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mo>*</mo></msup><annotation encoding="application/x-tex">x^*</annotation></semantics></math></span>
+最优矛盾。</p>
+</details>
+<h2 id="practice-b">补充练习 B</h2><p class="source-label">新增练习 · 编辑补充：练习本课 A 已完整示范的方法或条件判断。</p><p>财富为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>12</mn><annotation encoding="application/x-tex">12</annotation></semantics></math></span>。组合
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math></span>
+严格好于最优组合但花费恰好
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>12</mn><annotation encoding="application/x-tex">12</annotation></semantics></math></span>，组合
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math></span>
+与最优组合一样好但花费
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>11</mn><annotation encoding="application/x-tex">11</annotation></semantics></math></span>。分别指出矛盾所需条件。</p><div class="practice-controls" data-question-id="L2B008" data-module-id="L2M008" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math></span>
+是预算内的严格改善，单靠家庭最优性就排除。<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math></span>
+是弱改善且便宜，需要局部非饱和与支出连续性，先在它附近构造可负担的严格改善，再用最优性排除。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>严格改善必须超出财富；弱改善至少花完整份财富，这一步需要局部非饱和。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

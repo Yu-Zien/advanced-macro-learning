@@ -1,0 +1,60 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>两层固定点：私人价值与总量预期 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L4M027"><h1
+id="两层固定点私人价值与总量预期">两层固定点：私人价值与总量预期</h1>
+<p>来源：Lecture4.pdf，PDF 第 64 页。</p>
+<h2 id="method">本步讲解</h2>
+<p>给定总量规律
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math></span>，家庭
+Bellman 算子求出值函数固定点，再产生政策
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>G</mi><mi>H</mi></msub><annotation encoding="application/x-tex">G_H</annotation></semantics></math></span>。但这个私人问题解完，并不意味着猜测的
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math></span>
+正确。还要检查
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>G</mi><mi>H</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo>,</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mspace width="1.0em"></mspace><mrow><mtext mathvariant="normal">对每个相关 </mtext><mspace width="0.333em"></mspace></mrow><mi>K</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">H(K)=G_H(K,K)\quad\text{对每个相关 }K.</annotation></semantics></math></div>
+这是第二层固定点。第一层要求“续接价值与最优决策一致”，第二层要求“总量预期与实际聚合行为一致”。本例价格函数由技术与当期总量给出；<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math></span>
+通过未来总量影响未来价格。</p>
+<p>可按“猜测
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math></span>
+→ 解家庭问题 → 聚合政策 → 比较
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math></span>
+→
+更新猜测”的顺序计算。第一层有限网格的收缩证明，不会自动证明外层总量更新也收缩或均衡唯一。外层是否收敛需另查；这也是有摩擦模型比计划者问题更复杂的原因。</p>
+<h2 id="example-a">例题 A · 编辑示范</h2>
+<p>某次家庭求解得到
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mi>H</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo>,</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0.3</mn><msup><mi>K</mi><mn>0.4</mn></msup></mrow><annotation encoding="application/x-tex">G_H(K,K)=0.3K^{0.4}</annotation></semantics></math></span>，原猜测是
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0.25</mn><msup><mi>K</mi><mn>0.4</mn></msup></mrow><annotation encoding="application/x-tex">H(K)=0.25K^{0.4}</annotation></semantics></math></span>。在
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">K=1</annotation></semantics></math></span>
+处的一致性残差是多少？</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>实际聚合减预测为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.3</mn><mo>−</mo><mn>0.25</mn><mo>=</mo><mn>0.05</mn></mrow><annotation encoding="application/x-tex">0.3-0.25=0.05</annotation></semantics></math></span>。私人问题即使已完全解好，原猜测仍不是均衡规律。</p>
+</details>
+<h2 id="practice-b">练习 B · 补充练习</h2><p class="source-label">新增练习 · 训练本课已演示的方法</p><p>若新猜测
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0.28</mn><msup><mi>K</mi><mn>0.4</mn></msup></mrow><annotation encoding="application/x-tex">H(K)=0.28K^{0.4}</annotation></semantics></math></span>，求得
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mi>H</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo>,</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0.29</mn><msup><mi>K</mi><mn>0.4</mn></msup></mrow><annotation encoding="application/x-tex">G_H(K,K)=0.29K^{0.4}</annotation></semantics></math></span>，在
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">K=1</annotation></semantics></math></span>
+处残差多大？变小就能断言外层必然收敛吗？</p><div class="practice-controls" data-question-id="L4B027" data-module-id="L4M027" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p>残差为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.01</mn><annotation encoding="application/x-tex">0.01</annotation></semantics></math></span>。这次变小是局部计算结果，不能代替对外层算法收敛性的证明或系统诊断。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>解出家庭 Bellman 固定点之后，还要让总量预期与聚合政策一致。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

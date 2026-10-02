@@ -1,0 +1,71 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>用终端剩余价值验证递归解 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L4M006"><h1 id="用终端剩余价值验证递归解">用终端剩余价值验证递归解</h1>
+<p>来源：Lecture4.pdf，PDF 第 10、19、24 页。</p>
+<h2 id="method">本步讲解</h2>
+<p>这里补齐序列与递归等价的验证步骤。设候选
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math></span>
+满足 Bellman
+方程，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math></span>
+在每个状态达到最大值。任意可行路径都满足
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mi>t</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>≥</mo><mi>U</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>c</mi><mi>t</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mi>β</mi><mi>v</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">v(k_t)\geq U(c_t)+\beta v(k_{t+1}).</annotation></semantics></math></div>
+乘
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>β</mi><mi>t</mi></msup><annotation encoding="application/x-tex">\beta^t</annotation></semantics></math></span>
+后，从
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t=0</annotation></semantics></math></span>
+加到
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math></span>，相邻的价值项抵消，得到
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mn>0</mn></msub><mo stretchy="false" form="postfix">)</mo><mo>≥</mo><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover><msup><mi>β</mi><mi>t</mi></msup><mi>U</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>c</mi><mi>t</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>+</mo><msup><mi>β</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msup><mi>v</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">v(k_0)\geq\sum_{t=0}^{T}\beta^tU(c_t)+\beta^{T+1}v(k_{T+1}).</annotation></semantics></math></div>
+若待比较可行路径的效用和有定义，且终端项趋于零，就得到
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mn>0</mn></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">v(k_0)</annotation></semantics></math></span>
+是所有这些路径价值的上界。沿
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math></span>
+的路径每步等号成立，且终端项也趋于零，便达到该上界。</p>
+<p>一个容易验证的充分环境是：状态与回报受界、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math></span>
+有界、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>β</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0&lt;\beta&lt;1</annotation></semantics></math></span>。此时
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><msup><mi>β</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msup><mi>v</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>≤</mo><msup><mi>β</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msup><mi>M</mi><mo>→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">|\beta^{T+1}v(k_{T+1})|\leq\beta^{T+1}M\to0</annotation></semantics></math></span>。对数效用在零附近无界，不能直接套有界版本；第
+12
+课用该特殊模型另给最优性验证。尾部条件限制的是无限远影响，并非把有限期最后一期消费设为零。</p>
+<h2 id="example-a">例题 A · 编辑示范</h2>
+<p>若
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>v</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>≤</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">|v(k)|\leq10</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">\beta=1/2</annotation></semantics></math></span>，求截断到
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math></span>
+后剩余项的绝对值上界。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>上界为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>/</mi><mn>2</mn><msup><mo stretchy="false" form="postfix">)</mo><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">10(1/2)^{T+1}</annotation></semantics></math></span>，随
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>→</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">T\to\infty</annotation></semantics></math></span>
+趋零。因此在这些有界性条件下可以从有限和过渡到无限和。</p>
+</details>
+<h2 id="practice-b">练习 B · 补充练习</h2><p class="source-label">新增练习 · 训练本课已演示的方法</p><p>若
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>v</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>≤</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">|v(k)|\leq5</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mn>0.8</mn></mrow><annotation encoding="application/x-tex">\beta=0.8</annotation></semantics></math></span>，写出对应上界。若只知道
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\beta&lt;1</annotation></semantics></math></span>
+而
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">v(k_{T+1})</annotation></semantics></math></span>
+可能快速增长，能直接断言尾项为零吗？</p><div class="practice-controls" data-question-id="L4B006" data-module-id="L4M006" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p>有界时上界为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo stretchy="false" form="prefix">(</mo><mn>0.8</mn><msup><mo stretchy="false" form="postfix">)</mo><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">5(0.8)^{T+1}\to0</annotation></semantics></math></span>。无界时不能；例如数值序列
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>β</mi><mrow><mi>−</mi><mo stretchy="false" form="prefix">(</mo><mi>T</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></msup></mrow><annotation encoding="application/x-tex">v(k_{T+1})=\beta^{-(T+1)}</annotation></semantics></math></span>
+会使乘积恒为一。必须验证实际可行路径上的尾部行为。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>Bellman 逐期不等式加总，再控制尾部，才能验证无限期最优性。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

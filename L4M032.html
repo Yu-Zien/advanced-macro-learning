@@ -1,0 +1,61 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>从经济环境贯通到递归均衡模板 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L4M032"><h1 id="从经济环境贯通到递归均衡模板">从经济环境贯通到递归均衡模板</h1>
+<p>来源：Lecture4.pdf，PDF 第 70–76 页。</p>
+<h2 id="method">本步讲解</h2>
+<p>四讲现在连成一个完整过程。第 1 讲定义经济环境并解交换均衡；第 2
+讲评价效率、比较交易制度并识别摩擦；第 3
+讲加入生产、资本积累和竞争价格；第 4
+讲把相同经济问题写成状态上的决策规则。</p>
+<p>通用递归步骤如下：先声明时间、信息、主体、偏好、技术和制度；保留最小充分状态；写控制和可行集；给回报与转移；解
+Bellman 求政策；再加入价格函数、聚合规律与市场出清。用个体状态
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math></span>、总量状态
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math></span>
+示意：
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munder><mi mathvariant="normal">max</mi><msup><mi>x</mi><mo>′</mo></msup></munder><mo stretchy="false" form="prefix">{</mo><mi>u</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><msup><mi>x</mi><mo>′</mo></msup><mo>;</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mi>β</mi><mi>v</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>x</mi><mo>′</mo></msup><mo>,</mo><mi>H</mi><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">}</mo><mo>,</mo></mrow><annotation encoding="application/x-tex">v(x,X)=\max_{x&#39;}\{u(x,x&#39;;X)+\beta v(x&#39;,H(X))\},</annotation></semantics></math></div>
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>=</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mspace width="2.0em"></mspace><mi>H</mi><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi mathvariant="script">𝒜</mi><mo stretchy="false" form="prefix">[</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>⋅</mi><mo>,</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">]</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">x&#39;=g(x,X),\qquad H(X)=\mathcal A[g(\cdot,X)].</annotation></semantics></math></div>
+其中
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">𝒜</mi><annotation encoding="application/x-tex">\mathcal A</annotation></semantics></math></span>
+是聚合操作，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><msup><mi>x</mi><mo>′</mo></msup><mo>;</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">u(x,x&#39;;X)</annotation></semantics></math></span>
+已包含按制度写好的当期预算和回报。实际可行集不能省略；随机模型中续接要换成条件期望。单个代表性类型时聚合可简化成
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo>,</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">H(K)=G(K,K)</annotation></semantics></math></span>，异质性时通常需要分布。</p>
+<p>历史树为每一种过去冲击序列分别指定行动，节点会迅速增长；若
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>,</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(k,z)</annotation></semantics></math></span>
+已充分，就可用同一政策
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>,</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g(k,z)</annotation></semantics></math></span>
+在不同实现中反复调用。习惯、承诺或信念若仍影响未来，必须加入状态，不能为了方便计算忽略。</p>
+<h2 id="example-a">例题 A · 编辑示范</h2>
+<p>某模型已经给出家庭最优政策与企业价格，却没有说明家庭相信的未来总量怎样形成。根据模板缺哪一步？</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>缺聚合与预期一致性：须把最优个体政策聚合成实际总量转移，并与家庭使用的
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math></span>
+比较，同时核对市场出清。</p>
+</details>
+<h2 id="practice-b">练习 B · 补充练习</h2><p class="source-label">新增练习 · 训练本课已演示的方法</p><p>某随机模型用
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">V(k)</annotation></semantics></math></span>
+表示价值，却让当前生产率决定资源和明日分布；修正状态与续接形式，并说明学习主线的下一步。</p><div class="practice-controls" data-question-id="L4B032" data-module-id="L4M032" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p>应写
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>,</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">V(k,z)</annotation></semantics></math></span>，续接为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><msub><mo>∑</mo><msup><mi>z</mi><mo>′</mo></msup></msub><mi>π</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>z</mi><mo>′</mo></msup><mo>∣</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mi>V</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>k</mi><mo>′</mo></msup><mo>,</mo><msup><mi>z</mi><mo>′</mo></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\beta\sum_{z&#39;}\pi(z&#39;\mid z)V(k&#39;,z&#39;)</annotation></semantics></math></span>。之后在分散模型加入价格与总量状态，检查聚合一致和各市场出清。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>建模、优化、效率和均衡闭合是一条连续方法链。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

@@ -1,0 +1,76 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>状态是否充分：习惯、生产率与时间 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L4M005"><h1
+id="状态是否充分习惯生产率与时间">状态是否充分：习惯、生产率与时间</h1>
+<p>来源：Lecture4.pdf，PDF 第 16–18、70 页。</p>
+<h2 id="method">本步讲解</h2>
+<p>状态是与未来有关的历史的摘要。检验它是否充分，要逐项问：能否由状态和控制计算当期回报、当期可行集及下一期状态（随机时为其条件分布）？更早历史是否仍有额外影响？</p>
+<p>若效用为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>c</mi><mi>t</mi></msub><mo>−</mo><mi>h</mi><msub><mi>c</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">U(c_t-hc_{t-1})</annotation></semantics></math></span>，只保留资本不够：同一资本、不同上期消费，会给出不同习惯效用和可行消费。可用
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mi>t</mi></msub><mo>,</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(k_t,c_{t-1})</annotation></semantics></math></span>；选择
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mi>t</mi></msub><mo>,</mo><msub><mi>k</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">c_t,k_{t+1}</annotation></semantics></math></span>
+后，下一期状态为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>c</mi><mi>t</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(k_{t+1},c_t)</annotation></semantics></math></span>。</p>
+<p>若生产率
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>z</mi><mi>t</mi></msub><annotation encoding="application/x-tex">z_t</annotation></semantics></math></span>
+为 Markov 过程，即下一期条件分布只依赖当前
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>z</mi><mi>t</mi></msub><annotation encoding="application/x-tex">z_t</annotation></semantics></math></span>，则用
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mi>t</mi></msub><mo>,</mo><msub><mi>z</mi><mi>t</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(k_t,z_t)</annotation></semantics></math></span>。资本为过去选择形成的内生状态，生产率为按给定规律转移的外生状态。随机值将在第
+29–31
+课推导。若有债务期限、承诺或学习中的信念，也需保留其影响未来的部分。</p>
+<p>若制度每
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math></span>
+期重复，可加入周期位置
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>j</mi><mi>t</mi></msub><mo>∈</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi>…</mi><mo>,</mo><mi>m</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">j_t\in\{0,1,\ldots,m-1\}</annotation></semantics></math></span>：到最后一格后回到零，写成
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>j</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>j</mi><mi>t</mi></msub><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mrow><mspace width="0.222em"></mspace><mrow><mi mathvariant="normal">mod</mi><mo>&#8289;</mo></mrow><mspace width="0.222em"></mspace><mi>m</mi></mrow></mrow><annotation encoding="application/x-tex">j_{t+1}=(j_t+1)\bmod m</annotation></semantics></math></span>。<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mrow><mi mathvariant="normal">mod</mi><mo>&#8289;</mo></mrow><mspace width="0.222em"></mspace><mi>m</mi></mrow><annotation encoding="application/x-tex">\bmod m</annotation></semantics></math></span>
+表示除以
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math></span>
+后的余数；例如两期周期依次为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">0,1,0,1,\ldots</annotation></semantics></math></span>。因此不必保留全部日历历史，只需记录当前在哪个周期位置。</p>
+<p>状态过少会让决策无法执行；把完整历史都保留常能避免漏信息，却显著增加计算量。目标是足够且尽可能简洁，不能把“内生”误解为“当前可以任意重选”。</p>
+<h2 id="example-a">例题 A · 编辑示范</h2>
+<p>技术为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>t</mi></msub><msqrt><msub><mi>k</mi><mi>t</mi></msub></msqrt></mrow><annotation encoding="application/x-tex">z_t\sqrt{k_t}</annotation></semantics></math></span>，且
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>z</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">z_{t+1}</annotation></semantics></math></span>
+的分布依赖
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>z</mi><mi>t</mi></msub><annotation encoding="application/x-tex">z_t</annotation></semantics></math></span>。只用
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi>t</mi></msub><annotation encoding="application/x-tex">k_t</annotation></semantics></math></span>
+可以吗？</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>不可以。同一资本对应不同当期产出，也对应不同明日生产率分布。应至少保留
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mi>t</mi></msub><mo>,</mo><msub><mi>z</mi><mi>t</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(k_t,z_t)</annotation></semantics></math></span>。</p>
+</details>
+<h2 id="practice-b">练习 B · 补充练习</h2><p class="source-label">新增练习 · 训练本课已演示的方法</p><p>确定性税率每三期重复一次，其他条件不变。仅记录
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi>t</mi></msub><annotation encoding="application/x-tex">k_t</annotation></semantics></math></span>
+是否充分？提出一个状态。</p><div class="practice-controls" data-question-id="L4B005" data-module-id="L4M005" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p>不充分，同一资本处于不同税率周期时收益不同。可用
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mi>t</mi></msub><mo>,</mo><msub><mi>j</mi><mi>t</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(k_t,j_t)</annotation></semantics></math></span>，其中
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>j</mi><mi>t</mi></msub><mo>∈</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">j_t\in\{0,1,2\}</annotation></semantics></math></span>
+为周期位置，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>j</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>j</mi><mi>t</mi></msub><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mrow><mspace width="0.222em"></mspace><mrow><mi mathvariant="normal">mod</mi><mo>&#8289;</mo></mrow><mspace width="0.222em"></mspace><mn>3</mn></mrow></mrow><annotation encoding="application/x-tex">j_{t+1}=(j_t+1)\bmod3</annotation></semantics></math></span>。已给定的三期税率表为参数，不必重复存入状态。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>状态必须足以计算回报、可行性和转移；必要时加入时间、习惯或冲击。</p>
+<details class="prepared-review"><summary>精选回顾（回看不记分）</summary><h2 id="review">精选回顾</h2><p>随机模型里为何“当前资本”不一定是充分状态？</p><h2 id="review-answer">回顾答案</h2><details>
+<summary>
+回忆后查看
+</summary>
+<p>若当前生产率还决定资源和未来冲击分布，必须把它加入；其他仍影响未来的历史信息同理。</p>
+</details></details></article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

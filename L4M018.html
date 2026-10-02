@@ -1,0 +1,128 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>收敛后的五点解：重画原页图示 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L4M018"><h1 id="收敛后的五点解重画原页图示">收敛后的五点解：重画原页图示</h1>
+<p>来源：Lecture4.pdf，PDF 第 43–45 页。</p>
+<h2 id="method">本步讲解</h2>
+<p>以最大更新差小于
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>10</mn><mrow><mi>−</mi><mn>12</mn></mrow></msup><annotation encoding="application/x-tex">10^{-12}</annotation></semantics></math></span>
+为停止标准，使用未舍入值计算，第 56 次迭代停止。结果为：</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math></span></th>
+<th><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.04</mn><annotation encoding="application/x-tex">0.04</annotation></semantics></math></span></th>
+<th><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.08</mn><annotation encoding="application/x-tex">0.08</annotation></semantics></math></span></th>
+<th><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.12</mn><annotation encoding="application/x-tex">0.12</annotation></semantics></math></span></th>
+<th><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.16</mn><annotation encoding="application/x-tex">0.16</annotation></semantics></math></span></th>
+<th><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.20</mn><annotation encoding="application/x-tex">0.20</annotation></semantics></math></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>网格
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>v</mi><mo>*</mo></msup><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">v^*(k)</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>2.6188</mn></mrow><annotation encoding="application/x-tex">-2.6188</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>2.3621</mn></mrow><annotation encoding="application/x-tex">-2.3621</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>2.2172</mn></mrow><annotation encoding="application/x-tex">-2.2172</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>2.1132</mn></mrow><annotation encoding="application/x-tex">-2.1132</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>2.0294</mn></mrow><annotation encoding="application/x-tex">-2.0294</annotation></semantics></math></span></td>
+</tr>
+<tr>
+<td>连续精确
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">v(k)</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>2.6148</mn></mrow><annotation encoding="application/x-tex">-2.6148</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>2.3612</mn></mrow><annotation encoding="application/x-tex">-2.3612</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>2.2129</mn></mrow><annotation encoding="application/x-tex">-2.2129</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>2.1076</mn></mrow><annotation encoding="application/x-tex">-2.1076</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>2.0260</mn></mrow><annotation encoding="application/x-tex">-2.0260</annotation></semantics></math></span></td>
+</tr>
+<tr>
+<td>网格
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>g</mi><mo>*</mo></msup><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g^*(k)</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.08</mn><annotation encoding="application/x-tex">0.08</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.08</mn><annotation encoding="application/x-tex">0.08</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.08</mn><annotation encoding="application/x-tex">0.08</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.12</mn><annotation encoding="application/x-tex">0.12</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.12</mn><annotation encoding="application/x-tex">0.12</annotation></semantics></math></span></td>
+</tr>
+<tr>
+<td>连续精确
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g(k)</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.0685</mn><annotation encoding="application/x-tex">0.0685</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.0844</mn><annotation encoding="application/x-tex">0.0844</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.0953</mn><annotation encoding="application/x-tex">0.0953</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.1039</mn><annotation encoding="application/x-tex">0.1039</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.1111</mn><annotation encoding="application/x-tex">0.1111</annotation></semantics></math></span></td>
+</tr>
+</tbody>
+</table>
+<p>离散值略低，因为限制选择集合不会提高最优价值。迭代过程中目标值为负，加入未来负效用会使数值下降，不能误解为“算法让家庭变得更不理性”。</p>
+<figure>
+<img src="assets/41aa21776986402aa73f.svg"
+alt="值函数迭代与连续解析值：实线为连续解，彩色点为五点网格各轮结果" />
+<figcaption
+aria-hidden="true">值函数迭代与连续解析值：实线为连续解，彩色点为五点网格各轮结果</figcaption>
+</figure>
+<figure>
+<img src="assets/9deac07a9f6538e9f405.svg"
+alt="政策比较：连续解析曲线与五点网格政策" />
+<figcaption
+aria-hidden="true">政策比较：连续解析曲线与五点网格政策</figcaption>
+</figure>
+<p><strong>原图的编辑处理：</strong> 第 45 页标为收敛政策的平滑曲线与第
+43
+页列出的五个离散政策值并不逐点一致。本课依据已复算的表格重绘，网格政策只画离散点，不声称在网格之间也允许任意控制。第
+44
+页“<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math></span>
+只看当前”也需精确区分：<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">v_0=0</annotation></semantics></math></span>
+是初始续接猜测，第一次更新
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>1</mn></msub><annotation encoding="application/x-tex">v_1</annotation></semantics></math></span>
+才只计算当前效用。</p>
+<h2 id="example-a">例题 A · 编辑示范</h2>
+<p>在
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>0.12</mn></mrow><annotation encoding="application/x-tex">k=0.12</annotation></semantics></math></span>
+比较网格值和精确值，并解释差的符号。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>网格值约
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>2.21720982</mn></mrow><annotation encoding="application/x-tex">-2.21720982</annotation></semantics></math></span>，精确值约
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>2.21288144</mn></mrow><annotation encoding="application/x-tex">-2.21288144</annotation></semantics></math></span>，网格减精确为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>0.00432839</mn></mrow><annotation encoding="application/x-tex">-0.00432839</annotation></semantics></math></span>。限制投资选择使最高可得终身效用弱下降。</p>
+</details>
+<h2 id="practice-b">练习 B · 补充练习</h2><p class="source-label">新增练习 · 训练本课已演示的方法</p><p>在
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>0.16</mn></mrow><annotation encoding="application/x-tex">k=0.16</annotation></semantics></math></span>
+比较两种最优资本与值函数；值差很小是否意味着政策完全一样？</p><div class="practice-controls" data-question-id="L4B018" data-module-id="L4M018" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p>网格资本
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.12</mn><annotation encoding="application/x-tex">0.12</annotation></semantics></math></span>，连续资本约
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.10387439</mn><annotation encoding="application/x-tex">0.10387439</annotation></semantics></math></span>，相差约
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.01612561</mn><annotation encoding="application/x-tex">0.01612561</annotation></semantics></math></span>；值差约
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>0.00559093</mn></mrow><annotation encoding="application/x-tex">-0.00559093</annotation></semantics></math></span>。目标在最优点附近可能较平坦，所以小值误差不等于零政策误差。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>收敛后仍有网格误差；用离散点表达离散政策，避免平滑图形造成误读。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

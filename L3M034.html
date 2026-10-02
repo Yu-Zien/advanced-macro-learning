@@ -1,0 +1,60 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>资本租金税进入家庭预算与Euler · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L3M034"><h1
+id="资本租金税进入家庭预算与euler">资本租金税进入家庭预算与Euler</h1>
+<p>来源：Lecture3.pdf，第 55、58、62 页；以下 A 与 B
+除明确标注原题外均为编辑补充。</p>
+<p>本课目标：准确写税基、税后回报和一次性转移。</p>
+<h2 id="method">本步讲解</h2>
+<p>税率
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi><mo>∈</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\tau\in[0,1)</annotation></semantics></math></span>
+作用于资本租金收入
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>t</mi></msub><msub><mi>k</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">r_tk_t</annotation></semantics></math></span>，不是对未折旧资本或整个总回报征税。政府向家庭提供一次性转移
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>t</mi></msub><annotation encoding="application/x-tex">T_t</annotation></semantics></math></span>，家庭预算成为
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mi>t</mi></msub><mo>+</mo><msub><mi>k</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>w</mi><mi>t</mi></msub><mo>+</mo><mo stretchy="false" form="prefix">[</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>τ</mi><mo stretchy="false" form="postfix">)</mo><msub><mi>r</mi><mi>t</mi></msub><mo>+</mo><mn>1</mn><mo>−</mo><mi>δ</mi><mo stretchy="false" form="postfix">]</mo><msub><mi>k</mi><mi>t</mi></msub><mo>+</mo><msub><mi>T</mi><mi>t</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">c_t+k_{t+1}=w_t+[(1-\tau)r_t+1-\delta]k_t+T_t.</annotation></semantics></math></div>
+“一次性”在这里意为每个价格接受家庭把转移金额视为给定，个人多存一点不会提高自己得到的转移。它可以逐期变化，并不一定只发一次。</p>
+<p>本期新增资本下一期带来的私人资源增加为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>τ</mi><mo stretchy="false" form="postfix">)</mo><msub><mi>r</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>+</mo><mn>1</mn><mo>−</mo><mi>δ</mi></mrow><annotation encoding="application/x-tex">(1-\tau)r_{t+1}+1-\delta</annotation></semantics></math></span>，所以
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>U</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><msub><mi>c</mi><mi>t</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>β</mi><msup><mi>U</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">[</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>τ</mi><mo stretchy="false" form="postfix">)</mo><msub><mi>r</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>+</mo><mn>1</mn><mo>−</mo><mi>δ</mi><mo stretchy="false" form="postfix">]</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">U&#39;(c_t)=\beta U&#39;(c_{t+1})[(1-\tau)r_{t+1}+1-\delta].</annotation></semantics></math></div>
+政府总预算可在均衡中满足
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>t</mi></msub><mo>=</mo><mi>τ</mi><msub><mi>r</mi><mi>t</mi></msub><msub><mi>K</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">T_t=\tau r_tK_t</annotation></semantics></math></span>。这里
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>t</mi></msub><annotation encoding="application/x-tex">K_t</annotation></semantics></math></span>
+是总量，家庭求私人一阶条件时先把总量转移规则视为外生，再在均衡中加上
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mi>t</mi></msub><mo>=</mo><msub><mi>k</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">K_t=k_t</annotation></semantics></math></span>
+的对称一致性；不能先代入后把它当作个人储蓄的返税。</p>
+<h2 id="example-a">例题 A</h2>
+<p>若
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mi>t</mi></msub><mo>=</mo><mn>4</mn><mo>,</mo><msub><mi>r</mi><mi>t</mi></msub><mo>=</mo><mn>1</mn><mi>/</mi><mn>4</mn><mo>,</mo><msub><mi>w</mi><mi>t</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo><mi>δ</mi><mo>=</mo><mn>1</mn><mi>/</mi><mn>4</mn><mo>,</mo><mi>τ</mi><mo>=</mo><mn>0.2</mn></mrow><annotation encoding="application/x-tex">k_t=4,r_t=1/4,w_t=1,\delta=1/4,\tau=0.2</annotation></semantics></math></span>，均衡转移是多少？家庭本期资源是多少？私人资本总回报是多少？</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>转移
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>0.2</mn><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>/</mi><mn>4</mn><mo stretchy="false" form="postfix">)</mo><mn>4</mn><mo>=</mo><mn>0.2</mn></mrow><annotation encoding="application/x-tex">T=0.2(1/4)4=0.2</annotation></semantics></math></span>。家庭资源
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mo stretchy="false" form="prefix">[</mo><mo stretchy="false" form="prefix">(</mo><mn>0.8</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>/</mi><mn>4</mn><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mn>3</mn><mi>/</mi><mn>4</mn><mo stretchy="false" form="postfix">]</mo><mn>4</mn><mo>+</mo><mn>0.2</mn><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">1+[(0.8)(1/4)+3/4]4+0.2=5</annotation></semantics></math></span>。私人总回报为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.2</mn><mo>+</mo><mn>0.75</mn><mo>=</mo><mn>0.95</mn></mrow><annotation encoding="application/x-tex">0.2+0.75=0.95</annotation></semantics></math></span>；资源返还没有把这个边际回报提高到无税的1。</p>
+</details>
+<h2 id="practice-b">补充练习 B</h2><p class="source-label">新增练习 · 练习本课A已经示范的同一动作。</p><p>若
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mi>t</mi></msub><mo>=</mo><mn>9</mn><mo>,</mo><msub><mi>r</mi><mi>t</mi></msub><mo>=</mo><mn>1</mn><mi>/</mi><mn>6</mn><mo>,</mo><msub><mi>w</mi><mi>t</mi></msub><mo>=</mo><mn>3</mn><mi>/</mi><mn>2</mn><mo>,</mo><mi>δ</mi><mo>=</mo><mn>1</mn><mi>/</mi><mn>3</mn><mo>,</mo><mi>τ</mi><mo>=</mo><mn>0.2</mn></mrow><annotation encoding="application/x-tex">k_t=9,r_t=1/6,w_t=3/2,\delta=1/3,\tau=0.2</annotation></semantics></math></span>，求转移、总资源与私人总回报。</p><div class="practice-controls" data-question-id="L3B034" data-module-id="L3M034" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+完成尝试后查看参考解
+</summary>
+<p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>0.2</mn><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>/</mi><mn>6</mn><mo stretchy="false" form="postfix">)</mo><mn>9</mn><mo>=</mo><mn>0.3</mn></mrow><annotation encoding="application/x-tex">T=0.2(1/6)9=0.3</annotation></semantics></math></span>。私人总回报
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.8</mn><mi>/</mi><mn>6</mn><mo>+</mo><mn>2</mn><mi>/</mi><mn>3</mn><mo>=</mo><mn>0.8</mn></mrow><annotation encoding="application/x-tex">0.8/6+2/3=0.8</annotation></semantics></math></span>。家庭资源
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1.5</mn><mo>+</mo><mn>0.8</mn><mo>×</mo><mn>9</mn><mo>+</mo><mn>0.3</mn><mo>=</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">1.5+0.8\times9+0.3=9</annotation></semantics></math></span>。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>税在租金上征收；一次性转移在个人求导时保持给定。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

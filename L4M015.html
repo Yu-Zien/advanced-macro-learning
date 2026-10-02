@@ -1,0 +1,93 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>五点网格：可行性与第一次更新 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L4M015"><h1 id="五点网格可行性与第一次更新">五点网格：可行性与第一次更新</h1>
+<p>来源：Lecture4.pdf，PDF 第 35–37、48 页。</p>
+<h2 id="method">本步讲解</h2>
+<p>回到讲义的手算参数：<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mn>0.3</mn></mrow><annotation encoding="application/x-tex">\alpha=0.3</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mn>0.6</mn></mrow><annotation encoding="application/x-tex">\beta=0.6</annotation></semantics></math></span>，状态与候选控制共用
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">𝒦</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mn>0.04</mn><mo>,</mo><mn>0.08</mn><mo>,</mo><mn>0.12</mn><mo>,</mo><mn>0.16</mn><mo>,</mo><mn>0.20</mn><mo stretchy="false" form="postfix">}</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">\mathcal K=\{0.04,0.08,0.12,0.16,0.20\}.</annotation></semantics></math></div>
+每一行固定当前
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math></span>，每一列是候选
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>k</mi><mo>′</mo></msup><annotation encoding="application/x-tex">k&#39;</annotation></semantics></math></span>。先计算消费
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mn>0.3</mn></msup><mo>−</mo><msup><mi>k</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">k^{0.3}-k&#39;</annotation></semantics></math></span>，只有严格正时才可取对数。这个网格上最小产出
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>0.04</mn><mn>0.3</mn></msup><mo>≈</mo><mn>0.3807</mn></mrow><annotation encoding="application/x-tex">0.04^{0.3}\approx0.3807</annotation></semantics></math></span>
+大于最大控制
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.20</mn><annotation encoding="application/x-tex">0.20</annotation></semantics></math></span>，因此所有
+25 组均可行；换网格后必须重查。</p>
+<p>令
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math></span>
+全为零，目标为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msup><mi>k</mi><mn>0.3</mn></msup><mo>−</mo><msup><mi>k</mi><mo>′</mo></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\ln(k^{0.3}-k&#39;)</annotation></semantics></math></span>。对同一状态，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>k</mi><mo>′</mo></msup><annotation encoding="application/x-tex">k&#39;</annotation></semantics></math></span>
+越小，消费越高，所以每行选最小控制
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.04</mn><annotation encoding="application/x-tex">0.04</annotation></semantics></math></span>。</p>
+<table>
+<thead>
+<tr>
+<th><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math></span></th>
+<th><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.04</mn><annotation encoding="application/x-tex">0.04</annotation></semantics></math></span></th>
+<th><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.08</mn><annotation encoding="application/x-tex">0.08</annotation></semantics></math></span></th>
+<th><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.12</mn><annotation encoding="application/x-tex">0.12</annotation></semantics></math></span></th>
+<th><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.16</mn><annotation encoding="application/x-tex">0.16</annotation></semantics></math></span></th>
+<th><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.20</mn><annotation encoding="application/x-tex">0.20</annotation></semantics></math></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">v_1(k)</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.0767</mn></mrow><annotation encoding="application/x-tex">-1.0767</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>0.8469</mn></mrow><annotation encoding="application/x-tex">-0.8469</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>0.7146</mn></mrow><annotation encoding="application/x-tex">-0.7146</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>0.6216</mn></mrow><annotation encoding="application/x-tex">-0.6216</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>0.5499</mn></mrow><annotation encoding="application/x-tex">-0.5499</annotation></semantics></math></span></td>
+</tr>
+<tr>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>g</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g_1(k)</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.04</mn><annotation encoding="application/x-tex">0.04</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.04</mn><annotation encoding="application/x-tex">0.04</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.04</mn><annotation encoding="application/x-tex">0.04</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.04</mn><annotation encoding="application/x-tex">0.04</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.04</mn><annotation encoding="application/x-tex">0.04</annotation></semantics></math></span></td>
+</tr>
+</tbody>
+</table>
+<p>离散首轮政策与连续截断的零投资不同，是因为零不在网格里。表中数值四舍五入到四位；迭代时保存全精度，不能拿四位数反复运算。</p>
+<h2 id="example-a">例题 A · 编辑示范</h2>
+<p>在
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>0.04</mn></mrow><annotation encoding="application/x-tex">k=0.04</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mo>′</mo></msup><mo>=</mo><mn>0.04</mn></mrow><annotation encoding="application/x-tex">k&#39;=0.04</annotation></semantics></math></span>
+处，手算首轮目标。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>0.04</mn><mn>0.3</mn></msup><mo>≈</mo><mn>0.380731</mn></mrow><annotation encoding="application/x-tex">0.04^{0.3}\approx0.380731</annotation></semantics></math></span>，消费约
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.340731</mn><annotation encoding="application/x-tex">0.340731</annotation></semantics></math></span>，对数约
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.076663</mn></mrow><annotation encoding="application/x-tex">-1.076663</annotation></semantics></math></span>，显示为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.0767</mn></mrow><annotation encoding="application/x-tex">-1.0767</annotation></semantics></math></span>。</p>
+</details>
+<h2 id="practice-b">练习 B · 补充练习</h2><p class="source-label">新增练习 · 训练本课已演示的方法</p><p>在
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>0.08</mn></mrow><annotation encoding="application/x-tex">k=0.08</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mo>′</mo></msup><mo>=</mo><mn>0.04</mn></mrow><annotation encoding="application/x-tex">k&#39;=0.04</annotation></semantics></math></span>
+处重算首轮目标。若加入候选
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mo>′</mo></msup><mo>=</mo><mn>0.5</mn></mrow><annotation encoding="application/x-tex">k&#39;=0.5</annotation></semantics></math></span>，这个候选在该状态可行吗？</p><div class="practice-controls" data-question-id="L4B015" data-module-id="L4M015" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>0.08</mn><mn>0.3</mn></msup><mo>≈</mo><mn>0.468735</mn></mrow><annotation encoding="application/x-tex">0.08^{0.3}\approx0.468735</annotation></semantics></math></span>，消费约
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.428735</mn><annotation encoding="application/x-tex">0.428735</annotation></semantics></math></span>，对数约
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>0.846917</mn></mrow><annotation encoding="application/x-tex">-0.846917</annotation></semantics></math></span>。候选
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.5</mn><annotation encoding="application/x-tex">0.5</annotation></semantics></math></span>
+超过产出，消费负，必须排除，不能对负数取对数。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>先筛选正消费，再做最大化；数值表显示可舍入，内部迭代须保留精度。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

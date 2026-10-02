@@ -1,0 +1,92 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>综合原题 2：两期消费需求 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L1M038"><h1 id="综合原题-2两期消费需求">综合原题 2：两期消费需求</h1>
+<p>来源：Lecture1，PDF 第 74–76
+页。目标：代入预算消去消费比例，得到价格函数。</p>
+<h2 id="method">讲解与方法</h2>
+<p>上课得到每户
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mn>1</mn><mi>i</mi></msubsup><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>β</mi><mi>i</mi></msub><mi>/</mi><mi>q</mi><mo stretchy="false" form="postfix">)</mo><msubsup><mi>c</mi><mn>0</mn><mi>i</mi></msubsup></mrow><annotation encoding="application/x-tex">c_1^i=(\beta_i/q)c_0^i</annotation></semantics></math></span>。将它代入预算等号：</p>
+<p><div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mn>0</mn><mi>i</mi></msubsup><mo>+</mo><mi>q</mi><mfrac><msub><mi>β</mi><mi>i</mi></msub><mi>q</mi></mfrac><msubsup><mi>c</mi><mn>0</mn><mi>i</mi></msubsup><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><msub><mi>β</mi><mi>i</mi></msub><mo stretchy="false" form="postfix">)</mo><msubsup><mi>c</mi><mn>0</mn><mi>i</mi></msubsup><mo>=</mo><msup><mi>W</mi><mi>i</mi></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">c_0^i+q\frac{\beta_i}{q}c_0^i=(1+\beta_i)c_0^i=W^i.</annotation></semantics></math></div></p>
+<p>因此两期需求为</p>
+<p><div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mn>0</mn><mi>i</mi></msubsup><mo>=</mo><mfrac><msup><mi>W</mi><mi>i</mi></msup><mrow><mn>1</mn><mo>+</mo><msub><mi>β</mi><mi>i</mi></msub></mrow></mfrac><mo>,</mo><mspace width="2.0em"></mspace><msubsup><mi>c</mi><mn>1</mn><mi>i</mi></msubsup><mo>=</mo><mfrac><mrow><msub><mi>β</mi><mi>i</mi></msub><msup><mi>W</mi><mi>i</mi></msup></mrow><mrow><mi>q</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><msub><mi>β</mi><mi>i</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">c_0^i=\frac{W^i}{1+\beta_i},\qquad c_1^i=\frac{\beta_iW^i}{q(1+\beta_i)}.</annotation></semantics></math></div></p>
+<p>这是两期问题的权重总和
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><msub><mi>β</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">1+\beta_i</annotation></semantics></math></span>，不能替换为无限期公式的
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>β</mi><mi>i</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">1/(1-\beta_i)</annotation></semantics></math></span>。价格
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math></span>
+一方面改变跨期替代比例，另一方面改变未来禀赋的现值财富。对只拥有未来禀赋的家庭，代入财富后某些
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math></span>
+会约去，必须实际化简，不能只看显式分母。</p>
+<p>本课求的是任意
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">q&gt;0</annotation></semantics></math></span>
+下的需求函数，还没有确定哪个
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math></span>
+让两个市场出清。这个区分使后面价格求解非常直接。</p>
+<h2 id="original-context">原题完整共享条件</h2>
+<p>经济只有第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+期和第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+期。第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+期消费品价格为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>，第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+期消费品的期初现值价格为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">q&gt;0</annotation></semantics></math></span>。两位家庭的效用和禀赋为</p>
+<p><div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>U</mi><mi>i</mi></msup><mo>=</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><msubsup><mi>c</mi><mn>0</mn><mi>i</mi></msubsup><mo>+</mo><msub><mi>β</mi><mi>i</mi></msub><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><msubsup><mi>c</mi><mn>1</mn><mi>i</mi></msubsup><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>β</mi><mn>1</mn></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>β</mi><mn>2</mn></msub><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>,</mo></mrow><annotation encoding="application/x-tex">
+U^i=\ln c_0^i+\beta_i\ln c_1^i,\qquad \beta_1=\frac12,\quad\beta_2=\frac34,
+</annotation></semantics></math></div></p>
+<p><div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msubsup><mi>e</mi><mn>0</mn><mn>1</mn></msubsup><mo>,</mo><msubsup><mi>e</mi><mn>1</mn><mn>1</mn></msubsup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mspace width="2.0em"></mspace><mo stretchy="false" form="prefix">(</mo><msubsup><mi>e</mi><mn>0</mn><mn>2</mn></msubsup><mo>,</mo><msubsup><mi>e</mi><mn>1</mn><mn>2</mn></msubsup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">
+(e_0^1,e_1^1)=(2,0),\qquad(e_0^2,e_1^2)=(0,2).
+</annotation></semantics></math></div></p>
+<p>两位家庭可在第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+期交易两期消费品，消费严格为正。原题要求依次完成：写预算与最优条件、求消费需求、求均衡价格及四个消费量并核验两市场、求总回报率并解释增长率与财富作用。本题四个小问分别安排在
+<a href="L1M037.html#practice-b">第 1 问</a>、<a
+href="L1M038.html#practice-b">第 2 问</a>、<a
+href="L1M039.html#practice-b">第 3 问</a>、<a
+href="L1M040.html#practice-b">第 4 问</a>。</p>
+<h2 id="example-a">例题 A</h2>
+<p>沿用编辑示范经济：<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>β</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn><mi>/</mi><mn>3</mn><mo>,</mo><msub><mi>β</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">\beta_1=1/3,\beta_2=2/3</annotation></semantics></math></span>，禀赋
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>3</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>3</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(3,0),(0,3)</annotation></semantics></math></span>。求四个需求函数。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>家庭
+1：<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mn>0</mn><mn>1</mn></msubsup><mo>=</mo><mn>3</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mi>/</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>9</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">c_0^1=3/(4/3)=9/4</annotation></semantics></math></span>，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mn>1</mn><mn>1</mn></msubsup><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>/</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mn>3</mn><mi>/</mi><mo stretchy="false" form="prefix">[</mo><mi>q</mi><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mi>/</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mn>3</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mi>q</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">c_1^1=(1/3)3/[q(4/3)]=3/(4q)</annotation></semantics></math></span>。家庭
+2：<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><mn>3</mn><mi>q</mi><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>5</mn><mi>/</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>9</mn><mi>q</mi><mi>/</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">c_0^2=3q/(5/3)=9q/5</annotation></semantics></math></span>，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mn>1</mn><mn>2</mn></msubsup><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>/</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mn>3</mn><mi>q</mi><mi>/</mi><mo stretchy="false" form="prefix">[</mo><mi>q</mi><mo stretchy="false" form="prefix">(</mo><mn>5</mn><mi>/</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mn>6</mn><mi>/</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">c_1^2=(2/3)3q/[q(5/3)]=6/5</annotation></semantics></math></span>。后一项的财富和价格各含
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math></span>，化简后取消。</p>
+</details>
+<h2 id="practice-b">原题小问</h2><p class="source-label">材料原题 · PDF 第 74–75 页，课堂综合练习第 2 小问</p><p>原题第 2 问：在原题共享条件下，求两位家庭对
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math></span>
+的消费需求函数。</p><div class="practice-controls" data-question-id="L1E001b" data-module-id="L1M038" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+查看参考解
+</summary>
+<p>由第 1 问条件代回预算，得
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mn>0</mn><mi>i</mi></msubsup><mo>=</mo><msup><mi>W</mi><mi>i</mi></msup><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><msub><mi>β</mi><mi>i</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">c_0^i=W^i/(1+\beta_i)</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mn>1</mn><mi>i</mi></msubsup><mo>=</mo><msub><mi>β</mi><mi>i</mi></msub><msup><mi>W</mi><mi>i</mi></msup><mi>/</mi><mo stretchy="false" form="prefix">[</mo><mi>q</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><msub><mi>β</mi><mi>i</mi></msub><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">c_1^i=\beta_iW^i/[q(1+\beta_i)]</annotation></semantics></math></span>。家庭
+1 用
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>W</mi><mn>1</mn></msup><mo>=</mo><mn>2</mn><mo>,</mo><msub><mi>β</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">W^1=2,\beta_1=1/2</annotation></semantics></math></span>，得
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mn>0</mn><mn>1</mn></msubsup><mo>=</mo><mn>4</mn><mi>/</mi><mn>3</mn><mo>,</mo><msubsup><mi>c</mi><mn>1</mn><mn>1</mn></msubsup><mo>=</mo><mn>2</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>3</mn><mi>q</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">c_0^1=4/3,c_1^1=2/(3q)</annotation></semantics></math></span>。家庭
+2 用
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>W</mi><mn>2</mn></msup><mo>=</mo><mn>2</mn><mi>q</mi><mo>,</mo><msub><mi>β</mi><mn>2</mn></msub><mo>=</mo><mn>3</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">W^2=2q,\beta_2=3/4</annotation></semantics></math></span>，得
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><mn>8</mn><mi>q</mi><mi>/</mi><mn>7</mn><mo>,</mo><msubsup><mi>c</mi><mn>1</mn><mn>2</mn></msubsup><mo>=</mo><mn>6</mn><mi>/</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">c_0^2=8q/7,c_1^2=6/7</annotation></semantics></math></span>。所有需求在
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">q&gt;0</annotation></semantics></math></span>
+时严格为正，且各自支出恰等于财富。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>需求函数来自边际条件和个体预算；价格依赖财富也必须代入。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

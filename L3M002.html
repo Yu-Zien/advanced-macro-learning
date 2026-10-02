@@ -1,0 +1,72 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>读懂导数和资本边际产出 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L3M002"><h1 id="读懂导数和资本边际产出">读懂导数和资本边际产出</h1>
+<p>来源：Lecture3.pdf，第 7、22；编辑前置 页；以下 A 与 B
+除明确标注原题外均为编辑补充。</p>
+<p>本课目标：计算并解释生产函数的一阶导数。</p>
+<h2 id="method">本步讲解</h2>
+<p>写
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>,</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">y=F(k,n)</annotation></semantics></math></span>，表示资本与劳动共同决定产出。固定劳动，只把资本增加很小的
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math></span>，每单位新增资本带来的产出变化约为
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>k</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>,</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munder><mi mathvariant="normal">lim</mi><mrow><mi>h</mi><mo>→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>+</mo><mi>h</mi><mo>,</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>,</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><mi>h</mi></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">F_k(k,n)=\lim_{h\to0}\frac{F(k+h,n)-F(k,n)}{h}.</annotation></semantics></math></div>
+下标
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math></span>
+表示“只对资本求偏导，劳动保持不变”；<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>n</mi></msub><annotation encoding="application/x-tex">F_n</annotation></semantics></math></span>
+同理。导数是边际变化率，不是平均产出
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>/</mi><mi>k</mi></mrow><annotation encoding="application/x-tex">F/k</annotation></semantics></math></span>。</p>
+<p>后面常用 Cobb–Douglas 技术
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>,</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>A</mi><msup><mi>k</mi><mi>α</mi></msup><msup><mi>n</mi><mrow><mn>1</mn><mo>−</mo><mi>α</mi></mrow></msup><mo>,</mo><mspace width="2.0em"></mspace><mi>A</mi><mo>&gt;</mo><mn>0</mn><mo>,</mo><mspace width="1.0em"></mspace><mn>0</mn><mo>&lt;</mo><mi>α</mi><mo>&lt;</mo><mn>1</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">F(k,n)=Ak^\alpha n^{1-\alpha},\qquad A&gt;0,\quad0&lt;\alpha&lt;1.</annotation></semantics></math></div>
+幂函数求导规则为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><msup><mi>x</mi><mi>a</mi></msup><mi>/</mi><mi>d</mi><mi>x</mi><mo>=</mo><mi>a</mi><msup><mi>x</mi><mrow><mi>a</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">d x^a/dx=ax^{a-1}</annotation></semantics></math></span>。固定另一个投入即把它视为常数，因此
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>k</mi></msub><mo>=</mo><mi>α</mi><mi>A</mi><msup><mi>k</mi><mrow><mi>α</mi><mo>−</mo><mn>1</mn></mrow></msup><msup><mi>n</mi><mrow><mn>1</mn><mo>−</mo><mi>α</mi></mrow></msup><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>F</mi><mi>n</mi></msub><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false" form="postfix">)</mo><mi>A</mi><msup><mi>k</mi><mi>α</mi></msup><msup><mi>n</mi><mrow><mi>−</mi><mi>α</mi></mrow></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">F_k=\alpha Ak^{\alpha-1}n^{1-\alpha},\qquad F_n=(1-\alpha)Ak^\alpha n^{-\alpha}.</annotation></semantics></math></div>
+这里在
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>,</mo><mi>n</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">k,n&gt;0</annotation></semantics></math></span>
+处求导；原点可能不具有有限导数。<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math></span>
+是效率系数，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span>
+是资本指数。讲义后面把
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math></span>
+归一化为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>。</p>
+<h2 id="example-a">例题 A</h2>
+<p>取
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>,</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>2</mn><msup><mi>k</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><msup><mi>n</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">F(k,n)=2k^{1/2}n^{1/2}</annotation></semantics></math></span>，求
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>,</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(k,n)=(4,1)</annotation></semantics></math></span>
+处的产出、资本边际产出和平均资本产出。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>产出为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">F=4</annotation></semantics></math></span>。求导得
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>k</mi></msub><mo>=</mo><msup><mi>k</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><msup><mi>n</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">F_k=k^{-1/2}n^{1/2}</annotation></semantics></math></span>，所以
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>k</mi></msub><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">F_k(4,1)=1/2</annotation></semantics></math></span>。平均资本产出是
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>/</mi><mi>k</mi><mo>=</mo><mn>4</mn><mi>/</mi><mn>4</mn><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">F/k=4/4=1</annotation></semantics></math></span>。边际产出说明在该点额外一小单位资本产生约
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">1/2</annotation></semantics></math></span>
+单位产出，不是
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>。</p>
+</details>
+<h2 id="practice-b">补充练习 B</h2><p class="source-label">新增练习 · 练习本课A已经示范的同一动作。</p><p>取
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>,</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>3</mn><msup><mi>k</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><msup><mi>n</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">F(k,n)=3k^{1/2}n^{1/2}</annotation></semantics></math></span>，求
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>9</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(9,1)</annotation></semantics></math></span>
+处的产出、资本边际产出和平均资本产出。</p><div class="practice-controls" data-question-id="L3B002" data-module-id="L3M002" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+完成尝试后查看参考解
+</summary>
+<p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">F=9</annotation></semantics></math></span>，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>k</mi></msub><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>3</mn><mi>/</mi><mn>2</mn><mo stretchy="false" form="postfix">)</mo><msup><mi>k</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><msup><mi>n</mi><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><mo>=</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">F_k=(3/2)k^{-1/2}n^{1/2}=1/2</annotation></semantics></math></span>，平均产出
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>/</mi><mi>k</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">F/k=1</annotation></semantics></math></span>。三者分别是总量、局部增量率和平均量。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>求资本边际产出时固定劳动；边际产出与平均产出不能互换。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

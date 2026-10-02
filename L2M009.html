@@ -1,0 +1,68 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>福利定理证明：把个体支出矛盾加总 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L2M009"><h1
+id="福利定理证明把个体支出矛盾加总">福利定理证明：把个体支出矛盾加总</h1>
+<p>来源：Lecture 2，PDF 第 16–17 页。</p>
+<h2 id="method">这一步解决什么</h2>
+<p><strong>有限期两家庭版本的第一福利定理。</strong>在共同的完备商品市场中，家庭接受同一正价格，偏好局部非饱和，没有外部性等使私人效用或预算遗漏社会影响的扭曲；若竞争均衡存在，则其配置
+Pareto 有效。</p>
+<p><strong>完整连贯证明。</strong>反设均衡
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>c</mi><mo>*</mo></msup><annotation encoding="application/x-tex">c^*</annotation></semantics></math></span>
+存在可行的 Pareto 改进
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>c</mi><mo accent="true">̃</mo></mover><annotation encoding="application/x-tex">\widetilde c</annotation></semantics></math></span>。每个家庭至少一样好，上一课支出引理给
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⋅</mo><msup><mover><mi>c</mi><mo accent="true">̃</mo></mover><mi>i</mi></msup><mo>≥</mo><mi>p</mi><mo>⋅</mo><msup><mi>e</mi><mi>i</mi></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">p\cdot\widetilde c^i\ge p\cdot e^i.</annotation></semantics></math></div>
+至少一人严格改善，其不等号严格。相加可得
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><msup><mover><mi>c</mi><mo accent="true">̃</mo></mover><mn>1</mn></msup><mo>+</mo><msup><mover><mi>c</mi><mo accent="true">̃</mo></mover><mn>2</mn></msup><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mi>p</mi><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><msup><mi>e</mi><mn>1</mn></msup><mo>+</mo><msup><mi>e</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">p\cdot(\widetilde c^1+\widetilde c^2)&gt;p\cdot(e^1+e^2).</annotation></semantics></math></div>
+另一方面，社会可行性逐项给
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mover><mi>c</mi><mo accent="true">̃</mo></mover><mi>t</mi><mn>1</mn></msubsup><mo>+</mo><msubsup><mover><mi>c</mi><mo accent="true">̃</mo></mover><mi>t</mi><mn>2</mn></msubsup><mo>≤</mo><msubsup><mi>e</mi><mi>t</mi><mn>1</mn></msubsup><mo>+</mo><msubsup><mi>e</mi><mi>t</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">\widetilde c_t^1+\widetilde c_t^2\le e_t^1+e_t^2</annotation></semantics></math></span>。逐项乘正数
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>t</mi></msub><annotation encoding="application/x-tex">p_t</annotation></semantics></math></span>
+后再求和，得到相反的弱不等式，矛盾。于是不存在 Pareto 改进。</p>
+<p>证明的结构是：个体最优把效用改善变成更高支出，可行性又不允许总支出超过总资源价值。它是“如果有均衡，那么有效”的条件命题，不证明均衡存在、唯一或公平。此处严格按讲义采用有限期证明；无限商品空间还需对价格、可求和性等加条件，不能无说明地把有限向量点积改成任意无限和。交替禀赋例子的效率已由显式计划者解直接证明。</p>
+<h2 id="example-a">例题 A：编辑示范</h2>
+<p>两家财富为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>,</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">4,6</annotation></semantics></math></span>。一个
+Pareto 改进据称使各家支出至少为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>,</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">4,6</annotation></semantics></math></span>，其中第二家严格超过
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>6</mn><annotation encoding="application/x-tex">6</annotation></semantics></math></span>。为什么它不可能同时资源可行？</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>加总支出严格超过
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn><annotation encoding="application/x-tex">10</annotation></semantics></math></span>，而可行配置的消费价值不能超过总禀赋价值
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">4+6=10</annotation></semantics></math></span>。两项陈述互相矛盾。</p>
+</details>
+<h2 id="practice-b">补充练习 B</h2><p class="source-label">新增练习 · 编辑补充：练习本课 A 已完整示范的方法或条件判断。</p><p>两种日期商品价格为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(1,2)</annotation></semantics></math></span>，总禀赋为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(3,4)</annotation></semantics></math></span>。若支出引理说明某个
+Pareto 改进总支出严格大于
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>11</mn><annotation encoding="application/x-tex">11</annotation></semantics></math></span>，请从逐期可行性推导矛盾。</p><div class="practice-controls" data-question-id="L2B009" data-module-id="L2M009" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p>可行性给总消费
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>0</mn></msub><mo>≤</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">C_0\le3</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>1</mn></msub><mo>≤</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">C_1\le4</annotation></semantics></math></span>。乘正价格并相加，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>0</mn></msub><mo>+</mo><mn>2</mn><msub><mi>C</mi><mn>1</mn></msub><mo>≤</mo><mn>3</mn><mo>+</mo><mn>2</mn><mo>×</mo><mn>4</mn><mo>=</mo><mn>11</mn></mrow><annotation encoding="application/x-tex">C_0+2C_1\le3+2\times4=11</annotation></semantics></math></span>，与严格大于
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>11</mn><annotation encoding="application/x-tex">11</annotation></semantics></math></span>
+矛盾。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>第一福利定理用个体最优推出支出严格增加，再由总资源可行性排除它。</p>
+<details class="prepared-review"><summary>精选回顾（回看不记分）</summary><h2 id="review">精选回顾</h2><p>第一福利定理有没有证明均衡存在、唯一或公平？</p><h2 id="review-answer">回顾答案</h2><details>
+<summary>
+回忆后查看
+</summary>
+<p>没有。它在相应条件及均衡存在的前提下，只证明均衡配置不存在 Pareto
+改进。存在、唯一和分配标准是不同问题。</p>
+</details></details></article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

@@ -1,0 +1,69 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>望远镜相消与完整充分性证明 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L3M018"><h1 id="望远镜相消与完整充分性证明">望远镜相消与完整充分性证明</h1>
+<p>来源：Lecture3.pdf，第 32–33；编辑补足证明 页；以下 A 与 B
+除明确标注原题外均为编辑补充。</p>
+<p>本课目标：用Euler消去中间资本项，再由TVC完成证明。</p>
+<h2 id="method">本步讲解</h2>
+<p>接上一课的逐期上界。候选路径Euler等价于
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>p</mi><mi>t</mi></msub><msup><mi>f</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><msubsup><mi>k</mi><mi>t</mi><mo>*</mo></msubsup><mo stretchy="false" form="postfix">)</mo><mspace width="2.0em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo>≥</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">p_{t-1}=p_tf&#39;(k_t^*)\qquad(t\ge1).</annotation></semantics></math></div>
+把上界从0加到
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math></span>：
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover><msup><mi>β</mi><mi>t</mi></msup><mo stretchy="false" form="prefix">[</mo><mi>U</mi><mo stretchy="false" form="prefix">(</mo><msub><mover><mi>c</mi><mo accent="true">̃</mo></mover><mi>t</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>U</mi><mo stretchy="false" form="prefix">(</mo><msubsup><mi>c</mi><mi>t</mi><mo>*</mo></msubsup><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">]</mo><mo>≤</mo><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover><msub><mi>p</mi><mi>t</mi></msub><msup><mi>f</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><msubsup><mi>k</mi><mi>t</mi><mo>*</mo></msubsup><mo stretchy="false" form="postfix">)</mo><mi mathvariant="normal">Δ</mi><msub><mi>k</mi><mi>t</mi></msub><mo>−</mo><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover><msub><mi>p</mi><mi>t</mi></msub><mi mathvariant="normal">Δ</mi><msub><mi>k</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">\sum_{t=0}^{T}\beta^t[U(\widetilde c_t)-U(c_t^*)]
+\le\sum_{t=0}^{T}p_tf&#39;(k_t^*)\Delta k_t-\sum_{t=0}^{T}p_t\Delta k_{t+1}.</annotation></semantics></math></div>
+相同初始资本使
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><msub><mi>k</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Delta k_0=0</annotation></semantics></math></span>；其余第一串的
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>…</mi><mo>,</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">t=1,\ldots,T</annotation></semantics></math></span>
+项，分别与第二串的
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn><mo>,</mo><mi>…</mi><mo>,</mo><mi>T</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">t=0,\ldots,T-1</annotation></semantics></math></span>
+项抵消，只剩
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><msub><mi>p</mi><mi>T</mi></msub><mi mathvariant="normal">Δ</mi><msub><mi>k</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>p</mi><mi>T</mi></msub><mo stretchy="false" form="prefix">(</mo><msubsup><mi>k</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow><mo>*</mo></msubsup><mo>−</mo><msub><mover><mi>k</mi><mo accent="true">̃</mo></mover><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="postfix">)</mo><mo>≤</mo><msub><mi>p</mi><mi>T</mi></msub><msubsup><mi>k</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow><mo>*</mo></msubsup><mi>.</mi></mrow><annotation encoding="application/x-tex">-p_T\Delta k_{T+1}=p_T(k_{T+1}^*-\widetilde k_{T+1})\le p_Tk_{T+1}^*.</annotation></semantics></math></div>
+最后一步使用
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>T</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p_T&gt;0</annotation></semantics></math></span>
+和比较路径资本非负。由候选路径TVC，右侧趋0。所以有限实数效用的比较路径总效用不大于候选路径，候选路径全局最优。即使不先假定总效用有限，上式仍给出截断效用差的上极限不大于0，但需明确使用这种评价标准，不能做“无穷大减无穷大”。</p>
+<p><strong>连贯证明回看：</strong>凹效用把效用差界成消费差；可行性把消费差界成资源与资本差；凹技术进一步线性化上界；Euler令所有中间项相消；相同初值消去起点；非负资本与TVC消去终点。缺其中任何一步，都不能直接引用此充分性结论。这里只证明了一组明确条件下的充分性，不宣称任意非凹问题都能由Euler求解。</p>
+<h2 id="example-a">例题 A</h2>
+<p>把
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">T=2</annotation></semantics></math></span>
+时的资本差上界展开，指出哪些项相消。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>展开为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>0</mn></msub><msup><mi>f</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><msubsup><mi>k</mi><mn>0</mn><mo>*</mo></msubsup><mo stretchy="false" form="postfix">)</mo><mi mathvariant="normal">Δ</mi><msub><mi>k</mi><mn>0</mn></msub><mo>−</mo><msub><mi>p</mi><mn>0</mn></msub><mi mathvariant="normal">Δ</mi><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><msub><mi>p</mi><mn>1</mn></msub><msup><mi>f</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><msubsup><mi>k</mi><mn>1</mn><mo>*</mo></msubsup><mo stretchy="false" form="postfix">)</mo><mi mathvariant="normal">Δ</mi><msub><mi>k</mi><mn>1</mn></msub><mo>−</mo><msub><mi>p</mi><mn>1</mn></msub><mi mathvariant="normal">Δ</mi><msub><mi>k</mi><mn>2</mn></msub><mo>+</mo><msub><mi>p</mi><mn>2</mn></msub><msup><mi>f</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><msubsup><mi>k</mi><mn>2</mn><mo>*</mo></msubsup><mo stretchy="false" form="postfix">)</mo><mi mathvariant="normal">Δ</mi><msub><mi>k</mi><mn>2</mn></msub><mo>−</mo><msub><mi>p</mi><mn>2</mn></msub><mi mathvariant="normal">Δ</mi><msub><mi>k</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">p_0f&#39;(k_0^*)\Delta k_0-p_0\Delta k_1+p_1f&#39;(k_1^*)\Delta k_1-p_1\Delta k_2+p_2f&#39;(k_2^*)\Delta k_2-p_2\Delta k_3</annotation></semantics></math></span>。初值项为0。Euler给
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><msup><mi>f</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><msubsup><mi>k</mi><mn>1</mn><mo>*</mo></msubsup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>p</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">p_1f&#39;(k_1^*)=p_0</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>2</mn></msub><msup><mi>f</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><msubsup><mi>k</mi><mn>2</mn><mo>*</mo></msubsup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>p</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">p_2f&#39;(k_2^*)=p_1</annotation></semantics></math></span>，所以仅剩
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><msub><mi>p</mi><mn>2</mn></msub><mi mathvariant="normal">Δ</mi><msub><mi>k</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">-p_2\Delta k_3</annotation></semantics></math></span>。</p>
+</details>
+<h2 id="practice-b">补充练习 B</h2><p class="source-label">新增练习 · 练习本课A已经示范的同一动作。</p><p>把
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">T=1</annotation></semantics></math></span>
+时的上界展开并相消，再说明如何用非负资本把终点项界住。</p><div class="practice-controls" data-question-id="L3B018" data-module-id="L3M018" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+完成尝试后查看参考解
+</summary>
+<p>上界为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>0</mn></msub><msup><mi>f</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><msubsup><mi>k</mi><mn>0</mn><mo>*</mo></msubsup><mo stretchy="false" form="postfix">)</mo><mi mathvariant="normal">Δ</mi><msub><mi>k</mi><mn>0</mn></msub><mo>−</mo><msub><mi>p</mi><mn>0</mn></msub><mi mathvariant="normal">Δ</mi><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><msub><mi>p</mi><mn>1</mn></msub><msup><mi>f</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><msubsup><mi>k</mi><mn>1</mn><mo>*</mo></msubsup><mo stretchy="false" form="postfix">)</mo><mi mathvariant="normal">Δ</mi><msub><mi>k</mi><mn>1</mn></msub><mo>−</mo><msub><mi>p</mi><mn>1</mn></msub><mi mathvariant="normal">Δ</mi><msub><mi>k</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">p_0f&#39;(k_0^*)\Delta k_0-p_0\Delta k_1+p_1f&#39;(k_1^*)\Delta k_1-p_1\Delta k_2</annotation></semantics></math></span>。初值相同、Euler成立后剩
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><msub><mi>p</mi><mn>1</mn></msub><mi mathvariant="normal">Δ</mi><msub><mi>k</mi><mn>2</mn></msub><mo>=</mo><msub><mi>p</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><msubsup><mi>k</mi><mn>2</mn><mo>*</mo></msubsup><mo>−</mo><msub><mover><mi>k</mi><mo accent="true">̃</mo></mover><mn>2</mn></msub><mo stretchy="false" form="postfix">)</mo><mo>≤</mo><msub><mi>p</mi><mn>1</mn></msub><msubsup><mi>k</mi><mn>2</mn><mo>*</mo></msubsup></mrow><annotation encoding="application/x-tex">-p_1\Delta k_2=p_1(k_2^*-\widetilde k_2)\le p_1k_2^*</annotation></semantics></math></span>。一般
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math></span>
+同理，TVC令最后上界趋0。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>Euler负责消去中间项，初始条件与TVC分别处理两端。</p>
+<details class="prepared-review"><summary>精选回顾（回看不记分）</summary><h2 id="review">精选回顾</h2><p>凹性充分性证明中，Euler和TVC各在哪一步起作用？</p><h2 id="review-answer">回顾答案</h2><details>
+<summary>
+回忆后查看
+</summary>
+<p>Euler让逐期上界的中间资本差项相消；TVC使剩下的候选终端资本现值趋0。还需同一初值、资本非负、可行性、凹性与良定义的效用比较。</p>
+</details></details></article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

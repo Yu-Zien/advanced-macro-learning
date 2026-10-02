@@ -1,0 +1,61 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>Arrow–Debreu 均衡是一列市场条件 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L1M024"><h1 id="arrowdebreu-均衡是一列市场条件">Arrow–Debreu
+均衡是一列市场条件</h1>
+<p>来源：Lecture1，PDF 第 50–52 页。目标：写出本交换经济的均衡定义。</p>
+<h2 id="method">讲解与方法</h2>
+<p>本讲交易制度称 Arrow–Debreu
+交易：期初交易各种日期交付的商品。在当前确定性例子中，只需按日期区分商品。竞争均衡是一组严格正价格
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><msubsup><mi>p</mi><mi>t</mi><mo>*</mo></msubsup><msub><mo stretchy="false" form="postfix">}</mo><mrow><mi>t</mi><mo>≥</mo><mn>0</mn></mrow></msub></mrow><annotation encoding="application/x-tex">\{p_t^*\}_{t\ge0}</annotation></semantics></math></span>（取
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>p</mi><mn>0</mn><mo>*</mo></msubsup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p_0^*=1</annotation></semantics></math></span>）和消费配置
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><msubsup><mi>c</mi><mi>t</mi><mrow><mn>1</mn><mo>*</mo></mrow></msubsup><mo>,</mo><msubsup><mi>c</mi><mi>t</mi><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><msub><mo stretchy="false" form="postfix">}</mo><mrow><mi>t</mi><mo>≥</mo><mn>0</mn></mrow></msub></mrow><annotation encoding="application/x-tex">\{c_t^{1*},c_t^{2*}\}_{t\ge0}</annotation></semantics></math></span>，满足两件事。</p>
+<p>第一，每位家庭在这些价格下、在自己的现值预算内最大化效用；第二，每个时期分别出清：</p>
+<p><div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mn>0</mn><mrow><mn>1</mn><mo>*</mo></mrow></msubsup><mo>+</mo><msubsup><mi>c</mi><mn>0</mn><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><mo>=</mo><mn>2</mn><mo>,</mo><mspace width="2.0em"></mspace><msubsup><mi>c</mi><mn>1</mn><mrow><mn>1</mn><mo>*</mo></mrow></msubsup><mo>+</mo><msubsup><mi>c</mi><mn>1</mn><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><mo>=</mo><mn>2</mn><mo>,</mo><mspace width="2.0em"></mspace><mi>…</mi><mo>,</mo><mspace width="2.0em"></mspace><msubsup><mi>c</mi><mi>t</mi><mrow><mn>1</mn><mo>*</mo></mrow></msubsup><mo>+</mo><msubsup><mi>c</mi><mi>t</mi><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><mo>=</mo><mn>2</mn><mspace width="1.0em"></mspace><mo>∀</mo><mi>t</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">c_0^{1*}+c_0^{2*}=2,\qquad c_1^{1*}+c_1^{2*}=2,\qquad\ldots,\qquad c_t^{1*}+c_t^{2*}=2\quad\forall t.</annotation></semantics></math></div></p>
+<p>不能把所有日期都合并成一个实物总量等式来替代这一列条件。不同交付日期是不同商品，而不可储存使日期之间不能任意挪用实物。个体的现值预算可以跨日期加总，是因为价格将不同日期价值换算到同一计价单位；它并不消除逐期资源限制。</p>
+<p>接下来按五步求解：写家庭预算与最优条件；找共同消费增长；用逐期出清求价格；用各自财富定消费水平；核验最优、预算与市场。</p>
+<h2 id="example-a">例题 A</h2>
+<p>某候选满足每户现值预算，但第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+期总需求
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2.2</mn><annotation encoding="application/x-tex">2.2</annotation></semantics></math></span>、第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+期
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1.8</mn><annotation encoding="application/x-tex">1.8</annotation></semantics></math></span>。它能否满足本例的均衡定义？</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>不能。两期合计虽为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn><annotation encoding="application/x-tex">4</annotation></semantics></math></span>，第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+期却超出资源，且第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+期未出清。现值预算是个体价值约束，逐期出清是实物协调约束，必须同时成立。</p>
+</details>
+<h2 id="practice-b">练习 B</h2><p class="source-label">新增练习 · 练习本课 A 已示范的核心动作</p><p>写出本例均衡需包含的对象和两个条件。是否必须另外给出企业利润最大化和政府预算？</p><div class="practice-controls" data-question-id="L1B024" data-module-id="L1M024" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+查看参考解
+</summary>
+<p>对象是价格序列与两位家庭消费序列；条件是每户给定价格下效用最大化、每期两户消费之和为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>。本模型明确没有企业与政府，不需凭空添加其问题；若扩展模型加入这些主体才需增列条件。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>Arrow–Debreu 均衡要同时协调每个日期的最优需求与实物供给。</p>
+<details class="prepared-review"><summary>精选回顾（回看不记分）</summary><h2 id="review">精选回顾</h2><p>现值预算为何不能替代逐期市场出清？</p><h2 id="review-answer">回顾答案</h2><details>
+<summary>
+回忆后查看
+</summary>
+<p>现值预算比较一个家庭跨日期的购买力；逐期市场出清要求每个交付日期的全体实物需求等于该日期供给，约束对象不同。</p>
+</details></details></article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

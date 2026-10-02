@@ -1,0 +1,51 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>模型闭合与单位核验 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L1M014"><h1 id="模型闭合与单位核验">模型闭合与单位核验</h1>
+<p>来源：Lecture1，PDF 第 28–30 页。目标：逐条追溯方程的经济来源。</p>
+<h2 id="method">讲解与方法</h2>
+<p>若模型要决定序列
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><msub><mi>c</mi><mi>t</mi></msub><mo>,</mo><msub><mi>k</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>n</mi><mi>t</mi></msub><mo>,</mo><msub><mi>w</mi><mi>t</mi></msub><mo>,</mo><msub><mi>r</mi><mi>t</mi></msub><msub><mo stretchy="false" form="postfix">}</mo><mrow><mi>t</mi><mo>≥</mo><mn>0</mn></mrow></msub></mrow><annotation encoding="application/x-tex">\{c_t,k_{t+1},n_t,w_t,r_t\}_{t\ge0}</annotation></semantics></math></span>，需要互相配合的关系：家庭最优条件给消费、储蓄和劳动的边际权衡；企业最优条件把要素价格与边际产出相连；资本积累与资源约束连接时期；市场出清协调个体与总量；初始、边界或横截条件筛选具体路径。</p>
+<p>“未知数和方程一样多”只是初步检查。两条式子可能是同一条的倍数；某条式子也可能来自错误时点。<strong>模型闭合</strong>要求需要决定的对象有清楚来源，关系独立且相容，而非任意凑方程。</p>
+<p>核验要分层：存量是某时点拥有多少，流量是一段期间发生多少；期初与期末要一致；实际量以物品计价，名义量以货币计价，不能直接相加；决策不能使用当时尚未知的信息；个体预算、总体资源与均衡一致性分别检查。求出数值后还要检查边界、符号及机制解释。</p>
+<p>完整流程是：研究问题与候选机制，决定经济环境，交代信息时序，写主体问题，定义均衡，求解，最后核验并解释。下面用无生产的交换经济走完这个流程，避免一下引入太多机制。</p>
+<h2 id="example-a">例题 A</h2>
+<p>模型给出
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>+</mo><mi>i</mi><mo>=</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">c+i=y</annotation></semantics></math></span>
+和
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>c</mi><mo>+</mo><mn>2</mn><mi>i</mi><mo>=</mo><mn>2</mn><mi>y</mi></mrow><annotation encoding="application/x-tex">2c+2i=2y</annotation></semantics></math></span>，已知
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">y=10</annotation></semantics></math></span>。是否由两条式子唯一决定
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>,</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">c,i</annotation></semantics></math></span>？如何解释？</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>不能。第二条只是第一条乘
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>，没有新信息。任取可行
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math></span>
+都有
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mn>10</mn><mo>−</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">c=10-i</annotation></semantics></math></span>；还需要有经济来源的最优条件或其他独立约束，而不能随便补一条式子。</p>
+</details>
+<h2 id="practice-b">练习 B</h2><p class="source-label">新增练习 · 练习本课 A 已示范的核心动作</p><p>给定积累式但没给
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mn>0</mn></msub><annotation encoding="application/x-tex">k_0</annotation></semantics></math></span>，研究者声称得到了唯一资本路径；又把每年工资收入与期初资本实物量直接相加。指出两处核验问题。</p><div class="practice-controls" data-question-id="L1B014" data-module-id="L1M014" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+查看参考解
+</summary>
+<p>第一，缺少初始条件，不同
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mn>0</mn></msub><annotation encoding="application/x-tex">k_0</annotation></semantics></math></span>
+可能产生不同路径，不能声称唯一。第二，收入是期间流量且可能以货币计价，资本是时点存量，必须统一价格单位和时点后通过正确预算或积累关系连接，不能直接相加。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>每条方程应有对象、时点、单位和经济来源，求解之后仍要检查可行与最优。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

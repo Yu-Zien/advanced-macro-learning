@@ -1,0 +1,79 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>用下极限严谨推出终身现值预算 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L2M024"><h1 id="用下极限严谨推出终身现值预算">用下极限严谨推出终身现值预算</h1>
+<p>来源：Lecture 2，PDF 第 44 页。</p>
+<h2 id="method">这一步解决什么</h2>
+<p>现在补全从有限求和到无限和的步骤。假设
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>t</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p_t&gt;0</annotation></semantics></math></span>，消费和禀赋非负，禀赋现值
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∑</mo><msub><mi>p</mi><mi>t</mi></msub><msub><mi>e</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">\sum p_te_t</annotation></semantics></math></span>
+有限，初始资产有限，资产满足 No-Ponzi。记
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>T</mi></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover><msub><mi>p</mi><mi>t</mi></msub><msub><mi>c</mi><mi>t</mi></msub><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>E</mi><mi>T</mi></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>T</mi></munderover><msub><mi>p</mi><mi>t</mi></msub><msub><mi>e</mi><mi>t</mi></msub><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>x</mi><mi>T</mi></msub><mo>=</mo><msub><mi>p</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><msub><mi>a</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">C_T=\sum_{t=0}^Tp_tc_t,\quad E_T=\sum_{t=0}^Tp_te_t,\quad x_T=p_{T+1}a_{T+1}.</annotation></semantics></math></div>
+合并预算给
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>T</mi></msub><mo>≤</mo><msub><mi>E</mi><mi>T</mi></msub><mo>+</mo><msub><mi>p</mi><mn>0</mn></msub><msub><mi>a</mi><mn>0</mn></msub><mo>−</mo><msub><mi>x</mi><mi>T</mi></msub></mrow><annotation encoding="application/x-tex">C_T\le E_T+p_0a_0-x_T</annotation></semantics></math></span>。由
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">liminf</mi><mo>&#8289;</mo></mrow><msub><mi>x</mi><mi>T</mi></msub><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\liminf x_T\ge0</annotation></semantics></math></span>，对任意
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon&gt;0</annotation></semantics></math></span>，足够大的
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math></span>
+都有
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>T</mi></msub><mo>≥</mo><mi>−</mi><mi>ε</mi></mrow><annotation encoding="application/x-tex">x_T\ge-\varepsilon</annotation></semantics></math></span>。因此
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>T</mi></msub><mo>≤</mo><msub><mi>E</mi><mi>T</mi></msub><mo>+</mo><msub><mi>p</mi><mn>0</mn></msub><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><mi>ε</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">C_T\le E_T+p_0a_0+\varepsilon.</annotation></semantics></math></div>
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mi>T</mi></msub><annotation encoding="application/x-tex">C_T</annotation></semantics></math></span>
+非递减，因为每项非负；右边有有限上界，所以
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mi>T</mi></msub><annotation encoding="application/x-tex">C_T</annotation></semantics></math></span>
+收敛到有限现值消费
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math></span>。令
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>→</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">T\to\infty</annotation></semantics></math></span>
+再让
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>↓</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon\downarrow0</annotation></semantics></math></span>，得到
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mo accent="false">∞</mo></munderover><msub><mi>p</mi><mi>t</mi></msub><msub><mi>c</mi><mi>t</mi></msub><mo>≤</mo><msub><mi>p</mi><mn>0</mn></msub><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mo accent="false">∞</mo></munderover><msub><mi>p</mi><mi>t</mi></msub><msub><mi>e</mi><mi>t</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">\sum_{t=0}^{\infty}p_tc_t\le p_0a_0+\sum_{t=0}^{\infty}p_te_t.</annotation></semantics></math></div>
+当
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_0=0</annotation></semantics></math></span>，就是讲义的期初现值预算。</p>
+<p>这里没有把 No-Ponzi
+擅自改成等式：它只足够推出弱预算不等式。严格递增偏好下若没有其他阻止增加消费的限制，最优性会进一步排除预算余量；这就是下一课的工作。</p>
+<h2 id="example-a">例题 A：编辑示范</h2>
+<p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn><mo>,</mo><msub><mi>p</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a_0=1,p_0=1</annotation></semantics></math></span>，禀赋现值和为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>8</mn><annotation encoding="application/x-tex">8</annotation></semantics></math></span>。若
+No-Ponzi 成立，终身消费现值最多多少？消费现值为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>8.5</mn><annotation encoding="application/x-tex">8.5</annotation></semantics></math></span>
+是否被这一条件排除？</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>最多为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>9</mn><annotation encoding="application/x-tex">9</annotation></semantics></math></span>。<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8.5</mn><mo>≤</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">8.5\le9</annotation></semantics></math></span>
+不被现值预算排除，但它留下
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.5</mn><annotation encoding="application/x-tex">0.5</annotation></semantics></math></span>
+的现值余量，是否最优还须判断。</p>
+</details>
+<h2 id="practice-b">补充练习 B</h2><p class="source-label">新增练习 · 编辑补充：练习本课 A 已完整示范的方法或条件判断。</p><p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>=</mo><mi>−</mi><mn>0.5</mn><mo>,</mo><msub><mi>p</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a_0=-0.5,p_0=1</annotation></semantics></math></span>，禀赋现值为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>6</mn><annotation encoding="application/x-tex">6</annotation></semantics></math></span>。消费现值
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5.8</mn><annotation encoding="application/x-tex">5.8</annotation></semantics></math></span>
+能否由满足逐期预算和 No-Ponzi 的路径实现？解释理由。</p><div class="practice-controls" data-question-id="L2B024" data-module-id="L2M024" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p>不能，现值财富为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mo>−</mo><mn>0.5</mn><mo>=</mo><mn>5.5</mn></mrow><annotation encoding="application/x-tex">6-0.5=5.5</annotation></semantics></math></span>，而
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5.8</mn><mo>&gt;</mo><mn>5.5</mn></mrow><annotation encoding="application/x-tex">5.8&gt;5.5</annotation></semantics></math></span>。若逐期账目仍能配平，就必然在长期偿债条件或其他给定假设上出问题。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>有限现值财富、非负消费与 No-Ponzi
+一起，把逐期预算压成终身现值预算。</p>
+<details class="prepared-review"><summary>精选回顾（回看不记分）</summary><h2 id="review">精选回顾</h2><p>No-Ponzi 为什么只能先给预算不等式，而不是预算等式？</p><h2 id="review-answer">回顾答案</h2><details>
+<summary>
+回忆后查看
+</summary>
+<p>它允许长期正资产现值，也就允许部分财富未消费。要得到耗尽财富的等式，还要使用严格递增偏好和适当的最优性条件。</p>
+</details></details></article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

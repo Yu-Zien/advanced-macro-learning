@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "contentVersion": "8adc4fb1fd705776937ac7ceb74eeea31f596b5bd2ef9e5ee89f363cf13a1c50",
+  "runtimeSha256": {
+    "app.css": "17a995b8c49140a242df9d130e02452eea0978b61d8a85a764af48b85e68e9ba",
+    "app.js": "20a18a621ff3bdbf1be2729319f138acbad081013b42510b8642539751d272c5",
+    "course.js": "433f5613686798b8df6116dc08593c80841019a1da57040979b66982dae36ec9",
+    "db.js": "5c51c257cb5fd0b47c40d9df6bd9bf0d67fdbcea818779e96f62799b0a67ee3f",
+    "flow.js": "1244b3931a27d9211f2d308f9ca33a115198ef82680d9c5df256b295490b646e",
+    "scheduler.js": "30784e5913e3bddac39b8ba691ea9829ef2cb2afd975b8466afaa54483cf905c",
+    "state.js": "615574167648a04075d242137734fba79ea1f07be0b05e46e2b2f69b65098f33",
+    "study.js": "19c2be48ea3bc9745cff158fb29c8bb99a1023f9b084ab681b653cf6f24af8ce",
+    "vendor/ts-fsrs.mjs": "ad4a4b3b7e259fcbf02764454c8f9db4ea3bf5aae2f473198129ecb7728f1a19"
+  }
+}

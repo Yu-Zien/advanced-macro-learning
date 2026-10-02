@@ -1,0 +1,58 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>复算讲义的数值稳态 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L3M025"><h1 id="复算讲义的数值稳态">复算讲义的数值稳态</h1>
+<p>来源：Lecture3.pdf，第 41 页；以下 A 与 B
+除明确标注原题外均为编辑补充。</p>
+<p>本课目标：保留精度并用资源与Euler残差核验结果。</p>
+<h2 id="method">本步讲解</h2>
+<p>讲义参数为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mn>0.36</mn><mo>,</mo><mi>β</mi><mo>=</mo><mn>0.96</mn><mo>,</mo><mi>δ</mi><mo>=</mo><mn>0.08</mn></mrow><annotation encoding="application/x-tex">\alpha=0.36,\beta=0.96,\delta=0.08</annotation></semantics></math></span>。先算
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mn>1</mn><mi>/</mi><mn>0.96</mn><mo>−</mo><mn>1</mn><mo>+</mo><mn>0.08</mn><mo>=</mo><mn>0.121666</mn><mi>…</mi></mrow><annotation encoding="application/x-tex">D=1/0.96-1+0.08=0.121666\ldots</annotation></semantics></math></div>
+再代入稳态公式，可得
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mo>*</mo></msup><mo>≈</mo><mn>5.446807</mn><mo>,</mo><mspace width="2.0em"></mspace><msup><mi>y</mi><mo>*</mo></msup><mo>≈</mo><mn>1.840819</mn><mo>,</mo></mrow><annotation encoding="application/x-tex">k^*\approx5.446807,\qquad y^*\approx1.840819,</annotation></semantics></math></div>
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>i</mi><mo>*</mo></msup><mo>≈</mo><mn>0.435745</mn><mo>,</mo><mspace width="2.0em"></mspace><msup><mi>c</mi><mo>*</mo></msup><mo>≈</mo><mn>1.405075</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">i^*\approx0.435745,\qquad c^*\approx1.405075.</annotation></semantics></math></div>
+黄金律资本为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mi>g</mi></msup><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>α</mi><mi>/</mi><mi>δ</mi><msup><mo stretchy="false" form="postfix">)</mo><mrow><mn>1</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false" form="postfix">)</mo></mrow></msup><mo>≈</mo><mn>10.486838</mn></mrow><annotation encoding="application/x-tex">k^g=(\alpha/\delta)^{1/(1-\alpha)}\approx10.486838</annotation></semantics></math></span>。四舍五入到三位小数分别与讲义的5.447、1.841、0.436、1.405和10.487一致。</p>
+<p>计算时最后再四舍五入。可用两项残差核验：资源残差
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>y</mi><mo>*</mo></msup><mo>−</mo><msup><mi>i</mi><mo>*</mo></msup><mo>−</mo><msup><mi>c</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">y^*-i^*-c^*</annotation></semantics></math></span>
+应接近0；Euler残差
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo stretchy="false" form="prefix">[</mo><mi>α</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>k</mi><mo>*</mo></msup><msup><mo stretchy="false" form="postfix">)</mo><mrow><mi>α</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>+</mo><mn>1</mn><mo>−</mo><mi>δ</mi><mo stretchy="false" form="postfix">]</mo><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\beta[\alpha(k^*)^{\alpha-1}+1-\delta]-1</annotation></semantics></math></span>
+应接近0。检查的是公式一致性，不等于证明数值程序对所有参数都正确。</p>
+<h2 id="example-a">例题 A</h2>
+<p>用
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mn>1</mn><mi>/</mi><mn>2</mn><mo>,</mo><mi>β</mi><mo>=</mo><mn>0.8</mn><mo>,</mo><mi>δ</mi><mo>=</mo><mn>1</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">\alpha=1/2,\beta=0.8,\delta=1/4</annotation></semantics></math></span>
+与候选值
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>c</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mi>/</mi><mn>4</mn><mo>,</mo><mn>3</mn><mi>/</mi><mn>4</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(k,y,i,c)=(1,1,1/4,3/4)</annotation></semantics></math></span>
+计算资源和Euler残差。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>资源残差
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mn>1</mn><mi>/</mi><mn>4</mn><mo>−</mo><mn>3</mn><mi>/</mi><mn>4</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">1-1/4-3/4=0</annotation></semantics></math></span>；Euler残差
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.8</mn><mo stretchy="false" form="prefix">[</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>/</mi><mn>2</mn><mo stretchy="false" form="postfix">)</mo><msup><mn>1</mn><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup><mo>+</mo><mn>3</mn><mi>/</mi><mn>4</mn><mo stretchy="false" form="postfix">]</mo><mo>−</mo><mn>1</mn><mo>=</mo><mn>0.8</mn><mo stretchy="false" form="prefix">(</mo><mn>1.25</mn><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mn>1</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">0.8[(1/2)1^{-1/2}+3/4]-1=0.8(1.25)-1=0</annotation></semantics></math></span>。</p>
+</details>
+<h2 id="practice-b">补充练习 B</h2><p class="source-label">新增练习 · 练习本课A已经示范的同一动作。</p><p>沿用讲义参数和正文给出的精确近似值，写出两项残差的计算式；再判断把消费误记为1.505会由哪一项立即发现。</p><div class="practice-controls" data-question-id="L3B025" data-module-id="L3M025" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+完成尝试后查看参考解
+</summary>
+<p>资源残差为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1.840819</mn><mo>−</mo><mn>0.435745</mn><mo>−</mo><mn>1.405075</mn><mo>≈</mo><mi>−</mi><mn>0.000001</mn></mrow><annotation encoding="application/x-tex">1.840819-0.435745-1.405075\approx-0.000001</annotation></semantics></math></span>，属于截位误差。Euler残差为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.96</mn><mo stretchy="false" form="prefix">[</mo><mn>0.36</mn><mo stretchy="false" form="prefix">(</mo><mn>5.446807</mn><msup><mo stretchy="false" form="postfix">)</mo><mrow><mi>−</mi><mn>0.64</mn></mrow></msup><mo>+</mo><mn>0.92</mn><mo stretchy="false" form="postfix">]</mo><mo>−</mo><mn>1</mn><mo>≈</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">0.96[0.36(5.446807)^{-0.64}+0.92]-1\approx0</annotation></semantics></math></span>。若消费记为1.505，资源残差约
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>0.10</mn></mrow><annotation encoding="application/x-tex">-0.10</annotation></semantics></math></span>，明显不只是四舍五入；仅检查稳态Euler不能发现该消费抄错。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>分别核验资源与Euler；稳态资本算对并不保证消费记录也正确。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

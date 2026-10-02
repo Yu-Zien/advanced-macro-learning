@@ -1,0 +1,127 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>综合原题 3：价格与两市场出清 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L1M039"><h1 id="综合原题-3价格与两市场出清">综合原题 3：价格与两市场出清</h1>
+<p>来源：Lecture1，PDF 第 74–77
+页。目标：求均衡价格并分别核验四个消费量。</p>
+<h2 id="method">讲解与方法</h2>
+<p>把需求函数放入第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+期市场出清，便可求未知价格
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math></span>。得到价格后代回所有需求，再<strong>明确检查第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+期</strong>，不能看到一个市场平衡就停止。</p>
+<p>为什么在两户预算均取等号时，第一个市场出清通常会推出第二个？把两户预算相加：<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>0</mn></msub><mo>+</mo><mi>q</mi><msub><mi>C</mi><mn>1</mn></msub><mo>=</mo><msub><mi>E</mi><mn>0</mn></msub><mo>+</mo><mi>q</mi><msub><mi>E</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">C_0+qC_1=E_0+qE_1</annotation></semantics></math></span>。若
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>0</mn></msub><mo>=</mo><msub><mi>E</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">C_0=E_0</annotation></semantics></math></span>
+且
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">q&gt;0</annotation></semantics></math></span>，则
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>C</mi><mn>1</mn></msub><mo>−</mo><msub><mi>E</mi><mn>1</mn></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">q(C_1-E_1)=0</annotation></semantics></math></span>，所以
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>1</mn></msub><mo>=</mo><msub><mi>E</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">C_1=E_1</annotation></semantics></math></span>。这里
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mi>t</mi></msub><annotation encoding="application/x-tex">C_t</annotation></semantics></math></span>
+是总消费、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>t</mi></msub><annotation encoding="application/x-tex">E_t</annotation></semantics></math></span>
+是总禀赋。这是预算与出清的代数一致性，仍值得代数值核验以发现算术错误。</p>
+<p>求出配置后，还要核对严格正性和各户预算；家庭最优性已有严格凹性和需求推导支持。把这些组合起来，才得到价格与配置的完整均衡。</p>
+<h2 id="original-context">原题完整共享条件</h2>
+<p>经济只有第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+期和第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+期。第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+期消费品价格为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>，第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+期消费品的期初现值价格为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">q&gt;0</annotation></semantics></math></span>。两位家庭的效用和禀赋为</p>
+<p><div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>U</mi><mi>i</mi></msup><mo>=</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><msubsup><mi>c</mi><mn>0</mn><mi>i</mi></msubsup><mo>+</mo><msub><mi>β</mi><mi>i</mi></msub><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><msubsup><mi>c</mi><mn>1</mn><mi>i</mi></msubsup><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>β</mi><mn>1</mn></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>β</mi><mn>2</mn></msub><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>,</mo></mrow><annotation encoding="application/x-tex">
+U^i=\ln c_0^i+\beta_i\ln c_1^i,\qquad \beta_1=\frac12,\quad\beta_2=\frac34,
+</annotation></semantics></math></div></p>
+<p><div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msubsup><mi>e</mi><mn>0</mn><mn>1</mn></msubsup><mo>,</mo><msubsup><mi>e</mi><mn>1</mn><mn>1</mn></msubsup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mspace width="2.0em"></mspace><mo stretchy="false" form="prefix">(</mo><msubsup><mi>e</mi><mn>0</mn><mn>2</mn></msubsup><mo>,</mo><msubsup><mi>e</mi><mn>1</mn><mn>2</mn></msubsup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">
+(e_0^1,e_1^1)=(2,0),\qquad(e_0^2,e_1^2)=(0,2).
+</annotation></semantics></math></div></p>
+<p>两位家庭可在第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+期交易两期消费品，消费严格为正。原题要求依次完成：写预算与最优条件、求消费需求、求均衡价格及四个消费量并核验两市场、求总回报率并解释增长率与财富作用。本题四个小问分别安排在
+<a href="L1M037.html#practice-b">第 1 问</a>、<a
+href="L1M038.html#practice-b">第 2 问</a>、<a
+href="L1M039.html#practice-b">第 3 问</a>、<a
+href="L1M040.html#practice-b">第 4 问</a>。</p>
+<h2 id="example-a">例题 A</h2>
+<p>沿用编辑示范需求
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mn>0</mn><mn>1</mn></msubsup><mo>=</mo><mn>9</mn><mi>/</mi><mn>4</mn><mo>,</mo><msubsup><mi>c</mi><mn>1</mn><mn>1</mn></msubsup><mo>=</mo><mn>3</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mi>q</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><msubsup><mi>c</mi><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><mn>9</mn><mi>q</mi><mi>/</mi><mn>5</mn><mo>,</mo><msubsup><mi>c</mi><mn>1</mn><mn>2</mn></msubsup><mo>=</mo><mn>6</mn><mi>/</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">c_0^1=9/4,c_1^1=3/(4q),c_0^2=9q/5,c_1^2=6/5</annotation></semantics></math></span>，每期总禀赋为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math></span>。求均衡并核验两市场。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+期出清为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mi>/</mi><mn>4</mn><mo>+</mo><mn>9</mn><mi>q</mi><mi>/</mi><mn>5</mn><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">9/4+9q/5=3</annotation></semantics></math></span>，得
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><mn>5</mn><mi>/</mi><mn>12</mn></mrow><annotation encoding="application/x-tex">q=5/12</annotation></semantics></math></span>。配置为家庭
+1
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>9</mn><mi>/</mi><mn>4</mn><mo>,</mo><mn>9</mn><mi>/</mi><mn>5</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(9/4,9/5)</annotation></semantics></math></span>、家庭
+2
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>3</mn><mi>/</mi><mn>4</mn><mo>,</mo><mn>6</mn><mi>/</mi><mn>5</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(3/4,6/5)</annotation></semantics></math></span>。第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+期和
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math></span>，第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+期和
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mi>/</mi><mn>5</mn><mo>+</mo><mn>6</mn><mi>/</mi><mn>5</mn><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">9/5+6/5=3</annotation></semantics></math></span>。家庭
+1 支出
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mi>/</mi><mn>4</mn><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mn>5</mn><mi>/</mi><mn>12</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mn>9</mn><mi>/</mi><mn>5</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">9/4+(5/12)(9/5)=3</annotation></semantics></math></span>，家庭
+2 支出
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mi>/</mi><mn>4</mn><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mn>5</mn><mi>/</mi><mn>12</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mn>6</mn><mi>/</mi><mn>5</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>5</mn><mi>/</mi><mn>4</mn><mo>=</mo><mn>3</mn><mi>q</mi></mrow><annotation encoding="application/x-tex">3/4+(5/12)(6/5)=5/4=3q</annotation></semantics></math></span>。</p>
+</details>
+<h2 id="practice-b">原题小问</h2><p class="source-label">材料原题 · PDF 第 74–75 页，课堂综合练习第 3 小问</p><p>原题第 3 问：利用市场出清求均衡价格
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>q</mi><mo>*</mo></msup><annotation encoding="application/x-tex">q^*</annotation></semantics></math></span>
+和四个均衡消费量，并核验两个市场都出清。</p><div class="practice-controls" data-question-id="L1E001c" data-module-id="L1M039" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+查看参考解
+</summary>
+<p>第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+期出清要求
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mi>/</mi><mn>3</mn><mo>+</mo><mn>8</mn><mi>q</mi><mi>/</mi><mn>7</mn><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">4/3+8q/7=2</annotation></semantics></math></span>，所以
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mi>q</mi><mi>/</mi><mn>7</mn><mo>=</mo><mn>2</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">8q/7=2/3</annotation></semantics></math></span>，得
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>q</mi><mo>*</mo></msup><mo>=</mo><mn>7</mn><mi>/</mi><mn>12</mn></mrow><annotation encoding="application/x-tex">q^*=7/12</annotation></semantics></math></span>。代入需求，家庭
+1 为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msubsup><mi>c</mi><mn>0</mn><mrow><mn>1</mn><mo>*</mo></mrow></msubsup><mo>,</mo><msubsup><mi>c</mi><mn>1</mn><mrow><mn>1</mn><mo>*</mo></mrow></msubsup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mi>/</mi><mn>3</mn><mo>,</mo><mn>8</mn><mi>/</mi><mn>7</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(c_0^{1*},c_1^{1*})=(4/3,8/7)</annotation></semantics></math></span>；家庭
+2 为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>/</mi><mn>3</mn><mo>,</mo><mn>6</mn><mi>/</mi><mn>7</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(2/3,6/7)</annotation></semantics></math></span>。第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+期
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mi>/</mi><mn>3</mn><mo>+</mo><mn>2</mn><mi>/</mi><mn>3</mn><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">4/3+2/3=2</annotation></semantics></math></span>，第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+期
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mi>/</mi><mn>7</mn><mo>+</mo><mn>6</mn><mi>/</mi><mn>7</mn><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">8/7+6/7=2</annotation></semantics></math></span>。家庭
+1 支出
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mi>/</mi><mn>3</mn><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mn>7</mn><mi>/</mi><mn>12</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mn>8</mn><mi>/</mi><mn>7</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">4/3+(7/12)(8/7)=2</annotation></semantics></math></span>；家庭
+2 支出
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>/</mi><mn>3</mn><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mn>7</mn><mi>/</mi><mn>12</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mn>6</mn><mi>/</mi><mn>7</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>7</mn><mi>/</mi><mn>6</mn><mo>=</mo><mn>2</mn><msup><mi>q</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">2/3+(7/12)(6/7)=7/6=2q^*</annotation></semantics></math></span>。所有消费为正，预算和两个市场同时相容。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>把个体需求代入出清求价格，再代回配置逐项检查。</p>
+<details class="prepared-review"><summary>精选回顾（回看不记分）</summary><h2 id="review">精选回顾</h2><p>两期均衡中已知各户预算等号和第 0 期出清，为何第 1 期也应出清？</p><h2 id="review-answer">回顾答案</h2><details>
+<summary>
+回忆后查看
+</summary>
+<p>加总预算得
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>0</mn></msub><mo>+</mo><mi>q</mi><msub><mi>C</mi><mn>1</mn></msub><mo>=</mo><msub><mi>E</mi><mn>0</mn></msub><mo>+</mo><mi>q</mi><msub><mi>E</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">C_0+qC_1=E_0+qE_1</annotation></semantics></math></span>；代入
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>0</mn></msub><mo>=</mo><msub><mi>E</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">C_0=E_0</annotation></semantics></math></span>
+并用
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">q&gt;0</annotation></semantics></math></span>，便得到
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mn>1</mn></msub><mo>=</mo><msub><mi>E</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">C_1=E_1</annotation></semantics></math></span>。实际求解仍应核对数值。</p>
+</details></details></article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

@@ -1,0 +1,126 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>第二次更新：逐格构造目标值矩阵 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L4M016"><h1
+id="第二次更新逐格构造目标值矩阵">第二次更新：逐格构造目标值矩阵</h1>
+<p>来源：Lecture4.pdf，PDF 第 38–40 页。</p>
+<h2 id="method">本步讲解</h2>
+<p>第二次更新使用<strong>上一轮整张值函数表</strong>，计算
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>2</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>,</mo><msup><mi>k</mi><mo>′</mo></msup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msup><mi>k</mi><mn>0.3</mn></msup><mo>−</mo><msup><mi>k</mi><mo>′</mo></msup><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mn>0.6</mn><msub><mi>v</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><msup><mi>k</mi><mo>′</mo></msup><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">Q_2(k,k&#39;)=\ln(k^{0.3}-k&#39;)+0.6v_1(k&#39;).</annotation></semantics></math></div>
+续接值索引用候选下一期资本
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>k</mi><mo>′</mo></msup><annotation encoding="application/x-tex">k&#39;</annotation></semantics></math></span>，不是当前资本
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math></span>。例如
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>0.04</mn><mo>,</mo><msup><mi>k</mi><mo>′</mo></msup><mo>=</mo><mn>0.08</mn></mrow><annotation encoding="application/x-tex">k=0.04,k&#39;=0.08</annotation></semantics></math></span>，当前消费约
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.300731</mn><annotation encoding="application/x-tex">0.300731</annotation></semantics></math></span>，加上
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.6</mn><msub><mi>v</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mn>0.08</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">0.6v_1(0.08)</annotation></semantics></math></span>
+得
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.709690</mn></mrow><annotation encoding="application/x-tex">-1.709690</annotation></semantics></math></span>。</p>
+<p>完整目标表如下，行是当前资本，列是候选控制；每行取最大值（负数越接近零越大）：</p>
+<table>
+<thead>
+<tr>
+<th>当前
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math></span>
+/ 候选
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>k</mi><mo>′</mo></msup><annotation encoding="application/x-tex">k&#39;</annotation></semantics></math></span></th>
+<th><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.04</mn><annotation encoding="application/x-tex">0.04</annotation></semantics></math></span></th>
+<th><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.08</mn><annotation encoding="application/x-tex">0.08</annotation></semantics></math></span></th>
+<th><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.12</mn><annotation encoding="application/x-tex">0.12</annotation></semantics></math></span></th>
+<th><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.16</mn><annotation encoding="application/x-tex">0.16</annotation></semantics></math></span></th>
+<th><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.20</mn><annotation encoding="application/x-tex">0.20</annotation></semantics></math></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.04</mn><annotation encoding="application/x-tex">0.04</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.7227</mn></mrow><annotation encoding="application/x-tex">-1.7227</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.7097</mn></mrow><annotation encoding="application/x-tex">-1.7097</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.7731</mn></mrow><annotation encoding="application/x-tex">-1.7731</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.8838</mn></mrow><annotation encoding="application/x-tex">-1.8838</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>2.0407</mn></mrow><annotation encoding="application/x-tex">-2.0407</annotation></semantics></math></span></td>
+</tr>
+<tr>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.08</mn><annotation encoding="application/x-tex">0.08</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.4929</mn></mrow><annotation encoding="application/x-tex">-1.4929</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.4530</mn></mrow><annotation encoding="application/x-tex">-1.4530</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.4822</mn></mrow><annotation encoding="application/x-tex">-1.4822</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.5482</mn></mrow><annotation encoding="application/x-tex">-1.5482</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.6439</mn></mrow><annotation encoding="application/x-tex">-1.6439</annotation></semantics></math></span></td>
+</tr>
+<tr>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.12</mn><annotation encoding="application/x-tex">0.12</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.3606</mn></mrow><annotation encoding="application/x-tex">-1.3606</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.3081</mn></mrow><annotation encoding="application/x-tex">-1.3081</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.3219</mn></mrow><annotation encoding="application/x-tex">-1.3219</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.3689</mn></mrow><annotation encoding="application/x-tex">-1.3689</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.4405</mn></mrow><annotation encoding="application/x-tex">-1.4405</annotation></semantics></math></span></td>
+</tr>
+<tr>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.16</mn><annotation encoding="application/x-tex">0.16</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.2676</mn></mrow><annotation encoding="application/x-tex">-1.2676</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.2072</mn></mrow><annotation encoding="application/x-tex">-1.2072</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.2117</mn></mrow><annotation encoding="application/x-tex">-1.2117</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.2474</mn></mrow><annotation encoding="application/x-tex">-1.2474</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.3052</mn></mrow><annotation encoding="application/x-tex">-1.3052</annotation></semantics></math></span></td>
+</tr>
+<tr>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.20</mn><annotation encoding="application/x-tex">0.20</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.1959</mn></mrow><annotation encoding="application/x-tex">-1.1959</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.1298</mn></mrow><annotation encoding="application/x-tex">-1.1298</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.1279</mn></mrow><annotation encoding="application/x-tex">-1.1279</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.1560</mn></mrow><annotation encoding="application/x-tex">-1.1560</annotation></semantics></math></span></td>
+<td><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.2045</mn></mrow><annotation encoding="application/x-tex">-1.2045</annotation></semantics></math></span></td>
+</tr>
+</tbody>
+</table>
+<p>在最后一行，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.1279</mn></mrow><annotation encoding="application/x-tex">-1.1279</annotation></semantics></math></span>
+比
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.1298</mn></mrow><annotation encoding="application/x-tex">-1.1298</annotation></semantics></math></span>
+大，所以控制由
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.08</mn><annotation encoding="application/x-tex">0.08</annotation></semantics></math></span>
+切换到
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.12</mn><annotation encoding="application/x-tex">0.12</annotation></semantics></math></span>。这也是必须保留足够精度的原因。表已由原始公式重算，与讲义第
+38–40 页一致。</p>
+<h2 id="example-a">例题 A · 编辑示范</h2>
+<p>在当前
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>0.12</mn></mrow><annotation encoding="application/x-tex">k=0.12</annotation></semantics></math></span>
+时，指出最大目标值和对应控制；为什么不能把“第 2 列”当成政策数值？</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>最大值为约
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.3081</mn></mrow><annotation encoding="application/x-tex">-1.3081</annotation></semantics></math></span>，对应
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>k</mi><mo>′</mo></msup><mo>=</mo><mn>0.08</mn></mrow><annotation encoding="application/x-tex">k&#39;=0.08</annotation></semantics></math></span>。列号
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>
+是索引；真正下一期资本是网格第 2 项
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.08</mn><annotation encoding="application/x-tex">0.08</annotation></semantics></math></span>。</p>
+</details>
+<h2 id="practice-b">练习 B · 补充练习</h2><p class="source-label">新增练习 · 训练本课已演示的方法</p><p>在当前
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>0.16</mn></mrow><annotation encoding="application/x-tex">k=0.16</annotation></semantics></math></span>
+时，比较候选
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.08</mn><annotation encoding="application/x-tex">0.08</annotation></semantics></math></span>
+与
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.12</mn><annotation encoding="application/x-tex">0.12</annotation></semantics></math></span>，求两者目标值之差并选择控制。</p><div class="practice-controls" data-question-id="L4B016" data-module-id="L4M016" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>2</mn></msub><mo stretchy="false" form="prefix">(</mo><mn>0.16</mn><mo>,</mo><mn>0.08</mn><mo stretchy="false" form="postfix">)</mo><mo>−</mo><msub><mi>Q</mi><mn>2</mn></msub><mo stretchy="false" form="prefix">(</mo><mn>0.16</mn><mo>,</mo><mn>0.12</mn><mo stretchy="false" form="postfix">)</mo><mo>≈</mo><mi>−</mi><mn>1.20715472</mn><mo>+</mo><mn>1.21168619</mn><mo>=</mo><mn>0.00453147</mn><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">Q_2(0.16,0.08)-Q_2(0.16,0.12)\approx-1.20715472+1.21168619=0.00453147&gt;0</annotation></semantics></math></span>，故选
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.08</mn><annotation encoding="application/x-tex">0.08</annotation></semantics></math></span>。虽然
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.12</mn><annotation encoding="application/x-tex">0.12</annotation></semantics></math></span>
+留下更多资本，但少了当前消费，总目标略低。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>每一格用下一期状态查旧值函数，再逐行取最大值和对应控制。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

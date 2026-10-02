@@ -1,0 +1,79 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>横截条件为什么要求剩余资产现值为零 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L2M025"><h1
+id="横截条件为什么要求剩余资产现值为零">横截条件为什么要求剩余资产现值为零</h1>
+<p>来源：Lecture 2，PDF 第 45 页。</p>
+<h2 id="method">这一步解决什么</h2>
+<p>在当前无额外交易限制、严格递增效用、有限现值财富的确定性资产问题中，一个常用
+<strong>横截条件（TVC）</strong>是
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>T</mi><mo>→</mo><mi>∞</mi></mrow></munder><msub><mi>p</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><msub><mi>a</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">\lim_{T\to\infty}p_{T+1}a_{T+1}=0.</annotation></semantics></math></div>
+它是本模型最优路径的边界条件。No-Ponzi 先排除负的长期现值；TVC
+还排除正的、永远没有用于消费的财富。一般模型的 TVC
+要用其相应的影子价值表达，不能把本式当成所有模型通用公式。</p>
+<p>为什么正极限
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">L&gt;0</annotation></semantics></math></span>
+不最优？在逐期预算取等号且现值和收敛时，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math></span>
+就是未消费财富。取
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>δ</mi><mo>&lt;</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">0&lt;\delta&lt;L</annotation></semantics></math></span>，在日期
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+增加
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>δ</mi><annotation encoding="application/x-tex">\delta</annotation></semantics></math></span>
+单位消费，其他消费不动；相应资产递推变化为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>a</mi><mo accent="true">̃</mo></mover><mi>t</mi></msub><mo>=</mo><msub><mi>a</mi><mi>t</mi></msub><mo>−</mo><mi>δ</mi><mi>/</mi><msub><mi>p</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">\widetilde a_t=a_t-\delta/p_t</annotation></semantics></math></span>（<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">t\ge1</annotation></semantics></math></span>，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p_0=1</annotation></semantics></math></span>）。每期预算仍相等，长期现值变成
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>−</mo><mi>δ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">L-\delta&gt;0</annotation></semantics></math></span>，仍满足
+No-Ponzi。严格递增效用使消费更多的计划更好，故原计划不是最优。</p>
+<p>这项证明明确使用了“没有额外阻止该资产调整的约束”。若有复杂约束、遗赠价值或不同状态变量，应回到相应问题重新推导边界条件。TVC
+不是在优化前缩小选择集合的任意规定。</p>
+<p>资产数量可以不趋零。只要价格衰减足够快，有界资产甚至适度增长的资产都可具有趋零的现值。</p>
+<h2 id="example-a">例题 A：编辑示范</h2>
+<p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>t</mi></msub><mo>=</mo><msup><mn>2</mn><mrow><mi>−</mi><mi>t</mi></mrow></msup></mrow><annotation encoding="application/x-tex">p_t=2^{-t}</annotation></semantics></math></span>。比较
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>t</mi></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a_t=1</annotation></semantics></math></span>
+和
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>t</mi></msub><mo>=</mo><msup><mn>2</mn><mi>t</mi></msup></mrow><annotation encoding="application/x-tex">a_t=2^t</annotation></semantics></math></span>
+的 TVC；后者若预算等式成立且无额外限制，为何可改进？</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>前者现值
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mrow><mi>−</mi><mi>t</mi></mrow></msup><mo>→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">2^{-t}\to0</annotation></semantics></math></span>，满足。后者现值恒为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>，不满足；可增加日期
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+消费
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.5</mn><annotation encoding="application/x-tex">0.5</annotation></semantics></math></span>，把未来资产现值减少
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.5</mn><annotation encoding="application/x-tex">0.5</annotation></semantics></math></span>，仍剩
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.5</mn><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">0.5\ge0</annotation></semantics></math></span>，可行且效用更高。</p>
+</details>
+<h2 id="practice-b">补充练习 B</h2><p class="source-label">新增练习 · 编辑补充：练习本课 A 已完整示范的方法或条件判断。</p><p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>t</mi></msub><mo>=</mo><msup><mn>3</mn><mrow><mi>−</mi><mi>t</mi></mrow></msup></mrow><annotation encoding="application/x-tex">p_t=3^{-t}</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>t</mi></msub><mo>=</mo><mn>2</mn><mo>⋅</mo><msup><mn>3</mn><mi>t</mi></msup></mrow><annotation encoding="application/x-tex">a_t=2\cdot3^t</annotation></semantics></math></span>。核验
+No-Ponzi 与 TVC，并构造一个现值消费增加
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+的可行改进说明原路径不最优（假设没有额外资产限制）。</p><div class="practice-controls" data-question-id="L2B025" data-module-id="L2M025" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p>现值为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>，满足
+No-Ponzi，但不满足 TVC。日期
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+增加消费
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>，令未来
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>a</mi><mo accent="true">̃</mo></mover><mi>t</mi></msub><mo>=</mo><msub><mi>a</mi><mi>t</mi></msub><mo>−</mo><mn>1</mn><mi>/</mi><msub><mi>p</mi><mi>t</mi></msub><mo>=</mo><msup><mn>3</mn><mi>t</mi></msup></mrow><annotation encoding="application/x-tex">\widetilde a_t=a_t-1/p_t=3^t</annotation></semantics></math></span>，长期现值变成
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>，预算仍成立、No-Ponzi
+仍成立且效用增加。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>当前模型的 TVC
+把可行却未使用的长期财富排除，要求趋零的是资产价值。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

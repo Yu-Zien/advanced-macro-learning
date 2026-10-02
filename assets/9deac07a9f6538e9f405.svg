@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="800" height="420" preserveAspectRatio="xMinYMin meet" viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="800" height="420"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-420)" style="clip-path: url(#clip)">
+		<g transform="">
+			<text x="75" y="393" style="font-family: Helvetica-Bold; font-size: 17px;fill: rgb(8%,23%,19%); stroke:none;" transform="translate(0,786) scale(1,-1)">Policy: continuous choices and five grid points</text>
+			<path d="M 75,65 L 575,65 Z" style="stroke: rgb(87%,91%,89%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="47.5" y="61.0" style="font-family: Times-Roman; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,122) scale(1,-1)">0.02</text>
+			<path d="M 75,124 L 575,124 Z" style="stroke: rgb(87%,91%,89%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="47.5" y="119.99999999999999" style="font-family: Times-Roman; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,239) scale(1,-1)">0.04</text>
+			<path d="M 75,183 L 575,183 Z" style="stroke: rgb(87%,91%,89%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="47.5" y="179.0" style="font-family: Times-Roman; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,358) scale(1,-1)">0.07</text>
+			<path d="M 75,242 L 575,242 Z" style="stroke: rgb(87%,91%,89%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="47.5" y="238.0" style="font-family: Times-Roman; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,476) scale(1,-1)">0.09</text>
+			<path d="M 75,301 L 575,301 Z" style="stroke: rgb(87%,91%,89%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="47.5" y="297.0" style="font-family: Times-Roman; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,594) scale(1,-1)">0.12</text>
+			<path d="M 75,360 L 575,360 Z" style="stroke: rgb(87%,91%,89%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="47.5" y="356.0" style="font-family: Times-Roman; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,712) scale(1,-1)">0.14</text>
+			<path d="M 89.705882,61 L 89.705882,65 Z" style="stroke: rgb(27%,35%,31%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="80.08088235294117" y="46" style="font-family: Times-Roman; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,92) scale(1,-1)">0.04</text>
+			<path d="M 207.352941,61 L 207.352941,65 Z" style="stroke: rgb(27%,35%,31%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="197.72794117647058" y="46" style="font-family: Times-Roman; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,92) scale(1,-1)">0.08</text>
+			<path d="M 325,61 L 325,65 Z" style="stroke: rgb(27%,35%,31%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="315.375" y="46" style="font-family: Times-Roman; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,92) scale(1,-1)">0.12</text>
+			<path d="M 442.647059,61 L 442.647059,65 Z" style="stroke: rgb(27%,35%,31%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="433.02205882352945" y="46" style="font-family: Times-Roman; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,92) scale(1,-1)">0.16</text>
+			<path d="M 560.294118,61 L 560.294118,65 Z" style="stroke: rgb(27%,35%,31%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="550.6691176470589" y="46" style="font-family: Times-Roman; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,92) scale(1,-1)">0.20</text>
+			<path d="M 75,65 L 575,65 Z" style="stroke: rgb(27%,35%,31%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 75,65 L 75,360 Z" style="stroke: rgb(27%,35%,31%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="284.674" y="22" style="font-family: Times-Roman; font-size: 12px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,44) scale(1,-1)">Current capital k</text>
+			<text x="75" y="370" style="font-family: Times-Roman; font-size: 11px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,740) scale(1,-1)">Next capital</text>
+			<polyline points="89.70588 184.3067, 92.05882 185.3106, 94.41176 186.3007, 96.76471 187.2776, 99.11765 188.2417, 101.4706 189.1934, 103.8235 190.133, 106.1765 191.061, 108.5294 191.9777, 110.8824 192.8833, 113.2353 193.7783, 115.5882 194.6629, 117.9412 195.5373, 120.2941 196.402, 122.6471 197.2571, 125 198.1029, 127.3529 198.9397, 129.7059 199.7676, 132.0588 200.5869, 134.4118 201.3979, 136.7647 202.2006, 139.1176 202.9954, 141.4706 203.7823, 143.8235 204.5617, 146.1765 205.3336, 148.5294 206.0982, 150.8824 206.8558, 153.2353 207.6063, 155.5882 208.3501, 157.9412 209.0873, 160.2941 209.8179, 162.6471 210.5422, 165 211.2603, 167.3529 211.9722, 169.7059 212.6782, 172.0588 213.3783, 174.4118 214.0727, 176.7647 214.7614, 179.1176 215.4446, 181.4706 216.1224, 183.8235 216.7949, 186.1765 217.4622, 188.5294 218.1244, 190.8824 218.7815, 193.2353 219.4337, 195.5882 220.0811, 197.9412 220.7237, 200.2941 221.3617, 202.6471 221.9951, 205 222.624, 207.3529 223.2484, 209.7059 223.8685, 212.0588 224.4843, 214.4118 225.0958, 216.7647 225.7033, 219.1176 226.3067, 221.4706 226.906, 223.8235 227.5014, 226.1765 228.093, 228.5294 228.6807, 230.8824 229.2646, 233.2353 229.8449, 235.5882 230.4215, 237.9412 230.9945, 240.2941 231.5639, 242.6471 232.1299, 245 232.6924, 247.3529 233.2516, 249.7059 233.8074, 252.0588 234.36, 254.4118 234.9093, 256.7647 235.4554, 259.1176 235.9983, 261.4706 236.5381, 263.8235 237.0749, 266.1765 237.6087, 268.5294 238.1395, 270.8824 238.6673, 273.2353 239.1922, 275.5882 239.7143, 277.9412 240.2336, 280.2941 240.75, 282.6471 241.2637, 285 241.7747, 287.3529 242.283, 289.7059 242.7887, 292.0588 243.2917, 294.4118 243.7922, 296.7647 244.2901, 299.1176 244.7855, 301.4706 245.2784, 303.8235 245.7688, 306.1765 246.2568, 308.5294 246.7425, 310.8824 247.2257, 313.2353 247.7066, 315.5882 248.1852, 317.9412 248.6615, 320.2941 249.1355, 322.6471 249.6073, 325 250.0769, 327.3529 250.5443, 329.7059 251.0095, 332.0588 251.4726, 334.4118 251.9336, 336.7647 252.3925, 339.1176 252.8493, 341.4706 253.3041, 343.8235 253.7569, 346.1765 254.2076, 348.5294 254.6564, 350.8824 255.1032, 353.2353 255.5481, 355.5882 255.9911, 357.9412 256.4321, 360.2941 256.8713, 362.6471 257.3086, 365 257.7441, 367.3529 258.1778, 369.7059 258.6096, 372.0588 259.0397, 374.4118 259.468, 376.7647 259.8946, 379.1176 260.3194, 381.4706 260.7425, 383.8235 261.1639, 386.1765 261.5836, 388.5294 262.0017, 390.8824 262.4181, 393.2353 262.8329, 395.5882 263.2461, 397.9412 263.6576, 400.2941 264.0676, 402.6471 264.476, 405 264.8828, 407.3529 265.2881, 409.7059 265.6918, 412.0588 266.0941, 414.4118 266.4948, 416.7647 266.8941, 419.1176 267.2919, 421.4706 267.6882, 423.8235 268.083, 426.1765 268.4764, 428.5294 268.8684, 430.8824 269.259, 433.2353 269.6482, 435.5882 270.036, 437.9412 270.4224, 440.2941 270.8075, 442.6471 271.1912, 445 271.5736, 447.3529 271.9546, 449.7059 272.3343, 452.0588 272.7128, 454.4118 273.0899, 456.7647 273.4657, 459.1176 273.8403, 461.4706 274.2136, 463.8235 274.5856, 466.1765 274.9564, 468.5294 275.326, 470.8824 275.6943, 473.2353 276.0614, 475.5882 276.4273, 477.9412 276.7921, 480.2941 277.1556, 482.6471 277.5179, 485 277.8791, 487.3529 278.2392, 489.7059 278.5981, 492.0588 278.9558, 494.4118 279.3124, 496.7647 279.6679, 499.1176 280.0223, 501.4706 280.3756, 503.8235 280.7277, 506.1765 281.0788, 508.5294 281.4288, 510.8824 281.7778, 513.2353 282.1256, 515.5882 282.4725, 517.9412 282.8182, 520.2941 283.1629, 522.6471 283.5066, 525 283.8493, 527.3529 284.1909, 529.7059 284.5315, 532.0588 284.8712, 534.4118 285.2098, 536.7647 285.5474, 539.1176 285.8841, 541.4706 286.2198, 543.8235 286.5545, 546.1765 286.8882, 548.5294 287.221, 550.8824 287.5528, 553.2353 287.8837, 555.5882 288.2137, 557.9412 288.5427, 560.2941 288.8708" style="stroke: rgb(7%,18%,25%); stroke-linecap: butt; stroke-width: 1.8; fill: None; fill-rule: evenodd;"/>
+			<path d="M 604,360 L 624,360 Z" style="stroke: rgb(7%,18%,25%); stroke-linecap: butt; stroke-width: 2;"/>
+			<text x="633" y="356" style="font-family: Times-Roman; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,712) scale(1,-1)">Exact continuous</text>
+			<circle cx="89.70588235294117" cy="114.16666666666666" r="3.6" style="stroke: rgb(77%,51%,21%); stroke-linecap: butt; stroke-width: 1; fill: rgb(77%,51%,21%); fill-rule: evenodd;"/>
+			<circle cx="207.35294117647058" cy="114.16666666666666" r="3.6" style="stroke: rgb(77%,51%,21%); stroke-linecap: butt; stroke-width: 1; fill: rgb(77%,51%,21%); fill-rule: evenodd;"/>
+			<circle cx="325.0" cy="114.16666666666666" r="3.6" style="stroke: rgb(77%,51%,21%); stroke-linecap: butt; stroke-width: 1; fill: rgb(77%,51%,21%); fill-rule: evenodd;"/>
+			<circle cx="442.64705882352945" cy="114.16666666666666" r="3.6" style="stroke: rgb(77%,51%,21%); stroke-linecap: butt; stroke-width: 1; fill: rgb(77%,51%,21%); fill-rule: evenodd;"/>
+			<circle cx="560.2941176470589" cy="114.16666666666666" r="3.6" style="stroke: rgb(77%,51%,21%); stroke-linecap: butt; stroke-width: 1; fill: rgb(77%,51%,21%); fill-rule: evenodd;"/>
+			<path d="M 604,332 L 624,332 Z" style="stroke: rgb(77%,51%,21%); stroke-linecap: butt; stroke-width: 2;"/>
+			<text x="633" y="328" style="font-family: Times-Roman; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,656) scale(1,-1)">Iteration 1</text>
+			<circle cx="89.70588235294117" cy="212.49999999999997" r="3.6" style="stroke: rgb(32%,51%,67%); stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,51%,67%); fill-rule: evenodd;"/>
+			<circle cx="207.35294117647058" cy="212.49999999999997" r="3.6" style="stroke: rgb(32%,51%,67%); stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,51%,67%); fill-rule: evenodd;"/>
+			<circle cx="325.0" cy="212.49999999999997" r="3.6" style="stroke: rgb(32%,51%,67%); stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,51%,67%); fill-rule: evenodd;"/>
+			<circle cx="442.64705882352945" cy="212.49999999999997" r="3.6" style="stroke: rgb(32%,51%,67%); stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,51%,67%); fill-rule: evenodd;"/>
+			<circle cx="560.2941176470589" cy="310.83333333333326" r="3.6" style="stroke: rgb(32%,51%,67%); stroke-linecap: butt; stroke-width: 1; fill: rgb(32%,51%,67%); fill-rule: evenodd;"/>
+			<path d="M 604,304 L 624,304 Z" style="stroke: rgb(32%,51%,67%); stroke-linecap: butt; stroke-width: 2;"/>
+			<text x="633" y="300" style="font-family: Times-Roman; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,600) scale(1,-1)">Iteration 2</text>
+			<circle cx="89.70588235294117" cy="212.49999999999997" r="3.6" style="stroke: rgb(14%,51%,40%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,51%,40%); fill-rule: evenodd;"/>
+			<circle cx="207.35294117647058" cy="212.49999999999997" r="3.6" style="stroke: rgb(14%,51%,40%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,51%,40%); fill-rule: evenodd;"/>
+			<circle cx="325.0" cy="212.49999999999997" r="3.6" style="stroke: rgb(14%,51%,40%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,51%,40%); fill-rule: evenodd;"/>
+			<circle cx="442.64705882352945" cy="310.83333333333326" r="3.6" style="stroke: rgb(14%,51%,40%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,51%,40%); fill-rule: evenodd;"/>
+			<circle cx="560.2941176470589" cy="310.83333333333326" r="3.6" style="stroke: rgb(14%,51%,40%); stroke-linecap: butt; stroke-width: 1; fill: rgb(14%,51%,40%); fill-rule: evenodd;"/>
+			<path d="M 604,276 L 624,276 Z" style="stroke: rgb(14%,51%,40%); stroke-linecap: butt; stroke-width: 2;"/>
+			<text x="633" y="272" style="font-family: Times-Roman; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,544) scale(1,-1)">Converged grid</text>
+		</g>
+	</g>
+</svg>

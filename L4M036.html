@@ -1,0 +1,77 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>原题第 4 问：数值路径与稳态复算 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L4M036"><h1 id="原题第-4-问数值路径与稳态复算">原题第 4
+问：数值路径与稳态复算</h1>
+<p>来源：Lecture4.pdf，PDF 第 79、83 页。</p>
+<h2 id="method">本步讲解</h2>
+<p>得到
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>α</mi><mi>β</mi><msup><mi>K</mi><mi>α</mi></msup></mrow><annotation encoding="application/x-tex">H(K)=\alpha\beta K^\alpha</annotation></semantics></math></span>
+后，数值计算按“先算储蓄率，再算当期产出，最后分配消费与资本”进行。正稳态由
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>K</mi><mo>*</mo></msup><mo>=</mo><mi>α</mi><mi>β</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>K</mi><mo>*</mo></msup><msup><mo stretchy="false" form="postfix">)</mo><mi>α</mi></msup></mrow><annotation encoding="application/x-tex">K^*=\alpha\beta(K^*)^\alpha</annotation></semantics></math></span>
+得
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>K</mi><mo>*</mo></msup><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>α</mi><mi>β</mi><msup><mo stretchy="false" form="postfix">)</mo><mrow><mn>1</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>α</mi><mo stretchy="false" form="postfix">)</mo></mrow></msup></mrow><annotation encoding="application/x-tex">K^*=(\alpha\beta)^{1/(1-\alpha)}</annotation></semantics></math></span>。</p>
+<p>稳态是重复使用同一政策后不再变的状态；<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mn>1</mn></msub><annotation encoding="application/x-tex">K_1</annotation></semantics></math></span>
+是给定初值只走一步的结果，两者通常不同。核验稳态时应把结果代回政策，而不只记公式。四讲至此形成闭环：环境确定约束，家庭和企业优化，价格与资源出清，最后由一致性确定动态规律。</p>
+<h2 id="example-a">例题 A · 编辑示范</h2>
+<p>编辑示范：<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">\alpha=1/2</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mn>0.8</mn></mrow><annotation encoding="application/x-tex">\beta=0.8</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>0</mn></msub><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">K_0=4</annotation></semantics></math></span>。求
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>1</mn></msub><mo>,</mo><msub><mi>c</mi><mn>0</mn></msub><mo>,</mo><msup><mi>K</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">K_1,c_0,K^*</annotation></semantics></math></span>
+并核对资源。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>储蓄率
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.4</mn><annotation encoding="application/x-tex">0.4</annotation></semantics></math></span>，产出为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>；故
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>1</mn></msub><mo>=</mo><mn>0.8</mn></mrow><annotation encoding="application/x-tex">K_1=0.8</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mn>0</mn></msub><mo>=</mo><mn>1.2</mn></mrow><annotation encoding="application/x-tex">c_0=1.2</annotation></semantics></math></span>，和为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>。稳态
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>K</mi><mo>*</mo></msup><mo>=</mo><msup><mn>0.4</mn><mn>2</mn></msup><mo>=</mo><mn>0.16</mn></mrow><annotation encoding="application/x-tex">K^*=0.4^2=0.16</annotation></semantics></math></span>，代回
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.4</mn><msqrt><mn>0.16</mn></msqrt><mo>=</mo><mn>0.16</mn></mrow><annotation encoding="application/x-tex">0.4\sqrt{0.16}=0.16</annotation></semantics></math></span>。</p>
+</details>
+<h2 id="practice-b">材料原题</h2><p class="source-label">材料原题 · PDF 第 78–83 页，第 4 问</p><p><strong>原题共享条件（Lecture4 第 78 页）：</strong> 代表性家庭偏好为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mi>∞</mi></msubsup><msup><mi>β</mi><mi>t</mi></msup><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><msub><mi>c</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">\sum_{t=0}^{\infty}\beta^t\ln c_t</annotation></semantics></math></span>，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>β</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0&lt;\beta&lt;1</annotation></semantics></math></span>；拥有资本并无弹性供给一单位劳动。竞争企业技术为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo>,</mo><mi>N</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>K</mi><mi>α</mi></msup><msup><mi>N</mi><mrow><mn>1</mn><mo>−</mo><mi>α</mi></mrow></msup></mrow><annotation encoding="application/x-tex">F(K,N)=K^\alpha N^{1-\alpha}</annotation></semantics></math></span>，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>α</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0&lt;\alpha&lt;1</annotation></semantics></math></span>，资本完全折旧。<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math></span>
+为家庭资本，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math></span>
+为总量资本；家庭把
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mi>w</mi><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><msup><mi>K</mi><mo>′</mo></msup><mo>=</mo><mi>H</mi><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">r(K),w(K),K&#39;=H(K)</annotation></semantics></math></span>
+视为给定。消费严格正，资本非负，初值给定，路径满足相应无限期可行与尾部条件。</p>
+<p><strong>第 4 问：</strong> 取
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mn>0.3</mn></mrow><annotation encoding="application/x-tex">\alpha=0.3</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mn>0.96</mn></mrow><annotation encoding="application/x-tex">\beta=0.96</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">K_0=1</annotation></semantics></math></span>，计算
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mn>1</mn></msub><annotation encoding="application/x-tex">K_1</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>c</mi><mn>0</mn></msub><annotation encoding="application/x-tex">c_0</annotation></semantics></math></span>
+和稳态资本
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>K</mi><mo>*</mo></msup><annotation encoding="application/x-tex">K^*</annotation></semantics></math></span>。</p><div class="practice-controls" data-question-id="L4E004" data-module-id="L4M036" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p>先算
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mi>β</mi><mo>=</mo><mn>0.288</mn></mrow><annotation encoding="application/x-tex">\alpha\beta=0.288</annotation></semantics></math></span>，当前产出
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>1</mn><mn>0.3</mn></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">1^{0.3}=1</annotation></semantics></math></span>。因此
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>1</mn></msub><mo>=</mo><mn>0.288</mn><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>c</mi><mn>0</mn></msub><mo>=</mo><mn>0.712</mn><mo>,</mo></mrow><annotation encoding="application/x-tex">K_1=0.288,\qquad c_0=0.712,</annotation></semantics></math></div>
+两者之和为一。稳态为
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>K</mi><mo>*</mo></msup><mo>=</mo><msup><mn>0.288</mn><mrow><mn>1</mn><mi>/</mi><mn>0.7</mn></mrow></msup><mo>≈</mo><mn>0.1689287443</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">K^*=0.288^{1/0.7}\approx0.1689287443.</annotation></semantics></math></div>
+四舍五入到三位小数为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.169</mn><annotation encoding="application/x-tex">0.169</annotation></semantics></math></span>，与原页一致。这里
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>1</mn></msub><mo>&gt;</mo><msup><mi>K</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">K_1&gt;K^*</annotation></semantics></math></span>，后续会继续下降；不能把第一期资本
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.288</mn><annotation encoding="application/x-tex">0.288</annotation></semantics></math></span>
+误认作稳态。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>按政策计算一步与稳态，再用资源恒等式和固定点回代复核。</p>
+<details class="prepared-review"><summary>精选回顾（回看不记分）</summary><h2 id="review">精选回顾</h2><p>四讲最后需要联合求什么，而不只是背一个 Euler 方程？</p><h2 id="review-answer">回顾答案</h2><details>
+<summary>
+回忆后查看
+</summary>
+<p>需要从经济环境联合确定可行配置、私人最优、价格、市场出清和预期一致的总量规律，并核验边界与数值解。</p>
+</details></details></article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

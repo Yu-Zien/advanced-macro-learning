@@ -1,0 +1,41 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>模型把假设与结论分开 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L1M001"><h1 id="模型把假设与结论分开">模型把假设与结论分开</h1>
+<p>来源：Lecture1，PDF 第 1–7
+页。目标：辨认一个模型的假设、约束、行为与结论。</p>
+<h2 id="method">讲解与方法</h2>
+<p>这门课最终要解的是：家庭和企业如何选择，价格如何把他们的选择协调起来。本讲先学习建模语言，再亲手解一个交换经济；第
+2 讲评价效率和摩擦，第 3 讲加入生产与资本，第 4
+讲把无限期问题写成递归形式。AIO 与 slides 只补足主线所需的知识。</p>
+<p>一个宏观模型是一组明确的<strong>经济环境和均衡条件</strong>。环境规定有哪些主体、商品、制度，主体拥有什么、观察到什么、能够做什么。最优行为与市场出清共同决定价格和配置。配置是“谁在何时得到或使用多少资源”的完整安排。</p>
+<p>要区分四层：假设给出环境；约束排除做不到的选择；行为在可行选择中择优；结论由前面条件推导。这样才能组织思考、让别人重复推导，并在同一基准上加入新机制积累知识。模型有意省略细节，但若细节会改变研究问题相关的可行集合、最优选择或均衡条件，就不能随意省略。</p>
+<p>政策分析还要区分事前、事后和反事实。事前问主体根据当时信息怎样选；事后问结果实现后各人得到什么；反事实把另一项政策放入同一套机制重新求解。同一个经济在同一时点不可能既加税又不加税，历史数据只能记录实现的一条路径，模型提供可比较的另一条路径。</p>
+<h2 id="example-a">例题 A</h2>
+<p>研究“借款限制怎样影响当前消费”。把“禁止借款、收入暂时低、家庭尽量维持消费、消费下降”分到模型的四层，并说明何种细节不能省略。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>“收入暂时低”是收入过程的假设；“禁止借款”进入约束；“尽量维持消费”是需要由偏好与约束推导的行为动机；“消费下降”才是待证明的结果。是否存在可用储蓄不能轻易省略：有储蓄的家庭可能先动用储蓄，消费未必下降。</p>
+</details>
+<h2 id="practice-b">练习 B</h2><p class="source-label">新增练习 · 练习本课 A 已示范的核心动作</p><p>研究“所得税提高后劳动时间怎样变化”。分别举出一个假设、约束、行为问题和待求结论，再说明反事实比较怎样做。</p><div class="practice-controls" data-question-id="L1B001" data-module-id="L1M001" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+查看参考解
+</summary>
+<p>可设家庭重视消费且厌恶劳动；预算约束记录税后劳动收入；行为问题是在预算允许下选消费和工时；待求结论是均衡工时增加还是减少。反事实需要分别在原税率和新税率下求解，其他保持不变的假设应明确。不能先把“加税必然少工作”当成模型假设。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>模型的价值在于让结论有可追踪的假设、约束与推理来源。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

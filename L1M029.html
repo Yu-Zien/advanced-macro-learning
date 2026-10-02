@@ -1,0 +1,83 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>把候选解逐项验成均衡 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L1M029"><h1 id="把候选解逐项验成均衡">把候选解逐项验成均衡</h1>
+<p>来源：Lecture1，PDF 第 59–61、71
+页。目标：连贯核验正性、预算、最优与出清。</p>
+<h2 id="method">讲解与方法</h2>
+<p>本课把前面拆开的步骤合成完整论证。给定
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>β</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0&lt;\beta&lt;1</annotation></semantics></math></span>，候选价格和配置为</p>
+<p><div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>p</mi><mi>t</mi><mo>*</mo></msubsup><mo>=</mo><msup><mi>β</mi><mi>t</mi></msup><mo>,</mo><mspace width="2.0em"></mspace><msubsup><mi>c</mi><mi>t</mi><mrow><mn>1</mn><mo>*</mo></mrow></msubsup><mo>=</mo><mfrac><mn>2</mn><mrow><mn>1</mn><mo>+</mo><mi>β</mi></mrow></mfrac><mo>,</mo><mspace width="2.0em"></mspace><msubsup><mi>c</mi><mi>t</mi><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><mo>=</mo><mfrac><mrow><mn>2</mn><mi>β</mi></mrow><mrow><mn>1</mn><mo>+</mo><mi>β</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">p_t^*=\beta^t,\qquad c_t^{1*}=\frac2{1+\beta},\qquad c_t^{2*}=\frac{2\beta}{1+\beta}.</annotation></semantics></math></div></p>
+<p>先检查所有消费和价格严格为正；价格归一化满足
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p_0=1</annotation></semantics></math></span>。两家庭财富分别为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><msup><mi>β</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">2/(1-\beta^2)</annotation></semantics></math></span>
+与
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>β</mi><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><msup><mi>β</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">2\beta/(1-\beta^2)</annotation></semantics></math></span>，有限且为正。各自恒定消费的现值恰等于对应财富。</p>
+<p>再检查最优：选
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>λ</mi><mi>i</mi></msup><mo>=</mo><mn>1</mn><mi>/</mi><msup><mover><mi>c</mi><mo accent="true">‾</mo></mover><mi>i</mi></msup></mrow><annotation encoding="application/x-tex">\lambda^i=1/\bar c^i</annotation></semantics></math></span>，就有
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>β</mi><mi>t</mi></msup><mi>/</mi><msup><mover><mi>c</mi><mo accent="true">‾</mo></mover><mi>i</mi></msup><mo>=</mo><msup><mi>λ</mi><mi>i</mi></msup><msubsup><mi>p</mi><mi>t</mi><mo>*</mo></msubsup></mrow><annotation encoding="application/x-tex">\beta^t/\bar c^i=\lambda^ip_t^*</annotation></semantics></math></span>。候选效用为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><msup><mover><mi>c</mi><mo accent="true">‾</mo></mover><mi>i</mi></msup><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>β</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\ln\bar c^i/(1-\beta)</annotation></semantics></math></span>，有限；<a
+href="L1M021.html#method">凹性充分性论证</a>保证每户确实最优，而不只是满足形式条件。</p>
+<p>最后每期
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mi>t</mi><mrow><mn>1</mn><mo>*</mo></mrow></msubsup><mo>+</mo><msubsup><mi>c</mi><mi>t</mi><mrow><mn>2</mn><mo>*</mo></mrow></msubsup><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">c_t^{1*}+c_t^{2*}=2</annotation></semantics></math></span>。也可看净交易：偶数期，家庭
+1 净卖
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>−</mo><msup><mover><mi>c</mi><mo accent="true">‾</mo></mover><mn>1</mn></msup><mo>=</mo><msup><mover><mi>c</mi><mo accent="true">‾</mo></mover><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">2-\bar c^1=\bar c^2</annotation></semantics></math></span>，家庭
+2 净买同量；奇数期家庭 1 净买
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mover><mi>c</mi><mo accent="true">‾</mo></mover><mn>1</mn></msup><annotation encoding="application/x-tex">\bar c^1</annotation></semantics></math></span>，家庭
+2 净卖同量。每个日期净交易都加总为零，且每户交易现值为零。</p>
+<p>由此候选满足完整均衡定义。反过来，任何满足上述内点最优与出清条件的均衡，都必须有共同增长
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>、归一化价格
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>β</mi><mi>t</mi></msup><annotation encoding="application/x-tex">\beta^t</annotation></semantics></math></span>，再由预算得到同样消费，因此在这些条件下解唯一。</p>
+<h2 id="example-a">例题 A</h2>
+<p>令
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">\beta=1/2</annotation></semantics></math></span>，列第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0,1</annotation></semantics></math></span>
+期家庭 1 和家庭 2 的净交易，并检查它们在每期的和。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>恒定消费为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mi>/</mi><mn>3</mn><mo>,</mo><mn>2</mn><mi>/</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(4/3,2/3)</annotation></semantics></math></span>。第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+期净交易为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>2</mn><mi>/</mi><mn>3</mn><mo>,</mo><mn>2</mn><mi>/</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(-2/3,2/3)</annotation></semantics></math></span>；第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+期为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mi>/</mi><mn>3</mn><mo>,</mo><mi>−</mi><mn>4</mn><mi>/</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(4/3,-4/3)</annotation></semantics></math></span>。每期和都为零。家庭
+1 的全序列净现值也为消费现值减财富
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mi>/</mi><mn>3</mn><mo>−</mo><mn>8</mn><mi>/</mi><mn>3</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">8/3-8/3=0</annotation></semantics></math></span>。</p>
+</details>
+<h2 id="practice-b">练习 B</h2><p class="source-label">新增练习 · 练习本课 A 已示范的核心动作</p><p>令
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mn>2</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">\beta=2/3</annotation></semantics></math></span>，列第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0,1</annotation></semantics></math></span>
+期净交易，并给出家庭 2 的乘子，检查它的一阶条件。</p><div class="practice-controls" data-question-id="L1B029" data-module-id="L1M029" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+查看参考解
+</summary>
+<p>消费为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>6</mn><mi>/</mi><mn>5</mn><mo>,</mo><mn>4</mn><mi>/</mi><mn>5</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(6/5,4/5)</annotation></semantics></math></span>。第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+期净交易
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>4</mn><mi>/</mi><mn>5</mn><mo>,</mo><mn>4</mn><mi>/</mi><mn>5</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(-4/5,4/5)</annotation></semantics></math></span>，第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+期为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>6</mn><mi>/</mi><mn>5</mn><mo>,</mo><mi>−</mi><mn>6</mn><mi>/</mi><mn>5</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(6/5,-6/5)</annotation></semantics></math></span>，和均为零。家庭
+2 乘子
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>λ</mi><mn>2</mn></msup><mo>=</mo><mn>5</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">\lambda^2=5/4</annotation></semantics></math></span>；每期
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>β</mi><mi>t</mi></msup><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mi>/</mi><mn>5</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>5</mn><mi>/</mi><mn>4</mn><mo stretchy="false" form="postfix">)</mo><msup><mi>β</mi><mi>t</mi></msup><mo>=</mo><msup><mi>λ</mi><mn>2</mn></msup><msub><mi>p</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">\beta^t/(4/5)=(5/4)\beta^t=\lambda^2p_t</annotation></semantics></math></span>。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>均衡验证要覆盖个体最优与预算，也要覆盖每一期的市场协调。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

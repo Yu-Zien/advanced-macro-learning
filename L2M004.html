@@ -1,0 +1,69 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>用反证法证明正权重计划者解有效 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L2M004"><h1
+id="用反证法证明正权重计划者解有效">用反证法证明正权重计划者解有效</h1>
+<p>来源：Lecture 2，PDF 第 10 页。</p>
+<h2 id="method">这一步解决什么</h2>
+<p>求到了候选配置，还要证明它满足效率定义。<strong>命题：</strong>若一个可行配置最大化
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><msup><mi>U</mi><mn>1</mn></msup><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>θ</mi><mo stretchy="false" form="postfix">)</mo><msup><mi>U</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\theta U^1+(1-\theta)U^2</annotation></semantics></math></span>，两个权重严格为正，效用和比较定义良好，则它
+Pareto 有效。</p>
+<p><strong>完整证明。</strong>设最大化配置为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>c</mi><mrow><mi>S</mi><mi>P</mi></mrow></msup><annotation encoding="application/x-tex">c^{SP}</annotation></semantics></math></span>。反设它无效。按无效的定义，存在可行
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>c</mi><mo accent="true">̃</mo></mover><annotation encoding="application/x-tex">\widetilde c</annotation></semantics></math></span>，满足两人效用都不降低，至少一人严格提高。把第一人的效用变化乘
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\theta&gt;0</annotation></semantics></math></span>，第二人的变化乘
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>θ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">1-\theta&gt;0</annotation></semantics></math></span>：两项非负，至少一项正，因此
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><msup><mi>U</mi><mn>1</mn></msup><mo stretchy="false" form="prefix">(</mo><msup><mover><mi>c</mi><mo accent="true">̃</mo></mover><mn>1</mn></msup><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>θ</mi><mo stretchy="false" form="postfix">)</mo><msup><mi>U</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><msup><mover><mi>c</mi><mo accent="true">̃</mo></mover><mn>2</mn></msup><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mi>θ</mi><msup><mi>U</mi><mn>1</mn></msup><mo stretchy="false" form="prefix">(</mo><msup><mi>c</mi><mrow><mn>1</mn><mo>,</mo><mi>S</mi><mi>P</mi></mrow></msup><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>θ</mi><mo stretchy="false" form="postfix">)</mo><msup><mi>U</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><msup><mi>c</mi><mrow><mn>2</mn><mo>,</mo><mi>S</mi><mi>P</mi></mrow></msup><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">\theta U^1(\widetilde c^1)+(1-\theta)U^2(\widetilde c^2)&gt;\theta U^1(c^{1,SP})+(1-\theta)U^2(c^{2,SP}).</annotation></semantics></math></div>
+但
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>c</mi><mo accent="true">̃</mo></mover><annotation encoding="application/x-tex">\widetilde c</annotation></semantics></math></span>
+可行，违反最大化的定义，矛盾。故不存在 Pareto 改进。</p>
+<p>正权重在“至少一项正”这一步真正起作用。如果被改善的人权重为零，加权目标可能完全不变。这时不能使用本证明；在某些具体模型里零权重解仍有效，但不是这个一般论证保证的。这个方向不依赖“市场是否存在”，也不要求先构造价格。</p>
+<h2 id="example-a">例题 A：编辑示范</h2>
+<p>配置
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math></span>
+最大化
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.3</mn><msup><mi>U</mi><mn>1</mn></msup><mo>+</mo><mn>0.7</mn><msup><mi>U</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">0.3U^1+0.7U^2</annotation></semantics></math></span>。声称有可行
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math></span>
+使两人效用分别改变
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+与
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.2</mn><annotation encoding="application/x-tex">0.2</annotation></semantics></math></span>。写出矛盾。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>加权目标增加
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.3</mn><mo>×</mo><mn>0</mn><mo>+</mo><mn>0.7</mn><mo>×</mo><mn>0.2</mn><mo>=</mo><mn>0.14</mn><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">0.3\times0+0.7\times0.2=0.14&gt;0</annotation></semantics></math></span>。既然
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math></span>
+可行，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math></span>
+就不是最大值，和已知相矛盾。</p>
+</details>
+<h2 id="practice-b">补充练习 B</h2><p class="source-label">新增练习 · 编辑补充：练习本课 A 已完整示范的方法或条件判断。</p><p>配置
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math></span>
+最大化
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.4</mn><msup><mi>U</mi><mn>1</mn></msup><mo>+</mo><mn>0.6</mn><msup><mi>U</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">0.4U^1+0.6U^2</annotation></semantics></math></span>。若可行
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math></span>
+的效用变化为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>0.5</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(0.5,0)</annotation></semantics></math></span>，为什么不可能？若家庭
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+权重改为零，原证明哪一步失效？</p><div class="practice-controls" data-question-id="L2B004" data-module-id="L2M004" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p>原权重下目标增加
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.4</mn><mo>×</mo><mn>0.5</mn><mo>=</mo><mn>0.2</mn><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">0.4\times0.5=0.2&gt;0</annotation></semantics></math></span>，违反最大化。权重变为零后改进者的正效用变化乘零，加权目标未必严格上升，无法得到矛盾。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>正福利权重把任意 Pareto 改进转成加权目标的严格上升。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

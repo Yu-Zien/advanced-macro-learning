@@ -1,0 +1,92 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>有限终值、No-Ponzi 与 TVC 分别做什么 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L2M027"><h1 id="有限终值no-ponzi-与-tvc-分别做什么">有限终值、No-Ponzi 与 TVC
+分别做什么</h1>
+<p>来源：Lecture 2，PDF 第 48–49 页。</p>
+<h2 id="method">这一步解决什么</h2>
+<p>三类条件有不同逻辑，不能只看形式都像“某个末端为零”。</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>条件</th>
+<th>何时使用</th>
+<th>条件来自哪里</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>有限期终值条件</td>
+<td>有真实最后一期</td>
+<td>给定终值、遗赠价值或终端最优选择</td>
+<td>和初值共同封闭有限路径</td>
+</tr>
+<tr>
+<td>No-Ponzi</td>
+<td>无限期家庭资产可行集合</td>
+<td>模型允许的偿债制度</td>
+<td>优化前排除永久续借</td>
+</tr>
+<tr>
+<td>TVC</td>
+<td>无限期候选最优路径</td>
+<td>该优化问题的边界最优性</td>
+<td>排除未利用的正影子价值</td>
+</tr>
+</tbody>
+</table>
+<p>讲义提到资本
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">k_{T+1}</annotation></semantics></math></span>。资本是今天保留、用于以后生产的资源；不同于家庭间互为债权债务的债券。有限期无遗赠、末端资本能无损转成消费、效用递增且允许完全消耗时，最优可有
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">k_{T+1}=0</annotation></semantics></math></span>；若有终端价值或技术限制，这个结论就未必成立。</p>
+<p>无限期资本问题没有最后一期，通常要求资本与相应影子价值的乘积在远期满足适用的
+TVC，而非逐项强制资本数量为零。具体资本模型和公式在后续增长讲义学习，本讲只比较条件的角色，不假设已推导资本
+Euler。</p>
+<p>因此正确顺序是：写清真实期限与可行集合，求局部最优条件，再推导或核验对应边界条件。</p>
+<h2 id="example-a">例题 A：编辑示范</h2>
+<p>有限期问题在最后日期仍给每单位剩余资产带来遗赠效用。能直接设末资产为零吗？无限期债券问题应先把
+No-Ponzi 放在哪？</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>不能；应把遗赠效用放进目标，比较末期消费和留下资产的边际价值，得到终端最优条件。No-Ponzi
+要先写入无限期家庭的可行资产序列限制，再在该集合里求最优。</p>
+</details>
+<h2 id="practice-b">补充练习 B</h2><p class="source-label">新增练习 · 编辑补充：练习本课 A 已完整示范的方法或条件判断。</p><p>有人把无限期最优资本路径写成“对每个截断点
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math></span>，令
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">k_{T+1}=0</annotation></semantics></math></span>”。指出错误，并区分
+No-Ponzi 与 TVC 的逻辑性质。</p><div class="practice-controls" data-question-id="L2B027" data-module-id="L2M027" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p>任意截断点不是经济终点，这样会强迫所有未来资本为零，改变原问题。No-Ponzi
+是优化前的偿债可行性限制；TVC
+是给定问题下刻画无限期最优路径的边界条件，通常针对价值而非资本数量。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>先区分真实期限和条件来源，再决定该用终值约束、No-Ponzi 还是 TVC。</p>
+<details class="prepared-review"><summary>精选回顾（回看不记分）</summary><h2 id="review">精选回顾</h2><p>No-Ponzi 和 TVC 的最重要区别是什么？</p><h2 id="review-answer">回顾答案</h2><details>
+<summary>
+回忆后查看
+</summary>
+<p>No-Ponzi 先定义哪些债务路径可选择，TVC
+则在给定可行集合上刻画无限期最优路径；本模型中前者允许长期正资产现值，后者要求其为零。</p>
+</details></details></article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

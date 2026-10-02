@@ -1,0 +1,62 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>反向恢复期初合约，并补齐最优性论证 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L2M020"><h1
+id="反向恢复期初合约并补齐最优性论证">反向恢复期初合约，并补齐最优性论证</h1>
+<p>来源：Lecture 2，PDF 第 36–37 页。</p>
+<h2 id="method">这一步解决什么</h2>
+<p>反向转换不能只换符号。给定正债券价格及序贯均衡，取
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p_0=1</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>p</mi><mi>t</mi></msub><msub><mi>q</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">p_{t+1}=p_tq_t</annotation></semantics></math></span>。对任意逐期可行路径，有限求和式和
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">liminf</mi><mo>&#8289;</mo></mrow><msub><mi>p</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><msub><mi>a</mi><mrow><mi>T</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\liminf p_{T+1}a_{T+1}\ge0</annotation></semantics></math></span>
+给
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mo>∑</mo><mrow><mi>t</mi><mo>≥</mo><mn>0</mn></mrow></munder><msub><mi>p</mi><mi>t</mi></msub><msub><mi>c</mi><mi>t</mi></msub><mo>≤</mo><msub><mi>p</mi><mn>0</mn></msub><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><munder><mo>∑</mo><mrow><mi>t</mi><mo>≥</mo><mn>0</mn></mrow></munder><msub><mi>p</mi><mi>t</mi></msub><msub><mi>e</mi><mi>t</mi></msub><mo>,</mo></mrow><annotation encoding="application/x-tex">\sum_{t\ge0}p_tc_t\le p_0a_0+\sum_{t\ge0}p_te_t,</annotation></semantics></math></div>
+这里要求禀赋现值有限、消费与禀赋非负、初始资产有限。论证如下：No-Ponzi
+给定任意
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon&gt;0</annotation></semantics></math></span>
+后，所有足够远的终端资产现值都至少为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi>ε</mi></mrow><annotation encoding="application/x-tex">-\varepsilon</annotation></semantics></math></span>；有限求和式于是把截断消费现值界在“禀赋现值加初始资产加
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math></span>”之下。截断消费和非递减且有上界，因此收敛；先令截断点趋于无穷，再令
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>↓</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon\downarrow0</annotation></semantics></math></span>，得到上式。这就证明序贯可行消费一定是期初预算可行的。第24课将用单独记号和数值练习再次展开这一步。</p>
+<p>上一课证明反方向：任何期初预算可行的消费，都能递推成满足同样长期限制的逐期路径。因此，在这些明确条件下，两种制度投影到<strong>消费序列</strong>上的可行集合相同。目标函数也相同，最大化消费集合便相同。</p>
+<p><strong>最优性继承的反证。</strong>若序贯均衡消费在期初制度中不是最优，存在更好的期初预算可行消费；上一课把它转成序贯可行路径，违反原家庭最优。反向也一样。市场出清则由配置本身与资产构造继承。</p>
+<p>至此得到完整等价结论：在本确定性、完备、偿债条件相容且无额外约束的环境中，两个制度支持相同的均衡消费配置。不同的是交易时点、价格记账和资产头寸，不是消费者得到的每期资源。这里只需可行性证明中使用
+No-Ponzi；最优计划通常又会耗尽预算并满足适用的 TVC。</p>
+<h2 id="example-a">例题 A：编辑示范</h2>
+<p>已知两个制度的消费可行集合相同、目标函数相同。有人说配置
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>c</mi><mo>*</mo></msup><annotation encoding="application/x-tex">c^*</annotation></semantics></math></span>
+在制度 A 最优，但制度 B 存在严格更好的可行配置
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math></span>。用一句反证说明不可能。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math></span>
+在 B 可行，就也在 A 可行；同一效用函数仍认为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math></span>
+严格更好，直接违反
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>c</mi><mo>*</mo></msup><annotation encoding="application/x-tex">c^*</annotation></semantics></math></span>
+在 A 的最优性。</p>
+</details>
+<h2 id="practice-b">补充练习 B</h2><p class="source-label">新增练习 · 编辑补充：练习本课 A 已完整示范的方法或条件判断。</p><p>如果制度 B 新增了某个借款下限，导致 A 的一部分可行消费无法在 B
+实现，还能直接用上述证明吗？请指出失效的步骤。</p><div class="practice-controls" data-question-id="L2B020" data-module-id="L2M020" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p>不能。“A 的任意预算可行消费都可映射为 B
+的可行资产路径”不再成立；递推资产可能越过借款下限。消费可行集合不相同，所以最优性不能无条件继承。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>交易制度等价的核心是消费可行集合相同，而不只是两条 Euler
+方程看起来一样。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

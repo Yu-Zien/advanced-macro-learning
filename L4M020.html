@@ -1,0 +1,61 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>把手算步骤写成可靠的迭代循环 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L4M020"><h1 id="把手算步骤写成可靠的迭代循环">把手算步骤写成可靠的迭代循环</h1>
+<p>来源：Lecture4.pdf，PDF 第 47–48 页。</p>
+<h2 id="method">本步讲解</h2>
+<p>手算矩阵可以直接变成循环。关键是<strong>这一轮所有状态都用同一份旧值</strong>，算完后才替换；否则就不再是本讲表格使用的同步迭代。</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="L4M020.html#cb1-1" aria-hidden="true" tabindex="-1"></a>v_old <span class="op">=</span> [<span class="fl">0.0</span>] <span class="op">*</span> <span class="bu">len</span>(grid)</span>
+<span id="cb1-2"><a href="L4M020.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> iteration <span class="kw">in</span> <span class="bu">range</span>(max_iterations):</span>
+<span id="cb1-3"><a href="L4M020.html#cb1-3" aria-hidden="true" tabindex="-1"></a>    v_new, policy <span class="op">=</span> [], []</span>
+<span id="cb1-4"><a href="L4M020.html#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> k <span class="kw">in</span> grid:</span>
+<span id="cb1-5"><a href="L4M020.html#cb1-5" aria-hidden="true" tabindex="-1"></a>        choices <span class="op">=</span> []</span>
+<span id="cb1-6"><a href="L4M020.html#cb1-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> j, next_k <span class="kw">in</span> <span class="bu">enumerate</span>(grid):</span>
+<span id="cb1-7"><a href="L4M020.html#cb1-7" aria-hidden="true" tabindex="-1"></a>            consumption <span class="op">=</span> k<span class="op">**</span>alpha <span class="op">-</span> next_k</span>
+<span id="cb1-8"><a href="L4M020.html#cb1-8" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> consumption <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb1-9"><a href="L4M020.html#cb1-9" aria-hidden="true" tabindex="-1"></a>                q <span class="op">=</span> log(consumption) <span class="op">+</span> beta <span class="op">*</span> v_old[j]</span>
+<span id="cb1-10"><a href="L4M020.html#cb1-10" aria-hidden="true" tabindex="-1"></a>                choices.append((q, next_k))</span>
+<span id="cb1-11"><a href="L4M020.html#cb1-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> choices:</span>
+<span id="cb1-12"><a href="L4M020.html#cb1-12" aria-hidden="true" tabindex="-1"></a>            <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="st">&quot;这个状态没有可行控制&quot;</span>)</span>
+<span id="cb1-13"><a href="L4M020.html#cb1-13" aria-hidden="true" tabindex="-1"></a>        best_value, best_k <span class="op">=</span> <span class="bu">max</span>(choices, key<span class="op">=</span><span class="kw">lambda</span> pair: pair[<span class="dv">0</span>])</span>
+<span id="cb1-14"><a href="L4M020.html#cb1-14" aria-hidden="true" tabindex="-1"></a>        v_new.append(best_value)</span>
+<span id="cb1-15"><a href="L4M020.html#cb1-15" aria-hidden="true" tabindex="-1"></a>        policy.append(best_k)</span>
+<span id="cb1-16"><a href="L4M020.html#cb1-16" aria-hidden="true" tabindex="-1"></a>    difference <span class="op">=</span> <span class="bu">max</span>(<span class="bu">abs</span>(x<span class="op">-</span>y) <span class="cf">for</span> x, y <span class="kw">in</span> <span class="bu">zip</span>(v_new, v_old))</span>
+<span id="cb1-17"><a href="L4M020.html#cb1-17" aria-hidden="true" tabindex="-1"></a>    v_old <span class="op">=</span> v_new</span>
+<span id="cb1-18"><a href="L4M020.html#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> difference <span class="op">&lt;</span> tolerance:</span>
+<span id="cb1-19"><a href="L4M020.html#cb1-19" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
+<span id="cb1-20"><a href="L4M020.html#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb1-21"><a href="L4M020.html#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">raise</span> <span class="pp">RuntimeError</span>(<span class="st">&quot;未在规定迭代数内收敛&quot;</span>)</span></code></pre></div>
+<p>这段是算法示范，需事先给定网格、参数与对数函数。并列最优时这里保留枚举中先出现的控制。先检查消费再取对数；不可行选择也可给负无穷值，但仍需处理整行都不可行的情况。完成后再做一次更新计算残差；不把达到最大迭代次数也写成“收敛”。</p>
+<h2 id="example-a">例题 A · 编辑示范</h2>
+<p>某实现把续接项写成 <code>beta * v_old[i]</code>，其中 <code>i</code>
+是当前状态行号。问题是什么？</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>续接价值取决于候选下一期状态，应该查候选列号
+<code>j</code>。用行号会让所有候选拥有同一未来价值，无法正确权衡储蓄。</p>
+</details>
+<h2 id="practice-b">练习 B · 补充练习</h2><p class="source-label">新增练习 · 训练本课已演示的方法</p><p>某实现在检查消费前先计算
+<code>log(consumption)</code>，遇到负消费后才尝试忽略该选项；还有一行没有任何可行控制。分别如何修复？</p><div class="practice-controls" data-question-id="L4B020" data-module-id="L4M020" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p>必须先判断消费严格大于零，再取对数或将不可行目标置为负无穷；整行没有可行控制应明确报错或修正网格，而非返回一个伪政策。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>正确索引、同步更新、先筛可行性和明确停止原因，是数值算法的基本要求。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

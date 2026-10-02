@@ -1,0 +1,66 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>相邻条件与跨期边际替代率 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L1M022"><h1 id="相邻条件与跨期边际替代率">相邻条件与跨期边际替代率</h1>
+<p>来源：Lecture1，PDF 第 47–48 页。目标：约去乘子，解释 MRS
+的方向和单位。</p>
+<h2 id="method">讲解与方法</h2>
+<p>同一家庭各期条件含相同乘子。对一般可微的一期效用，有
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>β</mi><mi>t</mi></msup><msup><mi>u</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><msubsup><mi>c</mi><mi>t</mi><mi>i</mi></msubsup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>λ</mi><mi>i</mi></msup><msub><mi>p</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">\beta^tu^{\prime}(c_t^i)=\lambda^ip_t</annotation></semantics></math></span>
+和
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>β</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msup><msup><mi>u</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><msubsup><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow><mi>i</mi></msubsup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>λ</mi><mi>i</mi></msup><msub><mi>p</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">\beta^{t+1}u^{\prime}(c_{t+1}^i)=\lambda^ip_{t+1}</annotation></semantics></math></span>。前式除以后式，约去
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>λ</mi><mi>i</mi></msup><annotation encoding="application/x-tex">\lambda^i</annotation></semantics></math></span>
+和共同的
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>β</mi><mi>t</mi></msup><annotation encoding="application/x-tex">\beta^t</annotation></semantics></math></span>：</p>
+<p><div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><msup><mi>u</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><msubsup><mi>c</mi><mi>t</mi><mi>i</mi></msubsup><mo stretchy="false" form="postfix">)</mo></mrow><mrow><mi>β</mi><msup><mi>u</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><msubsup><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow><mi>i</mi></msubsup><mo stretchy="false" form="postfix">)</mo></mrow></mfrac><mo>=</mo><mfrac><msub><mi>p</mi><mi>t</mi></msub><msub><mi>p</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">\frac{u^{\prime}(c_t^i)}{\beta u^{\prime}(c_{t+1}^i)}=\frac{p_t}{p_{t+1}}.</annotation></semantics></math></div></p>
+<p>左边定义为跨期边际替代率
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">R</mi><mi mathvariant="normal">S</mi></mrow><mrow><mi>t</mi><mo>,</mo><mi>t</mi><mo>+</mo><mn>1</mn></mrow><mi>i</mi></msubsup><annotation encoding="application/x-tex">\mathrm{MRS}_{t,t+1}^i</annotation></semantics></math></span>。它是减少一小单位本期消费时，为保持效用不变所需增加的下一期消费量。因为微小效用变化为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>β</mi><mi>t</mi></msup><msup><mi>u</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><msub><mi>c</mi><mi>t</mi></msub><mo stretchy="false" form="postfix">)</mo><mspace width="0.167em"></mspace><mi>d</mi><msub><mi>c</mi><mi>t</mi></msub><mo>+</mo><msup><mi>β</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msup><msup><mi>u</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="postfix">)</mo><mspace width="0.167em"></mspace><mi>d</mi><msub><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">\beta^tu^{\prime}(c_t)\,dc_t+\beta^{t+1}u^{\prime}(c_{t+1})\,dc_{t+1}</annotation></semantics></math></span>，令其为零，并取
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><msub><mi>c</mi><mi>t</mi></msub><mo>=</mo><mi>−</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">dc_t=-1</annotation></semantics></math></span>
+的边际单位，得到上述比率。这个“单位”是边际斜率解释，不是对一次大幅调整的精确补偿。</p>
+<p>右边是市场交换比：卖一单位本期消费收到
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>t</mi></msub><annotation encoding="application/x-tex">p_t</annotation></semantics></math></span>，可以买
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>t</mi></msub><mi>/</mi><msub><mi>p</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">p_t/p_{t+1}</annotation></semantics></math></span>
+单位下一期消费。最优把个人愿意交换的边际比例与市场允许的比例对齐。</p>
+<p>对数效用
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>u</mi><mi>′</mi></msup><mo>=</mo><mn>1</mn><mi>/</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">u^{\prime}=1/c</annotation></semantics></math></span>，所以
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">R</mi><mi mathvariant="normal">S</mi></mrow><mo>=</mo><msubsup><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow><mi>i</mi></msubsup><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>β</mi><msubsup><mi>c</mi><mi>t</mi><mi>i</mi></msubsup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{MRS}=c_{t+1}^i/(\beta c_t^i)</annotation></semantics></math></span>，得到
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow><mi>i</mi></msubsup><mi>/</mi><msubsup><mi>c</mi><mi>t</mi><mi>i</mi></msubsup><mo>=</mo><mi>β</mi><msub><mi>p</mi><mi>t</mi></msub><mi>/</mi><msub><mi>p</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">c_{t+1}^i/c_t^i=\beta p_t/p_{t+1}</annotation></semantics></math></span>。这只决定相邻消费比例，水平还得靠预算。</p>
+<h2 id="example-a">例题 A</h2>
+<p>若
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">\beta=1/2</annotation></semantics></math></span>、两期消费都是
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>，求
+MRS。价格比为多少时两期边际条件相容？</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">R</mi><mi mathvariant="normal">S</mi></mrow><mo>=</mo><mn>2</mn><mi>/</mi><mo stretchy="false" form="prefix">[</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>/</mi><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mn>2</mn><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\mathrm{MRS}=2/[(1/2)2]=2</annotation></semantics></math></span>。需要
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>t</mi></msub><mi>/</mi><msub><mi>p</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">p_t/p_{t+1}=2</annotation></semantics></math></span>。这表示边际少消费本期一单位，要增加下期两单位才补偿；市场也恰好给两单位。</p>
+</details>
+<h2 id="practice-b">练习 B</h2><p class="source-label">新增练习 · 练习本课 A 已示范的核心动作</p><p>若
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mn>3</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">\beta=3/4</annotation></semantics></math></span>、本期消费
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>、下期消费
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math></span>，求
+MRS 与相容价格比。若把两期消费同时翻倍，MRS 是否改变？</p><div class="practice-controls" data-question-id="L1B022" data-module-id="L1M022" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+查看参考解
+</summary>
+<p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">R</mi><mi mathvariant="normal">S</mi></mrow><mo>=</mo><mn>3</mn><mi>/</mi><mo stretchy="false" form="prefix">[</mo><mo stretchy="false" form="prefix">(</mo><mn>3</mn><mi>/</mi><mn>4</mn><mo stretchy="false" form="postfix">)</mo><mn>2</mn><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\mathrm{MRS}=3/[(3/4)2]=2</annotation></semantics></math></span>，故价格比应为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>。同时翻倍后比率不变，说明仅有
+MRS 条件不能确定消费水平。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>MRS 的单位是“未来消费/当前消费”，最优时等于对应的市场价格比。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

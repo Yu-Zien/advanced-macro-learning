@@ -1,0 +1,70 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>用预期理解 Lucas 批判 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L1M005"><h1 id="用预期理解-lucas-批判">用预期理解 Lucas 批判</h1>
+<p>来源：Lecture1，PDF 第 13–14
+页。目标：解释政策规则为何改变历史行为关系。</p>
+<h2 id="method">讲解与方法</h2>
+<p>本课把微观基础的政策用途放进一个具体例子。历史上估计的总量关系往往同时包含当时的政策规则、私人预期和最优反应。政策规则改变后，预期和约束可能改变，个体决策随之改变，所以原来的统计关系未必保持不变。这是
+Lucas 批判的核心。</p>
+<p>讲义先写历史 Phillips 关系
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>π</mi><mi>t</mi></msub><mo>=</mo><mi>a</mi><mo>−</mo><mi>b</mi><msub><mi>u</mi><mi>t</mi></msub><mo>+</mo><msub><mi>ε</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">\pi_t=a-bu_t+\varepsilon_t</annotation></semantics></math></span>，其中
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>π</mi><mi>t</mi></msub><annotation encoding="application/x-tex">\pi_t</annotation></semantics></math></span>
+是通胀率，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>u</mi><mi>t</mi></msub><annotation encoding="application/x-tex">u_t</annotation></semantics></math></span>
+是失业率，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">b&gt;0</annotation></semantics></math></span>，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math></span>
+是截距，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ε</mi><mi>t</mi></msub><annotation encoding="application/x-tex">\varepsilon_t</annotation></semantics></math></span>
+是未解释的扰动。负相关并不代表政府可以永久沿这条线任选低失业、高通胀的组合。</p>
+<p>带预期的示意关系为</p>
+<p><div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>π</mi><mi>t</mi></msub><mo>−</mo><msub><mi>E</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><msub><mi>π</mi><mi>t</mi></msub><mo>=</mo><mi>−</mi><mi>α</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>u</mi><mi>t</mi></msub><mo>−</mo><msup><mi>u</mi><mi>n</mi></msup><mo stretchy="false" form="postfix">)</mo><mo>+</mo><msub><mi>ε</mi><mi>t</mi></msub><mo>,</mo><mspace width="2.0em"></mspace><mi>α</mi><mo>&gt;</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">\pi_t-E_{t-1}\pi_t=-\alpha(u_t-u^n)+\varepsilon_t,\qquad\alpha&gt;0.</annotation></semantics></math></div></p>
+<p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><msub><mi>π</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">E_{t-1}\pi_t</annotation></semantics></math></span>
+是主体根据第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">t-1</annotation></semantics></math></span>
+期信息对本期通胀作的预期；<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>u</mi><mi>n</mi></msup><annotation encoding="application/x-tex">u^n</annotation></semantics></math></span>
+是该示意模型的自然失业率。左边是“实际减预期”的意外通胀。若扰动为零，持续高通胀最终被预期，则左边为零，从而
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mi>t</mi></msub><mo>=</mo><msup><mi>u</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">u_t=u^n</annotation></semantics></math></span>。这是在该关系和预期调整条件下的结论，不是任何一次通胀变化都立刻没有实际影响。</p>
+<p>因果链应完整读成：政策规则改变，预期与约束改变，个体决策改变，历史总量关系可能改变。</p>
+<h2 id="example-a">例题 A</h2>
+<p>设
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\alpha=2</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>u</mi><mi>n</mi></msup><mo>=</mo><mn>0.05</mn></mrow><annotation encoding="application/x-tex">u^n=0.05</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ε</mi><mi>t</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon_t=0</annotation></semantics></math></span>，实际通胀为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.04</mn><annotation encoding="application/x-tex">0.04</annotation></semantics></math></span>，预期为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.02</mn><annotation encoding="application/x-tex">0.02</annotation></semantics></math></span>。算失业率；再算完全预期
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.04</mn><annotation encoding="application/x-tex">0.04</annotation></semantics></math></span>
+时的失业率。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>第一种情况
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.02</mn><mo>=</mo><mi>−</mi><mn>2</mn><mo stretchy="false" form="prefix">(</mo><msub><mi>u</mi><mi>t</mi></msub><mo>−</mo><mn>0.05</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">0.02=-2(u_t-0.05)</annotation></semantics></math></span>，故
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mi>t</mi></msub><mo>=</mo><mn>0.04</mn></mrow><annotation encoding="application/x-tex">u_t=0.04</annotation></semantics></math></span>。第二种情况意外通胀为零，故
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mi>t</mi></msub><mo>=</mo><mn>0.05</mn></mrow><annotation encoding="application/x-tex">u_t=0.05</annotation></semantics></math></span>。起作用的是实际与预期的差，不能只看通胀水平。</p>
+</details>
+<h2 id="practice-b">练习 B</h2><p class="source-label">新增练习 · 练习本课 A 已示范的核心动作</p><p>设
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\alpha=1</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>u</mi><mi>n</mi></msup><mo>=</mo><mn>0.06</mn></mrow><annotation encoding="application/x-tex">u^n=0.06</annotation></semantics></math></span>、扰动为零。实际通胀
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.05</mn><annotation encoding="application/x-tex">0.05</annotation></semantics></math></span>、预期
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.03</mn><annotation encoding="application/x-tex">0.03</annotation></semantics></math></span>
+时失业率多少？预期调整为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.05</mn><annotation encoding="application/x-tex">0.05</annotation></semantics></math></span>
+后呢？说明政策菜单推理出了什么问题。</p><div class="practice-controls" data-question-id="L1B005" data-module-id="L1M005" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+查看参考解
+</summary>
+<p>先有
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.02</mn><mo>=</mo><mi>−</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>u</mi><mi>t</mi></msub><mo>−</mo><mn>0.06</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">0.02=-(u_t-0.06)</annotation></semantics></math></span>，得
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mi>t</mi></msub><mo>=</mo><mn>0.04</mn></mrow><annotation encoding="application/x-tex">u_t=0.04</annotation></semantics></math></span>；预期调整后回到
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.06</mn><annotation encoding="application/x-tex">0.06</annotation></semantics></math></span>。政策菜单推理把旧预期下的关系当成在新规则下仍固定的关系，遗漏了私人预期反应。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>评价新政策规则时，要重新求私人反应，不能机械外推旧制度下的总量关系。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

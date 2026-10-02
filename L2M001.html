@@ -1,0 +1,81 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>先问可行，再问有没有 Pareto 改进 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L2M001"><h1 id="先问可行再问有没有-pareto-改进">先问可行，再问有没有 Pareto
+改进</h1>
+<p>来源：Lecture 2，PDF 第 1–7 页。</p>
+<h2 id="method">这一步解决什么</h2>
+<p>上一讲求出了竞争均衡，本讲要评价它。路线是：先建立效率基准，再改写交易制度，最后加入限制看哪里失去效率。稀缺意味着每期可分配的资源有限；本讲每期总禀赋为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>。</p>
+<p><strong>配置</strong>
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msup><mi>c</mi><mn>1</mn></msup><mo>,</mo><msup><mi>c</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">c=(c^1,c^2)</annotation></semantics></math></span>
+包含两家全部时期的消费，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>c</mi><mi>i</mi></msup><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msubsup><mi>c</mi><mn>0</mn><mi>i</mi></msubsup><mo>,</mo><msubsup><mi>c</mi><mn>1</mn><mi>i</mi></msubsup><mo>,</mo><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">c^i=(c_0^i,c_1^i,\ldots)</annotation></semantics></math></span>。<strong>可行性</strong>只问总资源是否够用：<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mi>t</mi><mn>1</mn></msubsup><mo>+</mo><msubsup><mi>c</mi><mi>t</mi><mn>2</mn></msubsup><mo>≤</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">c_t^1+c_t^2\le2</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mi>t</mi><mi>i</mi></msubsup><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c_t^i&gt;0</annotation></semantics></math></span>。偏好严格递增时有效配置不会浪费，因此有效配置上可写等号。这是社会资源约束；市场出清还需要把它放进价格与个体选择构成的均衡中。</p>
+<p>若另一可行配置
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>c</mi><mo accent="true">̃</mo></mover><annotation encoding="application/x-tex">\widetilde c</annotation></semantics></math></span>
+满足
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>U</mi><mi>i</mi></msup><mo stretchy="false" form="prefix">(</mo><msup><mover><mi>c</mi><mo accent="true">̃</mo></mover><mi>i</mi></msup><mo stretchy="false" form="postfix">)</mo><mo>≥</mo><msup><mi>U</mi><mi>i</mi></msup><mo stretchy="false" form="prefix">(</mo><msup><mi>c</mi><mi>i</mi></msup><mo stretchy="false" form="postfix">)</mo><mspace width="1.0em"></mspace><mrow><mtext mathvariant="normal">对每个家庭 </mtext><mspace width="0.333em"></mspace></mrow><mi>i</mi><mo>,</mo></mrow><annotation encoding="application/x-tex">U^i(\widetilde c^i)\ge U^i(c^i)\quad\text{对每个家庭 }i,</annotation></semantics></math></div>
+且至少一人严格大于，就叫 <strong>Pareto
+改进</strong>。没有任何这样的可行改进，才叫 <strong>Pareto
+有效</strong>。两个“都”不要丢掉：所有家庭不受损、所有时期资源可行。这个标准只比较同一个人的前后效用，不相加比较不同人的效用单位。</p>
+<p>效率不等于平均分配。不能让所有人都不差，不意味着大家一样富；一个配置没有被某一次改动改善，也不能证明不存在任何改进。</p>
+<h2 id="example-a">例题 A：编辑示范</h2>
+<p>单期资源为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>，两人效用都严格递增。配置
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>0.7</mn><mo>,</mo><mn>0.8</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">x=(0.7,0.8)</annotation></semantics></math></span>
+改成
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>0.8</mn><mo>,</mo><mn>0.9</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">y=(0.8,0.9)</annotation></semantics></math></span>
+是 Pareto 改进吗？改成
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1.3</mn><mo>,</mo><mn>0.7</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">z=(1.3,0.7)</annotation></semantics></math></span>
+呢？</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math></span>
+使用
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1.7</mn><mo>≤</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">1.7\le2</annotation></semantics></math></span>
+单位资源，两人消费都增加，因此两人都严格改善。<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math></span>
+虽然可行，但第二人消费从
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.8</mn><annotation encoding="application/x-tex">0.8</annotation></semantics></math></span>
+降到
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.7</mn><annotation encoding="application/x-tex">0.7</annotation></semantics></math></span>，因此不是对
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math></span>
+的 Pareto 改进。单期配置
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1.8</mn><mo>,</mo><mn>0.2</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(1.8,0.2)</annotation></semantics></math></span>
+已用完资源；任何人严格多拿都会让另一人少拿，所以它有效，尽管不平均。</p>
+</details>
+<h2 id="practice-b">补充练习 B</h2><p class="source-label">新增练习 · 编辑补充：练习本课 A 已完整示范的方法或条件判断。</p><p>单期资源为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math></span>，严格递增偏好。从
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">x=(1,1)</annotation></semantics></math></span>
+到
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>1.5</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">y=(1,1.5)</annotation></semantics></math></span>，以及从
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math></span>
+到
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>2.2</mn><mo>,</mo><mn>1.1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">z=(2.2,1.1)</annotation></semantics></math></span>，分别核验可行性和
+Pareto 改进。</p><div class="practice-controls" data-question-id="L2B001" data-module-id="L2M001" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math></span>
+总量为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2.5</mn><mo>≤</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">2.5\le3</annotation></semantics></math></span>，第一人不变、第二人严格改善，所以是
+Pareto
+改进。<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math></span>
+两人都多拿，但需要
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3.3</mn><mo>&gt;</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">3.3&gt;3</annotation></semantics></math></span>，不可行，不能算
+Pareto 改进。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>Pareto 改进必须先可行，再满足所有人不差且至少一人更好。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

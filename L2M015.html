@@ -1,0 +1,64 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>逐期均衡必须同时清算商品和债券 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L2M015"><h1
+id="逐期均衡必须同时清算商品和债券">逐期均衡必须同时清算商品和债券</h1>
+<p>来源：Lecture 2，PDF 第 27–29 页。</p>
+<h2 id="method">这一步解决什么</h2>
+<p><strong>逐期交易均衡</strong>由价格序列
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><msubsup><mi>q</mi><mi>t</mi><mo>*</mo></msubsup><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{q_t^*\}</annotation></semantics></math></span>
+和各家的消费、资产序列
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><msubsup><mi>c</mi><mi>t</mi><mrow><mi>i</mi><mo>*</mo></mrow></msubsup><mo>,</mo><msubsup><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>i</mi><mo>*</mo></mrow></msubsup><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{c_t^{i*},a_{t+1}^{i*}\}</annotation></semantics></math></span>
+组成。给定价格及初始资产，家庭在完整可行集合内最优；每期还有两条出清条件：
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mi>t</mi><mn>1</mn></msubsup><mo>+</mo><msubsup><mi>c</mi><mi>t</mi><mn>2</mn></msubsup><mo>=</mo><msubsup><mi>e</mi><mi>t</mi><mn>1</mn></msubsup><mo>+</mo><msubsup><mi>e</mi><mi>t</mi><mn>2</mn></msubsup><mo>,</mo><mspace width="2.0em"></mspace><msubsup><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow><mn>1</mn></msubsup><mo>+</mo><msubsup><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow><mn>2</mn></msubsup><mo>=</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">c_t^1+c_t^2=e_t^1+e_t^2,\qquad a_{t+1}^1+a_{t+1}^2=0.</annotation></semantics></math></div>
+第二条是债券净供给为零；其中一个人的正债权必须由另一人的负债对应。家庭路径也要满足已指定的借款或
+No-Ponzi 限制，这包含在家庭可行性中，不能漏查。</p>
+<p>将两家取等号的预算相加，若旧资产合计为零、新资产合计也为零，便推出商品市场出清。这个代数联系可用于核对答案；定义里仍须清楚说明两个市场。</p>
+<p>交替禀赋例子中，上一讲现值价格为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>t</mi></msub><mo>=</mo><msup><mi>β</mi><mi>t</mi></msup></mrow><annotation encoding="application/x-tex">p_t=\beta^t</annotation></semantics></math></span>，相邻日期债券价为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mi>t</mi></msub><mo>=</mo><msub><mi>p</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mi>/</mi><msub><mi>p</mi><mi>t</mi></msub><mo>=</mo><mi>β</mi></mrow><annotation encoding="application/x-tex">q_t=p_{t+1}/p_t=\beta</annotation></semantics></math></span>，总回报率为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mi>β</mi></mrow><annotation encoding="application/x-tex">1/\beta</annotation></semantics></math></span>。于是
+Euler 等式变成
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>u</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><msubsup><mi>c</mi><mi>t</mi><mi>i</mi></msubsup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>u</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><msubsup><mi>c</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow><mi>i</mi></msubsup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">u&#39;(c_t^i)=u&#39;(c_{t+1}^i)</annotation></semantics></math></span>。对严格凹的对数效用，边际效用单调，故各家消费恒定，水平由终身预算给出。</p>
+<h2 id="example-a">例题 A：编辑示范</h2>
+<p>同一期两家禀赋合计为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>，旧资产合计为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>，新资产分别为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.6</mn><mo>,</mo><mi>−</mi><mn>0.6</mn></mrow><annotation encoding="application/x-tex">0.6,-0.6</annotation></semantics></math></span>。将两家预算加总，证明消费总量为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>相加得
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mi>t</mi><mn>1</mn></msubsup><mo>+</mo><msubsup><mi>c</mi><mi>t</mi><mn>2</mn></msubsup><mo>+</mo><msub><mi>q</mi><mi>t</mi></msub><mo stretchy="false" form="prefix">(</mo><mn>0.6</mn><mo>−</mo><mn>0.6</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c_t^1+c_t^2+q_t(0.6-0.6)=2+0</annotation></semantics></math></span>，即两家消费合计为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>。</p>
+</details>
+<h2 id="practice-b">补充练习 B</h2><p class="source-label">新增练习 · 编辑补充：练习本课 A 已完整示范的方法或条件判断。</p><p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mn>0.8</mn></mrow><annotation encoding="application/x-tex">\beta=0.8</annotation></semantics></math></span>，候选资产分别为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.4</mn><mo>,</mo><mi>−</mi><mn>0.3</mn></mrow><annotation encoding="application/x-tex">0.4,-0.3</annotation></semantics></math></span>。即使消费总量等于总禀赋，也能称均衡吗？另求无摩擦交替禀赋均衡的债券价格和总回报率。</p><div class="practice-controls" data-question-id="L2B015" data-module-id="L2M015" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p>不能，债券合计
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.1</mn><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">0.1\ne0</annotation></semantics></math></span>，违反零净供给。该交替禀赋无摩擦均衡应有
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mi>t</mi></msub><mo>=</mo><mn>0.8</mn></mrow><annotation encoding="application/x-tex">q_t=0.8</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mn>1.25</mn></mrow><annotation encoding="application/x-tex">R_{t+1}=1.25</annotation></semantics></math></span>，同时仍需核对正确资产路径。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>均衡不只检查消费总量，还要检查债券净供给为零及家庭的完整最优问题。</p>
+<details class="prepared-review"><summary>精选回顾（回看不记分）</summary><h2 id="review">精选回顾</h2><p>债券为什么不能创造整个经济的新资源？</p><h2 id="review-answer">回顾答案</h2><details>
+<summary>
+回忆后查看
+</summary>
+<p>一人的债券资产对应另一人的债务，市场出清时净头寸为零。相加家庭预算后，内部金融支付相消，总消费仍受总禀赋约束。</p>
+</details></details></article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

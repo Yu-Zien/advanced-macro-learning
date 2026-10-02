@@ -1,0 +1,94 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>原题第一问：等权重计划者怎样分配 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L2M033"><h1
+id="原题第一问等权重计划者怎样分配">原题第一问：等权重计划者怎样分配</h1>
+<p>来源：Lecture 2，PDF 第 61–64 页。</p>
+<h2 id="method">这一步解决什么</h2>
+<p>本节回到原材料完整综合题。先只求计划者，保留“价格与资产”到下一问，避免把社会资源约束误作个体预算。</p>
+<p>两期、对数效用、等权重时可最大化
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mn>2</mn></msubsup><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><msubsup><mi>c</mi><mn>0</mn><mi>i</mi></msubsup><mo>+</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><msubsup><mi>c</mi><mn>1</mn><mi>i</mi></msubsup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\sum_{i=1}^2(\ln c_0^i+\ln c_1^i)</annotation></semantics></math></span>。省略公共正系数
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">1/2</annotation></semantics></math></span>
+不改变最大化配置。分别给两期资源约束配乘子，每一期两家的条件为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><msubsup><mi>c</mi><mi>t</mi><mn>1</mn></msubsup><mo>=</mo><msub><mi>λ</mi><mi>t</mi></msub><mo>=</mo><mn>1</mn><mi>/</mi><msubsup><mi>c</mi><mi>t</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">1/c_t^1=\lambda_t=1/c_t^2</annotation></semantics></math></span>，故当期两家消费相等；再由资源总量求水平。</p>
+<p>判断最优仍需完整：对数严格凹、可行集凸、正消费内点，所求一阶条件给唯一最大值。这里两期贴现因子均为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+是题目设定，不应擅自带入前面无限期
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\beta&lt;1</annotation></semantics></math></span>
+的公式。</p>
+<h2 id="exercise-context">原题完整共用条件</h2>
+<p>经济只有第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+期和第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+期。两位家庭的效用相同：
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>U</mi><mi>i</mi></msup><mo>=</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><msubsup><mi>c</mi><mn>0</mn><mi>i</mi></msubsup><mo>+</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><msubsup><mi>c</mi><mn>1</mn><mi>i</mi></msubsup><mo>,</mo><mspace width="2.0em"></mspace><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">U^i=\ln c_0^i+\ln c_1^i,\qquad i=1,2.</annotation></semantics></math></div>
+禀赋为
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msubsup><mi>e</mi><mn>0</mn><mn>1</mn></msubsup><mo>,</mo><msubsup><mi>e</mi><mn>1</mn><mn>1</mn></msubsup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>,</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="2.0em"></mspace><mo stretchy="false" form="prefix">(</mo><msubsup><mi>e</mi><mn>0</mn><mn>2</mn></msubsup><mo>,</mo><msubsup><mi>e</mi><mn>1</mn><mn>2</mn></msubsup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">(e_0^1,e_1^1)=\left(\frac32,\frac12\right),\qquad
+(e_0^2,e_1^2)=\left(\frac12,\frac32\right).</annotation></semantics></math></div>
+一期债券在第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+期价格为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">q&gt;0</annotation></semantics></math></span>，第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+期支付一单位消费品；<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>a</mi><mn>1</mn><mi>i</mi></msubsup><annotation encoding="application/x-tex">a_1^i</annotation></semantics></math></span>
+是家庭
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math></span>
+持有的债券数量。
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mn>0</mn><mi>i</mi></msubsup><mo>+</mo><mi>q</mi><msubsup><mi>a</mi><mn>1</mn><mi>i</mi></msubsup><mo>=</mo><msubsup><mi>e</mi><mn>0</mn><mi>i</mi></msubsup><mo>,</mo><mspace width="2.0em"></mspace><msubsup><mi>c</mi><mn>1</mn><mi>i</mi></msubsup><mo>=</mo><msubsup><mi>e</mi><mn>1</mn><mi>i</mi></msubsup><mo>+</mo><msubsup><mi>a</mi><mn>1</mn><mi>i</mi></msubsup><mo>,</mo><mspace width="2.0em"></mspace><msubsup><mi>a</mi><mn>1</mn><mn>1</mn></msubsup><mo>+</mo><msubsup><mi>a</mi><mn>1</mn><mn>2</mn></msubsup><mo>=</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">c_0^i+qa_1^i=e_0^i,\qquad c_1^i=e_1^i+a_1^i,\qquad a_1^1+a_1^2=0.</annotation></semantics></math></div>
+所有消费严格为正。完整任务依次为：（1）写出等权重社会计划者问题并求最优配置；（2）不设借款约束，求竞争均衡价格和配置；（3）仅限制家庭
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>
+不能借款，即
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>a</mi><mn>1</mn><mn>2</mn></msubsup><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_1^2\ge0</annotation></semantics></math></span>，求新均衡价格、债券和消费，并核验家庭
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>
+的 Euler
+不等式；（4）比较受限均衡和计划者配置，定位效率损失并说明怎样恢复无摩擦配置。四问分别完整作答于本节四课。</p>
+<h2 id="example-a">例题 A：编辑示范</h2>
+<p>两家都有
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>U</mi><mi>i</mi></msup><mo>=</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><msubsup><mi>c</mi><mn>0</mn><mi>i</mi></msubsup><mo>+</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><msubsup><mi>c</mi><mn>1</mn><mi>i</mi></msubsup></mrow><annotation encoding="application/x-tex">U^i=\ln c_0^i+\ln c_1^i</annotation></semantics></math></span>，每期总资源为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math></span>。写等权重计划者问题并求解。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>最大化两家两期对数和，约束为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mi>t</mi><mn>1</mn></msubsup><mo>+</mo><msubsup><mi>c</mi><mi>t</mi><mn>2</mn></msubsup><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">c_t^1+c_t^2=3</annotation></semantics></math></span>、消费正、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">t=0,1</annotation></semantics></math></span>。各期条件
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><msubsup><mi>c</mi><mi>t</mi><mn>1</mn></msubsup><mo>=</mo><mn>1</mn><mi>/</mi><msubsup><mi>c</mi><mi>t</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">1/c_t^1=1/c_t^2</annotation></semantics></math></span>
+给相等消费，再用总量得每人每期
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">3/2</annotation></semantics></math></span>。严格凹性确保唯一最大。</p>
+</details>
+<h2 id="practice-b">原题 1</h2><p class="source-label">材料原题 · PDF 第 62–63 页，问题 1；参考答案第 64 页</p><p>在“原题完整共用条件”下，写出等权重社会计划者问题，并求两位家庭在两期的最优消费。</p><div class="practice-controls" data-question-id="L2E001a" data-module-id="L2M033" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p>每期资源分别是
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mi>/</mi><mn>2</mn><mo>+</mo><mn>1</mn><mi>/</mi><mn>2</mn><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">3/2+1/2=2</annotation></semantics></math></span>
+和
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>2</mn><mo>+</mo><mn>3</mn><mi>/</mi><mn>2</mn><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">1/2+3/2=2</annotation></semantics></math></span>，所以问题为
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">max</mi><mrow><msubsup><mi>c</mi><mi>t</mi><mi>i</mi></msubsup><mo>&gt;</mo><mn>0</mn></mrow></munder><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mn>2</mn></munderover><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><msubsup><mi>c</mi><mn>0</mn><mi>i</mi></msubsup><mo>+</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><msubsup><mi>c</mi><mn>1</mn><mi>i</mi></msubsup><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mspace width="2.0em"></mspace><msubsup><mi>c</mi><mi>t</mi><mn>1</mn></msubsup><mo>+</mo><msubsup><mi>c</mi><mi>t</mi><mn>2</mn></msubsup><mo>=</mo><mn>2</mn><mspace width="0.222em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">\max_{c_t^i&gt;0}\sum_{i=1}^{2}(\ln c_0^i+\ln c_1^i),\qquad c_t^1+c_t^2=2\ (t=0,1).</annotation></semantics></math></div>
+拉格朗日条件为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><msubsup><mi>c</mi><mi>t</mi><mn>1</mn></msubsup><mo>=</mo><msub><mi>λ</mi><mi>t</mi></msub><mo>=</mo><mn>1</mn><mi>/</mi><msubsup><mi>c</mi><mi>t</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">1/c_t^1=\lambda_t=1/c_t^2</annotation></semantics></math></span>，故两家各期相等；资源约束再给
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mn>0</mn><mrow><mn>1</mn><mo>,</mo><mi>S</mi><mi>P</mi></mrow></msubsup><mo>=</mo><msubsup><mi>c</mi><mn>1</mn><mrow><mn>1</mn><mo>,</mo><mi>S</mi><mi>P</mi></mrow></msubsup><mo>=</mo><msubsup><mi>c</mi><mn>0</mn><mrow><mn>2</mn><mo>,</mo><mi>S</mi><mi>P</mi></mrow></msubsup><mo>=</mo><msubsup><mi>c</mi><mn>1</mn><mrow><mn>2</mn><mo>,</mo><mi>S</mi><mi>P</mi></mrow></msubsup><mo>=</mo><mn>1</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">c_0^{1,SP}=c_1^{1,SP}=c_0^{2,SP}=c_1^{2,SP}=1.</annotation></semantics></math></div>
+对数严格凹且可行集凸，内点驻点是唯一最优。两家效用都为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mn>1</mn><mo>+</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mn>1</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\ln1+\ln1=0</annotation></semantics></math></span>。此问未要求求价格，计划者解本身也不自动等于原禀赋均衡。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>原题的等权重计划者让每位家庭每期消费一单位。</p>
+<details class="prepared-review"><summary>精选回顾（回看不记分）</summary><h2 id="review">精选回顾</h2><p>原题计划者问题为什么可以省略等权重中的公共
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">1/2</annotation></semantics></math></span>？</p><h2 id="review-answer">回顾答案</h2><details>
+<summary>
+回忆后查看
+</summary>
+<p>把整个目标乘任何正数都不改变最大化配置；省略的只是两家共有的系数，不是把两家的相对权重改了。</p>
+</details></details></article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

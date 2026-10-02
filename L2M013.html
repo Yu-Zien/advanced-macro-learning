@@ -1,0 +1,56 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>家庭问题先定义可选的整条路径 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L2M013"><h1 id="家庭问题先定义可选的整条路径">家庭问题先定义可选的整条路径</h1>
+<p>来源：Lecture 2，PDF 第 23 页。</p>
+<h2 id="method">这一步解决什么</h2>
+<p>家庭不是逐期分别最大化当期效用，而是同时选择整条消费和资产路径：
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">max</mi><mrow><mo stretchy="false" form="prefix">{</mo><msubsup><mi>c</mi><mi>t</mi><mi>i</mi></msubsup><mo>,</mo><msubsup><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow><mi>i</mi></msubsup><msub><mo stretchy="false" form="postfix">}</mo><mrow><mi>t</mi><mo>≥</mo><mn>0</mn></mrow></msub></mrow></munder><munderover><mo>∑</mo><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><mo accent="false">∞</mo></munderover><msup><mi>β</mi><mi>t</mi></msup><mi>u</mi><mo stretchy="false" form="prefix">(</mo><msubsup><mi>c</mi><mi>t</mi><mi>i</mi></msubsup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\max_{\{c_t^i,a_{t+1}^i\}_{t\ge0}}\sum_{t=0}^{\infty}\beta^tu(c_t^i)</annotation></semantics></math></div>
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mi>t</mi><mi>i</mi></msubsup><mo>+</mo><msub><mi>q</mi><mi>t</mi></msub><msubsup><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow><mi>i</mi></msubsup><mo>≤</mo><msubsup><mi>e</mi><mi>t</mi><mi>i</mi></msubsup><mo>+</mo><msubsup><mi>a</mi><mi>t</mi><mi>i</mi></msubsup><mo>,</mo><mspace width="2.0em"></mspace><msubsup><mi>a</mi><mn>0</mn><mi>i</mi></msubsup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> 给定</mtext></mrow><mo>,</mo><mspace width="2.0em"></mspace><msubsup><mi>c</mi><mi>t</mi><mi>i</mi></msubsup><mo>&gt;</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">c_t^i+q_ta_{t+1}^i\le e_t^i+a_t^i,\qquad a_0^i\text{ 给定},\qquad c_t^i&gt;0.</annotation></semantics></math></div>
+效用函数
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math></span>
+严格递增且凹，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math></span>
+为贴现因子。每期预算只是可行集合的一部分，还必须说明允许多少借款，以及无限远的偿债限制。后面会正式定义
+No-Ponzi
+条件；在定义前这里只标明它的位置：它约束可选资产路径，必须在求最优<strong>之前</strong>写入问题。</p>
+<p>为什么只列预算不够？给定任何偏高的消费，都能用
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>e</mi><mi>t</mi></msub><mo>+</mo><msub><mi>a</mi><mi>t</mi></msub><mo>−</mo><msub><mi>c</mi><mi>t</mi></msub><mo stretchy="false" form="postfix">)</mo><mi>/</mi><msub><mi>q</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">a_{t+1}=(e_t+a_t-c_t)/q_t</annotation></semantics></math></span>
+递推越来越负的债务，形式上逐期账目仍平。若债务可无休止滚动，预算不再真实约束一生消费。</p>
+<p>下两课的 Euler
+等式假设所讨论资产选择在局部没有绑定限制，且相邻两期的小变动可行。它只是最优路径的必要局部条件，不能代替问题本身或所有边界条件。</p>
+<h2 id="example-a">例题 A：编辑示范</h2>
+<p><span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mi>t</mi></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">q_t=1</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>e</mi><mi>t</mi></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">e_t=1</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_0=0</annotation></semantics></math></span>，家庭每期消费
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>。只看逐期预算，算前三个资产；解释为什么还需长期限制。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>递推
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>a</mi><mi>t</mi></msub><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a_{t+1}=a_t-1</annotation></semantics></math></span>，所以
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><mi>−</mi><mn>1</mn><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>=</mo><mi>−</mi><mn>2</mn><mo>,</mo><msub><mi>a</mi><mn>3</mn></msub><mo>=</mo><mi>−</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">a_1=-1,a_2=-2,a_3=-3</annotation></semantics></math></span>。账目每期都相等，但消费超出禀赋全靠新增债务，债务不断向后转。长期可行性不能由这些等式自动保证。</p>
+</details>
+<h2 id="practice-b">补充练习 B</h2><p class="source-label">新增练习 · 编辑补充：练习本课 A 已完整示范的方法或条件判断。</p><p>同样
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>q</mi><mi>t</mi></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">q_t=1</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>e</mi><mi>t</mi></msub><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">e_t=2</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_0=0</annotation></semantics></math></span>，选择每期消费
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3.5</mn><annotation encoding="application/x-tex">3.5</annotation></semantics></math></span>。算
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><msub><mi>a</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">a_1,a_2,a_3</annotation></semantics></math></span>，并判断“满足三期预算所以是无限期可行最优路径”是否成立。</p><div class="practice-controls" data-question-id="L2B013" data-module-id="L2M013" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p>每期资产减少
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1.5</mn><annotation encoding="application/x-tex">1.5</annotation></semantics></math></span>，所以分别为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1.5</mn><mo>,</mo><mi>−</mi><mn>3</mn><mo>,</mo><mi>−</mi><mn>4.5</mn></mrow><annotation encoding="application/x-tex">-1.5,-3,-4.5</annotation></semantics></math></span>。结论不成立：还未检查整条路径的借款和长期偿债限制，更没有检查最优性。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>完整家庭问题同时包含目标、逐期预算、初始资产和允许的长期资产路径。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>

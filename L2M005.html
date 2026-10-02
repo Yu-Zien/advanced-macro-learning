@@ -1,0 +1,109 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="runtime/favicon.svg"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-version" content="1.0.0"><title>为什么全部内点有效配置都使消费恒定 · 高级宏观经济学学习室</title><style>:root { color-scheme:light; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; color:#26342f; background:#f6f7f3; }
+* { box-sizing:border-box; } body { margin:0; font-size:17px; line-height:1.9; }
+.sheet { width:min(900px,calc(100% - 32px)); margin:30px auto; padding:32px 48px 42px; background:#fff; border:1px solid #e0e5dc; border-radius:12px; }
+nav { display:flex; flex-wrap:wrap; gap:12px 22px; padding-bottom:16px; border-bottom:1px solid #e1e6df; font-size:14px; }
+h1 { font-size:1.8rem; line-height:1.45; margin:27px 0 20px; } h2 { font-size:1.3rem; margin:36px 0 16px; } h3 { font-size:1.1rem; }
+p,ul,ol,table { margin:15px 0; } li+li { margin-top:7px; } a { color:#246a50; text-underline-offset:3px; }
+blockquote { margin:22px 0; padding:5px 20px; background:#f1f6f0; border-left:3px solid #7c9f77; }
+details { border:1px solid #d8e0d4; border-radius:8px; margin:16px 0 24px; padding:0 18px; background:#fcfdfb; } summary { cursor:pointer; padding:13px 0; color:#315b41; font-weight:600; } details[open] { padding-bottom:12px; }
+table { border-collapse:collapse; width:100%; font-size:.96em; display:block; overflow-x:auto; } th,td { border:1px solid #dce3d8; padding:10px 13px; text-align:left; vertical-align:top; } th { background:#f2f5ef; }
+math { font-family:math; font-size:1.04em; } .math-display { overflow-x:auto; padding:8px 2px; margin:20px 0; } .math-display math { margin:0 auto; }
+code { overflow-wrap:anywhere; } pre { overflow:auto; } img,svg { max-width:100%; height:auto; } .source-label,footer { color:#66736b; font-size:14px; } footer { margin-top:36px; padding-top:15px; border-top:1px solid #e1e6df; }
+@media(max-width:620px) { body { font-size:16px; } .sheet { width:calc(100% - 16px); margin:8px auto; padding:20px 18px 28px; } h1 { font-size:1.5rem; } th,td { padding:8px; } }
+</style><link rel="stylesheet" href="runtime/app.css"></head><body><main class="sheet"><header class="brand-bar"><span class="brand-mark" aria-hidden="true">β</span><span class="brand-name">高级宏观经济学学习室</span><span class="brand-sub">LEARN · REASON · PRACTICE</span></header><nav aria-label="课程导航"><a href="index.html">继续学习</a><a href="index.html?view=exercises">材料习题</a><a href="index.html?view=progress">目录与进度</a></nav><p id="save-status" role="status"></p><div id="runtime-error" class="runtime-error" role="alert" hidden></div><div id="app-view"><article id="lesson-content" data-module-id="L2M005"><h1
+id="为什么全部内点有效配置都使消费恒定">为什么全部内点有效配置都使消费恒定</h1>
+<p>来源：Lecture 2，PDF 第 11 页。</p>
+<h2 id="method">这一步解决什么</h2>
+<p>上一课证明了每个正权重解都有效。本课补上讲义未展开的反方向：在共同
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math></span>、对数效用、每期总量
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>、消费为正且效用有限的经济中，任意有效配置都属于这族解。</p>
+<p>取两个日期
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>,</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">s,t</annotation></semantics></math></span>。记
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>m</mi><mi>r</mi><mi>i</mi></msubsup><mo>=</mo><msup><mi>β</mi><mi>r</mi></msup><mi>/</mi><msubsup><mi>c</mi><mi>r</mi><mi>i</mi></msubsup><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">m_r^i=\beta^r/c_r^i&gt;0</annotation></semantics></math></span>，即家庭
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math></span>
+在日期
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math></span>
+的终身边际效用。如果两家的跨期边际比不同，比如
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msubsup><mi>m</mi><mi>s</mi><mn>1</mn></msubsup><msubsup><mi>m</mi><mi>t</mi><mn>1</mn></msubsup></mfrac><mo>&gt;</mo><mfrac><msubsup><mi>m</mi><mi>s</mi><mn>2</mn></msubsup><msubsup><mi>m</mi><mi>t</mi><mn>2</mn></msubsup></mfrac><mo>,</mo></mrow><annotation encoding="application/x-tex">\frac{m_s^1}{m_t^1}&gt;\frac{m_s^2}{m_t^2},</annotation></semantics></math></div>
+就在两数之间选
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math></span>。从家庭
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>
+的日期
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math></span>
+消费转
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon&gt;0</annotation></semantics></math></span>
+给家庭
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>，同时从家庭
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+的日期
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math></span>
+消费转
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mi>ε</mi></mrow><annotation encoding="application/x-tex">k\varepsilon</annotation></semantics></math></span>
+给家庭
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>。各日期总量不变，<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math></span>
+足够小可保证消费仍正。两人效用对
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math></span>
+在零点的导数为
+<div class="math-display"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>m</mi><mi>s</mi><mn>1</mn></msubsup><mo>−</mo><mi>k</mi><msubsup><mi>m</mi><mi>t</mi><mn>1</mn></msubsup><mo>&gt;</mo><mn>0</mn><mo>,</mo><mspace width="2.0em"></mspace><mo>−</mo><msubsup><mi>m</mi><mi>s</mi><mn>2</mn></msubsup><mo>+</mo><mi>k</mi><msubsup><mi>m</mi><mi>t</mi><mn>2</mn></msubsup><mo>&gt;</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">m_s^1-km_t^1&gt;0,\qquad -m_s^2+km_t^2&gt;0.</annotation></semantics></math></div>
+可微性保证足够小的正转移使两人都严格改善。因此有效配置必须满足每对日期的边际比相同。</p>
+<p>代入对数边际效用并消去共同贴现因子，得
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mi>t</mi><mn>1</mn></msubsup><mi>/</mi><msubsup><mi>c</mi><mi>s</mi><mn>1</mn></msubsup><mo>=</mo><msubsup><mi>c</mi><mi>t</mi><mn>2</mn></msubsup><mi>/</mi><msubsup><mi>c</mi><mi>s</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">c_t^1/c_s^1=c_t^2/c_s^2</annotation></semantics></math></span>，即跨家庭份额
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mi>r</mi><mn>1</mn></msubsup><mi>/</mi><msubsup><mi>c</mi><mi>r</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">c_r^1/c_r^2</annotation></semantics></math></span>
+不随日期改变。每期总量又都是
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>，故
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mi>t</mi><mn>1</mn></msubsup><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">c_t^1=x</annotation></semantics></math></span>、<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>c</mi><mi>t</mi><mn>2</mn></msubsup><mo>=</mo><mn>2</mn><mo>−</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">c_t^2=2-x</annotation></semantics></math></span>，其中
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">0&lt;x&lt;2</annotation></semantics></math></span>。令
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>=</mo><mi>x</mi><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">\theta=x/2</annotation></semantics></math></span>，这正是上一课的正权重计划者解，也已被证明有效。</p>
+<p>所以有效集合恰为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><msubsup><mi>c</mi><mi>t</mi><mn>1</mn></msubsup><mo>=</mo><mn>2</mn><mi>θ</mi><mo>,</mo><mspace width="0.222em"></mspace><msubsup><mi>c</mi><mi>t</mi><mn>2</mn></msubsup><mo>=</mo><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>θ</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mspace width="0.222em"></mspace><mn>0</mn><mo>&lt;</mo><mi>θ</mi><mo>&lt;</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{c_t^1=2\theta,\ c_t^2=2(1-\theta),\ 0&lt;\theta&lt;1\}</annotation></semantics></math></span>。这不是用一个例子代替一般证明；任意两个时期都已比较。</p>
+<h2 id="example-a">例题 A：编辑示范</h2>
+<p>两期共同贴现因子为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>，两人的消费分别为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1.5</mn><mo>,</mo><mn>0.5</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(1.5,0.5)</annotation></semantics></math></span>
+与
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>0.5</mn><mo>,</mo><mn>1.5</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(0.5,1.5)</annotation></semantics></math></span>。验证把第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math></span>
+期第一人
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.1</mn><annotation encoding="application/x-tex">0.1</annotation></semantics></math></span>
+单位转给第二人、反向转第
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>
+期
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.1</mn><annotation encoding="application/x-tex">0.1</annotation></semantics></math></span>
+单位，会同时改善。</p>
+<h2 id="answer-a">A 解答</h2>
+<details>
+<summary>
+查看示范解答
+</summary>
+<p>两人原先两期消费乘积都为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.75</mn><annotation encoding="application/x-tex">0.75</annotation></semantics></math></span>；交换后分别为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1.4</mn><mo>,</mo><mn>0.6</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(1.4,0.6)</annotation></semantics></math></span>
+与
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>0.6</mn><mo>,</mo><mn>1.4</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(0.6,1.4)</annotation></semantics></math></span>，乘积都为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.84</mn><annotation encoding="application/x-tex">0.84</annotation></semantics></math></span>。对数效用等于乘积的对数，严格上升；两期总量保持
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>。</p>
+</details>
+<h2 id="practice-b">补充练习 B</h2><p class="source-label">新增练习 · 编辑补充：练习本课 A 已完整示范的方法或条件判断。</p><p>两期贴现因子为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math></span>，两人的消费分别为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1.6</mn><mo>,</mo><mn>0.4</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(1.6,0.4)</annotation></semantics></math></span>
+和
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>0.4</mn><mo>,</mo><mn>1.6</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(0.4,1.6)</annotation></semantics></math></span>。按
+A 的同方向交换
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.2</mn><annotation encoding="application/x-tex">0.2</annotation></semantics></math></span>，核验是否是
+Pareto 改进。</p><div class="practice-controls" data-question-id="L2B005" data-module-id="L2M005" data-mode="guided" data-answer-anchor="answer-b"></div><h2 id="answer-b">B 解答</h2>
+<details>
+<summary>
+尝试后查看参考解
+</summary>
+<p>交换后为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1.4</mn><mo>,</mo><mn>0.6</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(1.4,0.6)</annotation></semantics></math></span>
+与
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>0.6</mn><mo>,</mo><mn>1.4</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(0.6,1.4)</annotation></semantics></math></span>。原乘积
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.64</mn><annotation encoding="application/x-tex">0.64</annotation></semantics></math></span>，新乘积
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.84</mn><annotation encoding="application/x-tex">0.84</annotation></semantics></math></span>，两人效用都提高。每期资源仍为
+<span class="math-inline"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math></span>，所以是可行
+Pareto 改进。</p>
+</details>
+<h2 id="summary">一句小结</h2>
+<p>共同贴现与固定总资源下，效率要求两家的跨期边际比一致，从而各家消费恒定。</p>
+</article></div><footer>网站版本 1.0.0 · 记录保存在当前浏览器。请固定使用同一地址与浏览器，并定期导出备份。</footer></main><script type="module" src="runtime/app.js"></script></body></html>
